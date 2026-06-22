@@ -1,0 +1,40 @@
+{
+  "source_file": "best_chunks_and_answer.json",
+  "judge_model": "mistral:latest",
+  "entries": [
+    {
+      "query": "Ab welchem Betrag ist eine Vergabe durchzuführen (UVgO, VV ÖA, LHO)",
+      "scores": {
+        "correctness": 5,
+        "completeness": 4,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Ab welchem Betrag ist eine Beschaffung durchzuführen (UVgO, VV ÖA, LHO)",
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Ist der Höchstbetrag in Brutto oder Netto anzugeben (UVgO, VgV, VV ÖA)",
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    }
+  ],
+  "aggregates": {
+    "correctness": 5.0,
+    "completeness": 4.67,
+    "faithfulness": 5.0,
+    "clarity": 5.0
+  },
+  "overall": 4.92
+}

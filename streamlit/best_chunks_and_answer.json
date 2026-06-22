@@ -1,0 +1,151 @@
+{
+  "export_zeit": "2026-06-22T12:42:35.102677",
+  "app": "Chatbot-Vergabe",
+  "run_name": "best_chunks_and_answer",
+  "entries": [
+    {
+      "query": "Ab welchem Betrag ist eine Vergabe durchzuführen (UVgO, VV ÖA, LHO)",
+      "answer": "**Aus dem vorliegenden Kontext ergeben sich keine eindeutig festgelegten Schwellen­werte für UVgO, VV ÖA RLP oder LHO, die darüber entscheiden, ab welchem Betrag eine Vergabe zwingend durchzuführen ist.**  \n\nHier ein Überblick über das, was im bereitgestellten Text konkret genannt wird:\n\n| Rechtsquelle | Wichtige Angaben aus dem Kontext | Schwellenwert bzw. Ausnahmen |\n|--------------|----------------------------------|-----------------------------|\n| **UVgO (Unterschwellenvergabeordnung)** | „a) die Unterschwellenvergabeordnung (UVgO) vom 2. Februar 2017 …“ – die UVgO regelt grundsätzlich Vergaben unter den EU‑Schwellenwerten. | *Keine explizite Zahl* im Text, nur die generelle Bezeichnung “unterhalb der EU‑Schwellenwerte”. |\n| **VV ÖA RLP** (Verwaltungsvorschriften zum öffentlichen Auftragswesen in Rheinland‑Pfalz) | Im Ausschnitt nicht erwähnt. | **Nicht im Kontext enthalten.** |\n| **LHO (Landeshaushaltsordnung)** | „Für öffentliche Aufträge unterhalb der EU‑Schwellenwerte gelten § 55 LHO …“ – das bedeutet, dass die LHO für Aufträge gilt, die die EU‑Schwellen­werte nicht überschreiten. | *Keine konkrete Zahl* im Text; lediglich Hinweis auf “unterhalb der EU‑Schwellenwerte”. |\n| **Ausnahme für preisgebundene Bücher** (nicht spezifisch einer der drei genannten Rechtsgrundlagen zugeordnet) | „Bis zu einem Auftragswert von 10 000 Euro (ohne Umsatzsteuer) … dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Büchern… direkt an ein Unternehmen vergeben werden.“ | **10 000 Euro** – ausschließlich für preisgebundene Bücher, nicht allgemeine Schwelle. |\n| **Elektronische Vergabeverfahren** | „Vergabeverfahren über Liefer‑ und Dienstleistungsaufträge mit einem geschätzten Auftragswert bis 20 000 Euro (ohne Umsatzsteuer) können …“ – Hinweis auf die Nutzung elektronischer Mittel. | **bis zu 20 000 Euro** – beschreibt einen Bereich, in dem e‑Vergabepflicht gilt; ist aber keine generelle Schwelle für alle Vergaben. |\n\n### Fazit\n\n- **UVgO & LHO**: Im bereitgestellten Text werden lediglich die EU‑Schwellenwerte als Rahmen genannt, keine konkreten Euro-Beträge.  \n- **VV ÖA RLP**: Der entsprechende Schwellenwert fehlt im gegebenen Ausschnitt – daher lässt sich aus diesem Kontext nicht ableiten.  \n- **Spezielle Ausnahmeregelungen**: Für preisgebundene Bücher gilt eine direkte Vergabe bis zu 10 000 Euro, und für elektronische Vergabeverfahren ist ein Auftragswert von bis zu 20 000 Euro genannt.\n\nFalls Sie weitere, spezifischere Angaben brauchen (z. B. die genauen EU‑Schwellenwerte oder die Schwelle nach VV ÖA RLP), müssten diese in anderen Abschnitten der UVgO, VV ÖA RLP bzw. LHO selbst zu finden sein – sie sind im vorliegenden Dokument nicht enthalten.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 13,
+          "score": 0.01538,
+          "relevanz": "hoch",
+          "abschnitt": "Aspekte der Qualität und der Innovation sowie soziale und umweltbezogene Aspekte wer-\nden nach Maßgabe dieser Verwaltungsvorschrift und der anzuwendenden Verfahrensvor-\nschriften ( Nummer 3.2 ) berücksichtigt.\n \n \n3.2 Anzuwendende Vergabeverfahrensvorschriften\n \n \nFür öffentliche Aufträge unterhalb "
+        },
+        {
+          "quelle": 2,
+          "datei": "UVgO.pdf",
+          "seite": 36,
+          "score": 0.01475,
+          "relevanz": "mittel",
+          "abschnitt": "Sofern eine freiberufliche Leistung zugleich eine Dienstleistung im Sinne des § 130 GWB ist, geht § 50 vor; das gilt etwa für\neine juristische Dienstleistung, die im Rahmen einer freiberuflichen Tätigkeit erbracht wird, sofern diese nicht bereits gemäß §\n1 Absatz 2 UVgO in Verbindung mit § 116 Absat"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01433,
+          "relevanz": "mittel",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 36,
+          "score": 0.00984,
+          "relevanz": "niedrig",
+          "abschnitt": "Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren gr"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.00968,
+          "relevanz": "niedrig",
+          "abschnitt": "13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteiligten Unternehmen gelten die Vorgabe n der Vergabeverfahrensord- \nnungen (UVgO, VOB/A). 13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteilig"
+        }
+      ],
+      "export_zeit": "2026-06-22T12:42:35.102666"
+    },
+    {
+      "query": "Ab welchem Betrag ist eine Beschaffung durchzuführen (UVgO, VV ÖA, LHO)",
+      "answer": "**Kurzantwort:**  \n- **VV ÖA (Verwaltungsverordnung für öffentliche Aufträge):** Direktauftrag ohne Vergabeverfahren ist nur bis zu einem geschätzten Auftragswert von **10 000 € (ohne MwSt)** zulässig. Ab dem nächst höheren Betrag (also ab > 10 000 €) muss ein Vergabeverfahren eingeleitet werden.  \n- **UVgO (Unterschwellenvergabeordnung):** Für Liefer‑ und Dienstleistungsaufträge gelten die in § 3 UVgO genannten Schwellenwerte: bis zu **100 000 € (ohne MwSt)** kann eine Verhandlungs­ oder freihändige Vergabe ohne Teilnahmewettbewerb vorgenommen werden; darüber hinaus ist ein öffentlicher Ausschreibungsverfahren erforderlich.  \n- **LHO (Landes‑Hochschulordnung) § 55 Abs. 1/LGHO & § 22 Abs. 1 GemHVO:** Die LHO selbst setzt keine konkrete Geldsumme, sondern verlangt grundsätzlich eine öffentliche oder beschränkte Ausschreibung, sofern keine Ausnahmesituation vorliegt.\n\n---\n\n### 1. VV ÖA – Direktauftragsgrenze  \n> **„Liefer-, Dienst- und Bauleistungen können bis zu einem geschätzten Auftragswert von 10 000 € ohne Umsatzsteuer ohne ein Vergabeverfahren (Direktauftrag) beschafft werden.“**  \n(Quelle: *Min. Wirtschaft, Verkehr, Landwirtschaft und Weinbau – Direktauftragsgrenze, Nummer 4.3 der Verwaltungsvorschrift*)\n\nDamit gilt:\n- **≤ 10 000 €** – keine Vergabe­prozedur erforderlich (Direktauftrag).  \n- **> 10 000 €** – ein Vergabeverfahren (öffentliche oder beschränkte Ausschreibung) ist einzuleiten.\n\n---\n\n### 2. UVgO – Schwellenwerte für Liefer‑ und Dienstleistungsaufträge  \n> **„Verhandlungsvergaben sind … zulässig, wenn der geschätzte Auftragswert nach § 3 VgV nicht überschreitet: … Liefer- und Dienstleistungen nach UVgO 100.000 €.“**  \n(Quelle: *UVgO‑Abschnitt zu Verhandlungsvergaben*)\n\nFolglich:\n- **≤ 100 000 € (ohne MwSt)** – Verhandlungsvergabe bzw. freihändige Vergabe möglich, ohne dass ein öffentlicher Teilnahmewettbewerb erforderlich ist.\n- **> 100 000 €** – Ein Verfahren mit öffentlichem Ausschreibungs­ oder Teilnahmewettbewerb wird benötigt.\n\n*(Für Bauleistungen gelten zusätzliche Schwellenwerte – 250 k €/VOB/A und 1 Mio €/Wohnungsbau, jedoch liegen diese Angaben ebenfalls in der UVgO‑Dokumentation.)*\n\n---\n\n### 3. LHO (Landes‑Hochschulordnung)  \n> **§ 55 Abs. 1 LHO & § 22 Abs. 1 GemHVO** verlangen: *„…eine öffentliche Ausschreibung oder eine beschränkte Ausschreibung mit Teilnahmewettbewerb … vorausgehen, sofern nicht die Natur des Geschäfts oder besondere Umstände eine Ausnahme rechtfertigen.“*\n\nDie LHO gibt hier **keine explizite Geldsumme an**, sondern übernimmt das Grundprinzip der Vergaberechtsprechung:  \n- Für jeden Auftragswert muss geprüft werden, ob einer der gesetzlichen Ausnahmetatbestände (z. B. preisgebundene Bücher) vorliegt; gilt er nicht, ist eine Ausschreibung erforderlich.\n\n---\n\n## Fazit – „Ab welchem Betrag ist eine Beschaffung durchzuführen?“\n\n| Rechtsgrundlage | Mindestrang für die Durchführung eines Vergabeverfahrens |\n|-----------------|----------------------------------------------------------|\n| **VV ÖA** | > 10 000 € (ohne MwSt) |\n| **UVgO** | > 100 000 € (für Liefer‑ und Dienstleistungsaufträge ohne spezielle Ausnahmetatbestände) |\n| **LHO** | Keine konkrete Zahl – die Durchführung einer Beschaffung richtet sich nach den generellen Ausschreibungs­regeln des Vergaberechts, sofern keine spezifischen Ausnahmen zutreffen. |\n\n**Wichtig:** Die genannten Schwellenwerte gelten ausschließlich für die *Verwaltung der Vergabeverfahren*.  Für eine Beschaffung ohne Einhaltung dieser Verfahren (z. B. Direktauftrag) ist die in der VV ÖA festgelegte Grenze von **10 000 €** maßgeblich; ab dem nächst höheren Betrag muss ein Vergabeverfahren eingeleitet werden, wobei weitere Schwellenwerte (UVgO, VOB/A usw.) im Einzelfall zu prüfen sind.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01531,
+          "relevanz": "hoch",
+          "abschnitt": "Nach § 55 Abs. 1 LHO\nund § 22 Abs. 1 GemHVO  muss dem Abschluss von Verträgen über Lieferungen und Leis-\ntungen beziehungsweise der Vergabe von Aufträgen eine öffentliche Ausschreibung oder\neine beschränkte Ausschreibung mit Teilnahmewettbewerb vorausgehen, sofern nicht die\nNatur des Geschäfts oder "
+        },
+        {
+          "quelle": 2,
+          "datei": "Rundschreiben_MWVLW_v._31.12.2024_Entbürokratisierung.pdf",
+          "seite": 3,
+          "score": 0.01511,
+          "relevanz": "mittel",
+          "abschnitt": "MINISTERIUM  FÜR \nWIRTSCHAFT,  VERKEHR,  \nLANDWIRTSCHAFT  \nUND  WEINBAUSeite  3\nc) keine Beschränkung  auf in der Region  oder am Ort ansässige  Unternehmen\nd) der Zuschlag  auf das wirtschaftlichste  Angebot  erfolgt  und\ne) die einzelnen  Schritte der Vergabe,  insbesondere  das Wechselgebot  zu \n"
+        },
+        {
+          "quelle": 3,
+          "datei": "Rundschreiben_MWVLW_v._31.12.2024_Entbürokratisierung.pdf",
+          "seite": 2,
+          "score": 0.01428,
+          "relevanz": "mittel",
+          "abschnitt": "Verhandlungsvergaben  sind ohne nähere Begründung  \nzugelassen,  wenn bei einer  zu vergebenden  Leistung  der geschätzte  Auftragswert \nnach § 3 der Vergabeverordnung  (VgV)  - jeweils  ohne Umsatzsteuer  - bestimmte  \nWertgrenzen  nicht überschreitet:\nBeschränkte  Ausschreibung\nohne Teilnahmewettb"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 36,
+          "score": 0.00984,
+          "relevanz": "niedrig",
+          "abschnitt": "Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren gr"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.00952,
+          "relevanz": "niedrig",
+          "abschnitt": "Bei der\nBeschaffung preisgebundener Bücher kann jedoch generell davon ausgegangen werden,\ndass der Ausnahmetatbestand erfüllt ist.\n \n \nDiese Aufträge können daher in einem wettbewerbsoffenen Verfahren ( Nummer 5.4 ) an\ngeeignete Unternehmen vergeben werden; in geeigneten Fällen kann das Instrument d"
+        }
+      ],
+      "export_zeit": "2026-06-22T12:42:35.102674"
+    },
+    {
+      "query": "Ist der Höchstbetrag in Brutto oder Netto anzugeben (UVgO, VgV, VV ÖA)",
+      "answer": "Nach den Angaben im Kontext müssen die Höchstbeträge ausschließlich **netto** (ohne Umsatzsteuer) angegeben werden – etwa:\n\n* „bis zu einem Auftragswert von 20 000 Euro (netto)“  \n* „bis zu einem Auftragswert von 25 000 Euro (ohne Umsatzsteuer)“  \n* „bis zu einem Auftragswert von 10 000 Euro (ohne Umsatzsteuer)“\n\nDamit folgt die UVgO sowie die in den genannten Auszügen verwendeten Vergabeverfahren, dass der aufzugebende Höchstbetrag im **netto‑Wert** zu verstehen ist.  \n\nFalls für einen bestimmten Teil des Gesetzes oder einer Regelung keine explizite Angabe vorhanden wäre, könnte man das nicht aus dem Kontext schließen – aber in den vorliegenden Auszügen wird eindeutig die Nettoformulierung verwendet.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "UVgO.pdf",
+          "seite": 36,
+          "score": 0.01623,
+          "relevanz": "hoch",
+          "abschnitt": "Für alle hier nicht aufgeführten Dienstleistungen gelten die sonstigen Vergaberegeln des Abschnitts 2 der UVgO.\n§ 49 UVgO gilt entsprechend § 1 Absatz 1 UVgO nur für die sozialen und anderen besonderen Dienstleistungen, deren\ngeschätzter Auftragswert ohne Umsatzsteuer den maßgeblichen EU-Schwellenwe"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffAw.pdf",
+          "seite": 18,
+          "score": 0.01619,
+          "relevanz": "mittel",
+          "abschnitt": "a  niedergelegten Grundsatz bis zu einer Auftragswertgrenze von 25.000 Euro (ohne\nUmsatzsteuer) auch ohne Aufforderung weiterer Planungsbüros zur Abgabe eines Angebots\nmit nur einem Planungsbüro verhandelt werden.\n \n \n§ 30 UVgO gilt entsprechend.\n \n \n§ 77 VgV gilt entsprechend. a  niedergelegten Gru"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.01558,
+          "relevanz": "mittel",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsauft räge mit einem geschätzten \nAuftragswert bis 20.000 Euro (netto) können für eine  Übergangszeit (bis 31. Mai \n2022) noch mittels einfacher E-Mail durchgeführt werden."
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 36,
+          "score": 0.01538,
+          "relevanz": "niedrig",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstlei"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01489,
+          "relevanz": "niedrig",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        }
+      ],
+      "export_zeit": "2026-06-22T12:42:35.102676"
+    }
+  ]
+}
