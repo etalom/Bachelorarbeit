@@ -2,151 +2,141 @@ import json
 import re
 import argparse
 import requests
+import os
 
-OLLAMA_URL = "http://ollama:11434/api/generate"
-DEFAULT_JUDGE_MODEL = "llama3.1:8b"
+CANDIDATES = [
+    os.getenv("OLLAMA_BASE_URL", ""),
+    "http://localhost:11434",
+    "http://ollama:11434",
+    "http://host.docker.internal:11434",
+]
 
-JUDGE_PROMPT_TEMPLATE = """Du bist ein Experte zur Bewertung von Antworten eines Vergaberechts-Chatbots.
-Bewerte die folgende Antwort anhand dieser Kriterien auf einer Skala von 1 (schlecht) bis 5 (sehr gut):
+def resolve_ollama_url():
+    for url in CANDIDATES:
+        if not url:
+            continue
+        try:
+            requests.get(f"{url}/api/tags", timeout=2)
+            print(f"Ollama gefunden: {url}")
+            return url
+        except:
+            continue
+    print("Ollama nicht erreichbar, fallback localhost")
+    return "http://localhost:11434"
 
-- **correctness**: Ist die Antwort fachlich korrekt basierend auf den Quellen?
-- **completeness**: Beantwortet die Antwort die Frage vollständig?
-- **faithfulness**: Bleibt die Antwort treu zu den gegebenen Quellen (keine Halluzinationen)?
-- **clarity**: Ist die Antwort klar, strukturiert und verständlich?
+OLLAMA_URL = resolve_ollama_url() + "/api/generate"
+DEFAULT_JUDGE_MODEL = "llama3.1:latest"
 
-Antworte AUSSCHLIESSLICH mit einem gültigen JSON-Objekt in diesem Format:
-{{"correctness": <1-5>, "completeness": <1-5>, "faithfulness": <1-5>, "clarity": <1-5>}}
+CRITERIA = {
+    "correctness": {
+        "desc": "Beantwortet die Antwort die Frage sinnvoll? Falls die Antwort sagt, dass die Info nicht in den Dokumenten steht (egal welche Formulierung), ist das schlecht.",
+        "rubric": "Score 1: Die Antwort beantwortet die Frage nicht oder sagt nur 'nicht gefunden'.\nScore 2: Die Antwort enthält kaum relevante Information.\nScore 3: Die Antwort beantwortet die Frage teilweise.\nScore 4: Die Antwort beantwortet die Frage größtenteils.\nScore 5: Die Antwort beantwortet die Frage vollständig und präzise."
+    },
+    "completeness": {
+        "desc": "Wie vollständig ist die Antwort? Wenn die Antwort sagt 'nicht gefunden': 1.",
+        "rubric": "Score 1: Keine relevanten Informationen geliefert ('nicht gefunden').\nScore 2: Nur sehr wenige Aspekte abgedeckt.\nScore 3: Einige Aspekte abgedeckt.\nScore 4: Die meisten Aspekte abgedeckt.\nScore 5: Alle relevanten Aspekte vollständig abgedeckt."
+    },
+    "faithfulness": {
+        "desc": "Bleibt die Antwort bei den Quellen (keine Halluzination)? Antwortet der Chatbot mit 'nicht gefunden': 5.",
+        "rubric": "Score 1: Die Antwort halluziniert Information, die nicht in den Quellen steht.\nScore 2: Große Teile der Antwort sind nicht durch Quellen gedeckt.\nScore 3: Teile der Antwort sind nicht durch Quellen gedeckt.\nScore 4: Die Antwort ist größtenteils quellenbasiert.\nScore 5: Die Antwort ist vollständig durch die Quellen gedeckt oder sagt korrekt 'nicht gefunden'."
+    },
+    "clarity": {
+        "desc": "Ist die Antwort klar und verständlich?",
+        "rubric": "Score 1: Unverständlich oder chaotisch.\nScore 2: Schwer verständlich.\nScore 3: Verständlich mit kleinen Mängeln.\nScore 4: Klar und gut strukturiert.\nScore 5: Sehr klar, präzise und gut formuliert."
+    }
+}
 
---- FRAGE ---
-{query}
+def call_prometheus(query, answer, context, criterion_key, model):
+    c = CRITERIA[criterion_key]
+    prompt = f"""##Description:
+Du bewertest einen RAG-Chatbot für Vergaberecht. Kriterium: {c["desc"]}
 
---- QUELLEN (Auszüge) ---
-{context}
+##Task:
+Frage: {query}
 
---- ANTWORT DES CHATBOTS ---
+Quellen: {context}
+
+Antwort des Chatbots: {answer}
+
+Bewerte die Antwort NUR nach dem Kriterium "{criterion_key}".
+
+##Score Rubric:
+{c["rubric"]}
+
+##Reference Answer:
+Eine gute Antwort basiert auf den Quellen und beantwortet die Frage präzise.
+
+##Response to Evaluate:
 {answer}
 """
-
-
-def call_judge(query: str, answer: str, context: str, model: str) -> dict | None:
-    prompt = JUDGE_PROMPT_TEMPLATE.format(query=query, answer=answer, context=context)
-
     try:
-        resp = requests.post(
-            OLLAMA_URL,
-            json={
-                "model": model,
-                "prompt": prompt,
-                "stream": False,
-                "num_predict": 256,
-                "temperature": 0.0,
-            },
-            timeout=120,
-        )
+        resp = requests.post(OLLAMA_URL, json={
+            "model": model, "prompt": prompt, "stream": False,
+            "num_predict": 256, "temperature": 0.0,
+        }, timeout=120)
         resp.raise_for_status()
         text = resp.json().get("response", "").strip()
     except Exception as e:
-        print(f"  [FEHLER] Ollama-Call fehlgeschlagen: {e}")
-        return None
+        print(f"  [FEHLER] {criterion_key}: {e}")
+        return 1
 
-    json_match = re.search(r"\{[^}]+\}", text, re.DOTALL)
-    if not json_match:
-        print(f"  [WARN] Kein JSON in Antwort gefunden:\n{text[:200]}")
-        return None
+    m = re.search(r"Score\s*(\d)", text, re.IGNORECASE)
+    if m:
+        return int(m.group(1))
 
-    try:
-        scores = json.loads(json_match.group())
-        required = {"correctness", "completeness", "faithfulness", "clarity"}
-        if not required.issubset(scores.keys()):
-            print(f"  [WARN] JSON hat nicht alle erwarteten Keys: {scores.keys()}")
-            return None
-        for k in required:
-            scores[k] = int(scores[k])
-        return scores
-    except (json.JSONDecodeError, ValueError, TypeError) as e:
-        print(f"  [WARN] JSON-Parse-Fehler: {e}")
-        return None
+    m = re.search(r"(\d)\s*=?\s*(?:Score|von|Punkt)", text)
+    if m:
+        return int(m.group(1))
 
+    m = re.search(r"\b([1-5])\b", text)
+    if m:
+        return int(m.group(1))
 
-def build_context_text(quellen: list[dict]) -> str:
+    print(f"  [WARN] Kein Score in: {text[:150]}")
+    return 1
+
+def build_context_text(quellen):
     parts = []
     for i, q in enumerate(quellen, 1):
-        file_name = q.get("datei", "unbekannt")
-        seite = q.get("seite", "?")
-        excerpt = q.get("abschnitt", "")
-        parts.append(f"[{i}] {file_name} (S. {seite}):\n{excerpt[:500]}")
-    return "\n\n".join(parts) if parts else "(keine Quellen angegeben)"
-
+        parts.append(f"[{i}] {q.get('datei','?')} (S. {q.get('seite','?')}):\n{q.get('abschnitt','')[:500]}")
+    return "\n\n".join(parts) if parts else "(keine Quellen)"
 
 def main():
-    parser = argparse.ArgumentParser(description="LLM-as-a-Judge für Antwortqualität")
-    parser.add_argument("--json", type=str, default="val_results_runB.json")
-    parser.add_argument("--judge-model", type=str, default=DEFAULT_JUDGE_MODEL)
-    parser.add_argument("--save", type=str, default=None, help="Pfad für Ergebnisse-JSON")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--json", required=True)
+    parser.add_argument("--judge-model", default=DEFAULT_JUDGE_MODEL)
+    parser.add_argument("--save", default="judge_results.json")
     args = parser.parse_args()
 
     with open(args.json, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        raw = json.load(f)
 
-    entries = data.get("entries", [])
-    print(f"📄 {len(entries)} Einträge geladen aus {args.json}")
-    print(f"⚖️  Judge-Modell: {args.judge_model}\n")
+    entries = raw.get("entries", raw if isinstance(raw, list) else [])
+    n = len(entries)
 
-    all_scores = []
-    per_entry = []
-
-    for idx, entry in enumerate(entries, 1):
-        query = entry.get("query", "")
-        answer = entry.get("answer", "")
-        quellen = entry.get("quellen", [])
-        context = build_context_text(quellen)
-
-        print(f"[{idx}/{len(entries)}] Bewerte: {query[:60]}...")
-        scores = call_judge(query, answer, context, args.judge_model)
-
-        if scores:
-            all_scores.append(scores)
-            per_entry.append({"query": query, "scores": scores})
-            line = "  "
-            for k, v in scores.items():
-                line += f"{k}={v} "
-            print(line)
-        else:
-            per_entry.append({"query": query, "scores": None})
-            print("  ❌ nicht bewertbar")
+    results = []
+    for i, e in enumerate(entries, 1):
+        query = e.get("query", "")
+        answer = e.get("answer", "")
+        context = build_context_text(e.get("quellen", []))
+        print(f"[{i}/{n}] {query[:60]}...")
+        scores = {}
+        for key in ["correctness", "completeness", "faithfulness", "clarity"]:
+            score = call_prometheus(query, answer, context, key, args.judge_model)
+            scores[key] = score
+            print(f"  {key}={score}", end="")
         print()
+        results.append(scores)
 
-    if not all_scores:
-        print("❌ Keine gültigen Bewertungen.")
-        return
+    if results:
+        print("\nDurchschnitt (alle {} Fragen):".format(n))
+        for k in ["correctness", "completeness", "faithfulness", "clarity"]:
+            avg = sum(r[k] for r in results) / len(results)
+            print(f"  {k}: {avg:.2f}")
 
-    n = len(all_scores)
-    print("=" * 50)
-    print("📊 ERGEBNISSE")
-    print("=" * 50)
-    for criterion in ["correctness", "completeness", "faithfulness", "clarity"]:
-        vals = [s[criterion] for s in all_scores]
-        avg = sum(vals) / n
-        print(f"  {criterion:15s}: {avg:.2f} / 5.0  (min={min(vals)}, max={max(vals)})")
-
-    overall = sum(sum(s.values()) for s in all_scores) / (n * 4)
-    print(f"\n  {'OVERALL':15s}: {overall:.2f} / 5.0")
-
-    if args.save:
-        result = {
-            "source_file": args.json,
-            "judge_model": args.judge_model,
-            "entries": per_entry,
-            "aggregates": {
-                c: round(sum(s[c] for s in all_scores) / n, 2)
-                for c in ["correctness", "completeness", "faithfulness", "clarity"]
-            },
-            "overall": round(overall, 2),
-        }
-        with open(args.save, "w", encoding="utf-8") as f:
-            json.dump(result, f, indent=2, ensure_ascii=False)
-        print(f"\n💾 Ergebnisse gespeichert: {args.save}")
-
+    with open(args.save, "w", encoding="utf-8") as f:
+        json.dump({"results": results}, f, indent=2)
+    print(f"\nGespeichert: {args.save}")
 
 if __name__ == "__main__":
     main()

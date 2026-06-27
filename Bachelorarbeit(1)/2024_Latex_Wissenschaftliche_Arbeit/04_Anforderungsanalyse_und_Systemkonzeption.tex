@@ -1,0 +1,182 @@
+
+
+\section{Anforderungsanalyse und Systemkonzeption}
+\label{sec:Systemkonzeption}
+
+In diesem Kapitel werden die Anforderungen an das entwickelte Expertensystem für das Vergaberecht systematisch analysiert und in eine konkrete Systemkonzeption überführt. Ziel ist es, eine belastbare Grundlage für die spätere technische Implementierung zu schaffen. Dazu werden die Anforderungen zunächst aus fachlicher und technischer Perspektive beschrieben, anschließend mithilfe von User Stories konkretisiert und schließlich funktionalen Systemkomponenten zugeordnet.
+
+\subsection{Methodisches Vorgehen}
+
+Zur strukturierten Erhebung und Beschreibung der Anforderungen wird ein nutzerzentrierter Ansatz verfolgt. Die Modellierung erfolgt in Form von User Stories, da diese eine verständliche und zugleich praxisnahe Beschreibung funktionaler und technischer Anforderungen ermöglichen. Darüber hinaus unterstützen sie die systematische Ausrichtung der Entwicklung an den Bedürfnissen der späteren Nutzergruppen sowie an den Erfordernissen der technischen Umsetzung.
+
+Ergänzend zu den User Stories werden Akzeptanzkriterien formuliert. Diese dienen dazu, die Anforderungen eindeutig, überprüfbar und validierbar zu machen. Das grundlegende Schema einer User Story lautet:
+
+\begin{quote}
+Als <Rolle> möchte ich <Funktion>, damit <Nutzen>.
+\end{quote}
+
+\subsection{Fachliche Anforderungen}
+Das System soll Nutzer bei der Beantwortung vergaberechtlicher Fragestellungen unterstützen. Im Mittelpunkt steht die Verarbeitung natürlichsprachlicher Anfragen sowie die Generierung präziser, quellenbasierter und nachvollziehbarer Antworten. Da das System in einem juristisch sensiblen Anwendungsfeld eingesetzt wird, ist insbesondere sicherzustellen, dass generierte Inhalte ausschließlich auf den zugrunde liegenden Dokumenten basieren.
+
+Die Antworten dürfen keine nicht belegbaren Aussagen enthalten. Stattdessen soll das System nur solche Informationen ausgeben, die durch die bereitgestellten Rechtsquellen, beispielsweise UVgO oder VgV, gestützt werden. Darüber hinaus soll das System auch unscharf formulierte, unvollständige oder semantisch variierende Anfragen sinnvoll verarbeiten können.
+
+Ein weiteres fachliches Ziel besteht in der transparenten Darstellung der verwendeten Quellen. Dadurch soll die Nachvollziehbarkeit der Antwortgenerierung erhöht und den Nutzern eine eigenständige Überprüfung der ausgegebenen Inhalte ermöglicht werden.
+
+\subsection{Technische Anforderungen}
+
+Aus den fachlichen Anforderungen ergeben sich mehrere technische Anforderungen an Architektur und Betrieb des Systems. Zunächst ist ein modularer Systemaufbau erforderlich, sodass einzelne Komponenten unabhängig voneinander entwickelt, betrieben, gewartet und erweitert werden können. Dies betrifft insbesondere die Trennung von Benutzeroberfläche, Anwendungslogik, Retrieval-Komponente, Sprachmodell-Anbindung und Datenhaltung.
+
+Darüber hinaus muss eine performante Verarbeitung und Suche innerhalb der zugrunde liegenden Dokumente gewährleistet sein, um kurze Antwortzeiten zu ermöglichen. Ebenso ist die Architektur so auszugestalten, dass neue Dokumente ohne grundlegende Änderungen an der Systemstruktur integriert, verarbeitet und indexiert werden können.
+
+Ein weiterer technischer Schwerpunkt liegt in der Qualitätssicherung der generierten Antworten. Insbesondere müssen Mechanismen vorgesehen werden, die Halluzinationen reduzieren und die Antworttreue gegenüber den zugrunde liegenden Quellen absichern.
+
+\subsection{Definition der User Stories}
+
+Basierend auf den identifizierten Anforderungen werden im Folgenden zentrale User Stories definiert. Diese konkretisieren die funktionalen Anforderungen aus Sicht der Nutzer und Entwickler und bilden die Grundlage für die spätere Ableitung der Systemarchitektur.
+
+\subsubsection*{US-01: Frage-Antwort-Zyklus (Kernfunktionalität)}
+
+Als Nutzer möchte ich eine fachliche Frage in natürlicher Sprache stellen und eine präzise, quellenbasierte Antwort erhalten, damit ich relevante Informationen schnell und ohne manuelle Recherche in umfangreichen Dokumenten finde.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Das System verarbeitet natürlichsprachliche Eingaben.
+\item Eine Antwort wird innerhalb einer angemessenen Zeitspanne bereitgestellt.
+\item Die Antwort basiert ausschließlich auf den bereitgestellten Dokumenten.
+\item Falls keine relevanten Informationen gefunden werden, gibt das System eine entsprechende Rückmeldung aus
+\item Die Antwort wird im Chat-Verlauf angezeigt
+\end{itemize}
+
+\subsubsection*{US-02: Hybride Informationssuche}
+
+Als Nutzer möchte ich, dass sowohl exakte Begriffstreffer als auch semantisch ähnliche Inhalte berücksichtigt werden, damit relevante Informationen unabhängig von der konkreten Formulierung meiner Anfrage gefunden werden.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Das System nutzt mehrere Suchstrategien zur Informationsgewinnung
+\item Sowohl lexikalische als auch semantische Ähnlichkeiten werden berücksichtigt
+\item Die Suchergebnisse werden zu einer gemeinsamen Rangliste zusammengeführt
+\item Die Anzahl der berücksichtigten Treffer ist konfigurierbar
+\end{itemize}
+
+\subsubsection*{US-03: Intent-basierte Antwortgenerierung}
+
+Als Nutzer möchte ich, dass das System die Absicht meiner Anfrage erkennt und die Antwort entsprechend ausrichtet, damit ich eine präzise und kontextgerechte Antwort erhalte.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Das System erkennt unterschiedliche Arten von Anfragen
+\item Die erkannte Absicht beeinflusst die Generierung der Antwort
+\item Für unterschiedliche Anfragearten werden angepasste Antwortstrategien verwendet
+\end{itemize}
+
+\subsubsection*{US-04: Sicherstellung der Antworttreue (Halluzinationsvermeidung)}
+
+Als Nutzer möchte ich sicher sein können, dass die generierten Antworten ausschließlich auf den bereitgestellten Quellen basieren, damit keine inhaltlich falschen oder unbelegten Aussagen entstehen.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Die generierte Antwort wird auf Übereinstimmung mit den zugrunde liegenden Dokumenten geprüft
+\item Bei fehlender Übereinstimmung wird keine inhaltliche Antwort ausgegeben
+\item Stattdessen erfolgt eine standardisierte Rückmeldung
+\end{itemize}
+
+\subsubsection*{US-05: Dokumentenverarbeitung und Indexierung}
+
+Als Entwickler möchte ich Dokumente automatisiert verarbeiten und indexieren können, damit die Wissensbasis des Systems flexibel erweitert werden kann.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Dokumente werden automatisiert eingelesen und strukturiert verarbeitet
+\item Inhalte werden für die Suche geeignet gespeichert
+\item Neue Dokumente können ohne Anpassung der Architektur integriert werden
+\item Der Prozess ist reproduzierbar ausführbar
+\end{itemize}
+
+\subsubsection*{US-06: Bewertung der Antwortqualität}
+
+Als Entwickler möchte ich die Qualität der generierten Antworten systematisch bewerten können, damit die Leistungsfähigkeit des Systems objektiv analysiert werden kann.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Antworten werden anhand definierter Kriterien bewertet
+\item Die Bewertung erfolgt automatisiert
+\item Ergebnisse werden strukturiert gespeichert
+\item Die Bewertungslogik ist anpassbar
+\end{itemize}
+
+\subsubsection*{US-07: Benutzeroberfläche und Interaktion}
+
+Als Nutzer möchte ich eine intuitive Benutzeroberfläche verwenden können, damit ich effizient mit dem System interagieren kann.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Eine Chat-basierte Oberfläche ist verfügbar
+\item Eingaben und Antworten werden übersichtlich dargestellt
+\item Der Verlauf ist einsehbar
+\item Verschiedene Betriebsmodi sind auswählbar
+\end{itemize}
+
+\subsubsection*{US-08: Datenexport für Analysezwecke}
+
+Als Entwickler möchte ich Interaktionsdaten exportieren können, damit diese für Evaluationen genutzt werden können.
+
+\textbf{Akzeptanzkriterien:}
+\begin{itemize}
+\item Relevante Daten werden strukturiert erfasst
+\item Ein Export in standardisiertem Format ist möglich
+\item Alle notwendigen Informationen sind enthalten
+\item Der Export kann durch den Nutzer ausgelöst werden
+\end{itemize}
+
+\subsection{Ableitung der Systemanforderungen}
+
+Aus den definierten User Stories lassen sich konkrete funktionale Anforderungen sowie deren Zuordnung zu den Systemkomponenten ableiten.
+
+
+
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\textbf{User Story} & \textbf{Anforderung} & \textbf{Systemkomponente} \\
+US-01 & Verarbeitung von Anfragen und Antwortgenerierung & Backend (FastAPI) \\
+US-02 & Kombination mehrerer Suchverfahren & Retrieval (Elasticsearch) \\
+US-03 & Erkennung der Nutzerintention & Intent-Modul \\
+US-04 & Prüfung der Antworttreue & Qualitätssicherung \\
+US-05 & Dokumentenverarbeitung und Indexierung & Indexierungsmodul \\
+US-06 & Automatisierte Bewertung & Evaluationsmodul \\
+US-07 & Benutzeroberfläche & Frontend (Streamlit) \\
+US-08 & Export von Daten & Exportmodul \\
+\end{tabular}
+\caption{Zusammenhang zwischen User Stories und Systemkomponenten}
+\label{tab:user_stories}
+\end{table}
+
+\subsection{Systemarchitektur}
+
+Auf Basis der zuvor definierten Anforderungen wird im Folgenden die Systemarchitektur des entwickelten Expertensystems beschrieben.
+
+Das System folgt einer modularen, serviceorientierten Architektur. Die einzelnen Komponenten sind klar voneinander getrennt und kommunizieren über definierte Schnittstellen.
+
+Die Benutzerinteraktion erfolgt über eine mit Streamlit realisierte Oberfläche. Diese ermöglicht die Eingabe natürlichsprachlicher Anfragen sowie die Darstellung der generierten Antworten einschließlich der zugrunde liegenden Quellen.
+
+Das Backend, implementiert mit FastAPI, übernimmt die zentrale Steuerung des Systems. Es verarbeitet eingehende Anfragen, koordiniert die Retrieval-Komponente, bindet das Sprachmodell ein und stellt die Antwortgenerierung sicher.
+
+Die Retrieval-Komponente basiert auf Elasticsearch und kombiniert klassische Volltextsuche (BM25) mit semantischer Vektorsuche. Dadurch wird sowohl eine exakte als auch eine kontextbasierte Informationssuche ermöglicht.
+
+Zur Generierung der Antworten wird ein lokal betriebenes Sprachmodell über Ollama eingesetzt. Dieses verarbeitet den durch das Retrieval bereitgestellten Kontext und erzeugt eine natürlichsprachliche Antwort.
+
+Ein zusätzlicher Validierungsschritt dient der Qualitätssicherung. Dabei wird überprüft, ob die generierte Antwort vollständig durch die zugrunde liegenden Dokumente gedeckt ist. Dies trägt maßgeblich zur Vermeidung von Halluzinationen bei.
+
+Die Dokumentenverarbeitung erfolgt automatisiert. Eingehende Dokumente werden in Textsegmente zerlegt, aufbereitet und sowohl lexikalisch als auch semantisch indexiert.
+
+Die Bereitstellung und Orchestrierung der Systemkomponenten erfolgt containerbasiert mittels Docker Compose. Dies ermöglicht eine einfache Installation, Wartung und Erweiterung des Systems.
+
+\subsection{Zusammenfassung}
+
+In diesem Kapitel wurden die fachlichen und technischen Anforderungen an das System strukturiert erfasst und in Form von User Stories konkretisiert. Darauf aufbauend wurden funktionale Anforderungen abgeleitet und eine modulare Systemarchitektur entworfen.
+
+Die beschriebenen Konzepte bilden die Grundlage für die im folgenden Kapitel dargestellte Implementierung des Systems.
+\clearpage

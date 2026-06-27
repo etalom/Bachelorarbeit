@@ -1,18 +1,18 @@
 {
-  "export_zeit": "2026-06-22T12:42:35.102677",
+  "export_zeit": "2026-06-27T10:38:35.173146",
   "app": "Chatbot-Vergabe",
   "run_name": "best_chunks_and_answer",
   "entries": [
     {
-      "query": "Ab welchem Betrag ist eine Vergabe durchzuführen (UVgO, VV ÖA, LHO)",
-      "answer": "**Aus dem vorliegenden Kontext ergeben sich keine eindeutig festgelegten Schwellen­werte für UVgO, VV ÖA RLP oder LHO, die darüber entscheiden, ab welchem Betrag eine Vergabe zwingend durchzuführen ist.**  \n\nHier ein Überblick über das, was im bereitgestellten Text konkret genannt wird:\n\n| Rechtsquelle | Wichtige Angaben aus dem Kontext | Schwellenwert bzw. Ausnahmen |\n|--------------|----------------------------------|-----------------------------|\n| **UVgO (Unterschwellenvergabeordnung)** | „a) die Unterschwellenvergabeordnung (UVgO) vom 2. Februar 2017 …“ – die UVgO regelt grundsätzlich Vergaben unter den EU‑Schwellenwerten. | *Keine explizite Zahl* im Text, nur die generelle Bezeichnung “unterhalb der EU‑Schwellenwerte”. |\n| **VV ÖA RLP** (Verwaltungsvorschriften zum öffentlichen Auftragswesen in Rheinland‑Pfalz) | Im Ausschnitt nicht erwähnt. | **Nicht im Kontext enthalten.** |\n| **LHO (Landeshaushaltsordnung)** | „Für öffentliche Aufträge unterhalb der EU‑Schwellenwerte gelten § 55 LHO …“ – das bedeutet, dass die LHO für Aufträge gilt, die die EU‑Schwellen­werte nicht überschreiten. | *Keine konkrete Zahl* im Text; lediglich Hinweis auf “unterhalb der EU‑Schwellenwerte”. |\n| **Ausnahme für preisgebundene Bücher** (nicht spezifisch einer der drei genannten Rechtsgrundlagen zugeordnet) | „Bis zu einem Auftragswert von 10 000 Euro (ohne Umsatzsteuer) … dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Büchern… direkt an ein Unternehmen vergeben werden.“ | **10 000 Euro** – ausschließlich für preisgebundene Bücher, nicht allgemeine Schwelle. |\n| **Elektronische Vergabeverfahren** | „Vergabeverfahren über Liefer‑ und Dienstleistungsaufträge mit einem geschätzten Auftragswert bis 20 000 Euro (ohne Umsatzsteuer) können …“ – Hinweis auf die Nutzung elektronischer Mittel. | **bis zu 20 000 Euro** – beschreibt einen Bereich, in dem e‑Vergabepflicht gilt; ist aber keine generelle Schwelle für alle Vergaben. |\n\n### Fazit\n\n- **UVgO & LHO**: Im bereitgestellten Text werden lediglich die EU‑Schwellenwerte als Rahmen genannt, keine konkreten Euro-Beträge.  \n- **VV ÖA RLP**: Der entsprechende Schwellenwert fehlt im gegebenen Ausschnitt – daher lässt sich aus diesem Kontext nicht ableiten.  \n- **Spezielle Ausnahmeregelungen**: Für preisgebundene Bücher gilt eine direkte Vergabe bis zu 10 000 Euro, und für elektronische Vergabeverfahren ist ein Auftragswert von bis zu 20 000 Euro genannt.\n\nFalls Sie weitere, spezifischere Angaben brauchen (z. B. die genauen EU‑Schwellenwerte oder die Schwelle nach VV ÖA RLP), müssten diese in anderen Abschnitten der UVgO, VV ÖA RLP bzw. LHO selbst zu finden sein – sie sind im vorliegenden Dokument nicht enthalten.",
+      "query": " Ab welchem Betrag ist eine Vergabe durchzuführen (UVgO, VV ÖA, LHO)?",
+      "answer": "**Ab welchem Betrag ist eine Vergabe nach den genannten Rechtsgrundlagen durchzuführen?**\n\n| Rechtsquelle | Was in den vorliegenden Dokumenten genannt wird |\n|--------------|-----------------------------------------------|\n| **UVgO** (Unterschwellenvergabeordnung) | 1. Für *preisgebundene Bücher* darf bis zu einem Auftragswert von **10 000 € (ohne Umsatzsteuer)** ohne Aufforderung mehrerer Unternehmen ein Direktauftrag vergeben werden – § 5.4, Nummer 5.4 Buchst. a.<br>2. Für besondere, soziale und sonstige Dienstleistungen gilt gemäß § 49 UVgO, dass sie nur dann in die Unterschwellenvergaberegelungen fallen, wenn ihr geschätzter Auftragswert ohne Umsatzsteuer den **EU‑Schwellwert von 750 000 €** unterschreitet.<br>3. Für sämtliche sonstige Liefer- und Dienstleistungsaufträge unterhalb der EU‑Schwellenwerte ist die UVgO anzuwenden – § 106 GWB; hier wird jedoch in den zitierten Texten **keine konkrete Wertgrenze genannt**, abgesehen von den oben aufgeführten Spezialfällen. |\n| **LHO** (Landeshaushaltsordnung) | Die Verwaltungsvorschrift zum Vollzug der LHO (VV‑LHO) gilt für öffentliche Aufträge *unterhalb* der EU‑Schwellenwerte (§ 55 LHO). In den vorliegenden Auszügen wird jedoch weder ein konkreter Betrag genannt, noch eine spezifische Untergrenze definiert. |\n| **VV ÖA** | Für die Verwaltungsvorschrift des Oberlandesverbands (VV ÖA) gibt es in den bereitgestellten Texten ebenfalls keine Angabe eines bestimmten Auftragswertes als Schwellen‑ oder Befreiungspunkt. |\n\n### Fazit\n\n- **Direktauftrag für preisgebundene Bücher**: möglich bis zu **10 000 € (ohne USt)** (§ 5.4, UVgO).  \n- **Besondere Dienstleistungen** unter der UVgO: gelten nur bei Auftragswerten < 750 000 € (§ 49 UVgO).  \n- Für alle übrigen öffentlichen Liefer‑ und Dienstleistungsaufträge gilt die UVgO bzw. LHO, wenn sie *unterhalb* der EU‑Schwellenwerte liegen – in den vorliegenden Auszügen werden jedoch **keine konkreten Eurobeträge genannt**.  \n\nFalls weitere spezifische Schwellen­grenzen für die LHO oder VV ÖA nötig sind, müssten Sie die entsprechenden Paragraphen bzw. Verwaltungsvorschriften prüfen, da sie im aktuellen Kontext nicht enthalten sind.",
       "model": "gpt-oss:20b",
       "quellen": [
         {
           "quelle": 1,
           "datei": "VVöffAw.pdf",
           "seite": 13,
-          "score": 0.01538,
+          "score": 0.02857,
           "relevanz": "hoch",
           "abschnitt": "Aspekte der Qualität und der Innovation sowie soziale und umweltbezogene Aspekte wer-\nden nach Maßgabe dieser Verwaltungsvorschrift und der anzuwendenden Verfahrensvor-\nschriften ( Nummer 3.2 ) berücksichtigt.\n \n \n3.2 Anzuwendende Vergabeverfahrensvorschriften\n \n \nFür öffentliche Aufträge unterhalb "
         },
@@ -20,95 +20,383 @@
           "quelle": 2,
           "datei": "UVgO.pdf",
           "seite": 36,
-          "score": 0.01475,
-          "relevanz": "mittel",
-          "abschnitt": "Sofern eine freiberufliche Leistung zugleich eine Dienstleistung im Sinne des § 130 GWB ist, geht § 50 vor; das gilt etwa für\neine juristische Dienstleistung, die im Rahmen einer freiberuflichen Tätigkeit erbracht wird, sofern diese nicht bereits gemäß §\n1 Absatz 2 UVgO in Verbindung mit § 116 Absat"
+          "score": 0.02848,
+          "relevanz": "hoch",
+          "abschnitt": "Entsprechend der Systematik des CPV-Codes bedeutet eine Bezugnahme auf eine CPV-Abteilung nicht automatisch eine\nBezugnahme auf untergeordnete Unterteilungen der CPV-Nummern. Insofern gilt § 49 ausschließlich für die im oben\ngenannten Anhang XIV aufgeführten Dienstleistungen.\nFür alle hier nicht auf"
         },
         {
           "quelle": 3,
-          "datei": "VVöffAw.pdf",
-          "seite": 17,
-          "score": 0.01433,
-          "relevanz": "mittel",
-          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+          "datei": "UVgO.pdf",
+          "seite": 1,
+          "score": 0.02355,
+          "relevanz": "hoch",
+          "abschnitt": "Nach\nihrer Inkraftsetzung gelten die Vorschriften der UVgO für die Vergabe von Liefer- und Dienstleistungsaufträgen unterhalb der\nSchwellenwerte gemäß § 106 des Gesetzes gegen Wettbewerbsbeschränkungen (EU-Schwellenwerte).\nDie UVgO orientiert sich strukturell an der für öffentliche Aufträge oberhalb"
         },
         {
           "quelle": 4,
           "datei": "VVöffAw.pdf",
-          "seite": 36,
-          "score": 0.00984,
-          "relevanz": "niedrig",
-          "abschnitt": "Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren gr"
+          "seite": 17,
+          "score": 0.02306,
+          "relevanz": "hoch",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
         },
         {
           "quelle": 5,
           "datei": "VVöffAw_Einführungsschreiben.pdf",
           "seite": 4,
-          "score": 0.00968,
-          "relevanz": "niedrig",
-          "abschnitt": "13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteiligten Unternehmen gelten die Vorgabe n der Vergabeverfahrensord- \nnungen (UVgO, VOB/A). 13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteilig"
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "  Seite 4   \n4  Aufgenommen wurde die Möglichkeit einer verlängerten  Bindefrist (§ 10 Abs. 4 \nVOB/A) bei wirtschaftlich bedeutsamen Bauvergaben im S inne der Landesverord- \nnung über die Nachprüfung von Vergabeverfahren durch Vergabeprüfstellen. e) Strategische Beschaffung (VV Nr. 8 bis 12"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw.pdf",
+          "seite": 16,
+          "score": 0.0223,
+          "relevanz": "hoch",
+          "abschnitt": "Die\nSchätzung des Auftragswerts oder Aufteilung des Auftrags in Gewerke/Lose darf nicht in\nder Absicht erfolgen, die Wertgrenzen zu unterschreiten. Die Auftragswerte beziehen sich\nauf den im jeweiligen Vergabeverfahren angestrebten zivilrechtlichen Vertrag. Werden z."
+        },
+        {
+          "quelle": 7,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Nicht gestattet ist es\naber, unter Berufung auf Absatz 1 nur ein Unternehmen aufzufordern. D"
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffAw.pdf",
+          "seite": 22,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
+        },
+        {
+          "quelle": 9,
+          "datei": "UVgO.pdf",
+          "seite": 1,
+          "score": 0.02071,
+          "relevanz": "hoch",
+          "abschnitt": "Solbach\nVerfahrensordnung für die Vergabe\nöffentlicher Liefer- und Dienstleistungsaufträge unterhalb der EU-Schwellenwerte\n(Unterschwellenvergabeordnung – UVgO)\n– Ausgabe 2017 –\nInhaltsübersicht. Solbach\nVerfahrensordnung für die Vergabe\nöffentlicher Liefer- und Dienstleistungsaufträge unterhalb der"
+        },
+        {
+          "quelle": 10,
+          "datei": "UVgO.pdf",
+          "seite": 1,
+          "score": 0.01987,
+          "relevanz": "hoch",
+          "abschnitt": "Bekanntmachung der Verfahrensordnung für die Vergabe öffentlicher Liefer- und Dienstleistungsaufträge\nunterhalb der EU-Schwellenwerte (Unterschwellenvergabeordnung – UVgO) – Ausgabe 2017 –\nZurück zur Teilliste Bundesministerium für Wirtschaft und Energie\nBekanntmachung\nder Verfahrensordnung für die "
+        },
+        {
+          "quelle": 11,
+          "datei": "UVgO.pdf",
+          "seite": 29,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 2 – Besondere Methoden und Instrumente in Vergabeverfahren\nZu § 15 Rahmenvereinbarungen\nAbsatz 1 orientiert sich an der Definition des Begriffs der Rahmenvereinbarung in § 103 Absatz 5 GWB.\nAbsatz 2 entspricht wortgleich § 21 Absatz 1 VgV.\nAbsatz 3 entspricht im Wesentlichen § 21 Absa"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "bei der zentralen Beschaffungsstelle ge- deckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen. 5.4 Verbundverfahren Sofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder- Ebene vom Bund oder von einem anderen Bundesland für die üb"
+        },
+        {
+          "quelle": 13,
+          "datei": "GWB.pdf",
+          "seite": 101,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "bei Vorliegen eines Ausschlussgrundes nach § 123 höchstens fünf Jahre ab dem Tag der rechtskräftigen\nVerurteilung von der Teilnahme an Vergabeverfahren ausgeschlossen werden,\n \n2.   bei Vorliegen eines Ausschlussgrundes nach § 124 höchstens drei Jahre ab dem betreffenden Ereignis von\nder Teilnahme a"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Kann der Bedarf nicht durch ein Verfahren bei der zentralen Beschaffungsstelle ge-\ndeckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen.\n \n \n \n5.4 Verbundverfahren\n \n \nSofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder-\nEbene v"
+        },
+        {
+          "quelle": 15,
+          "datei": "UVgO.pdf",
+          "seite": 27,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "GWB); in beiden Fällen müssen die Voraussetzung des § 118 Absatz 2 GWB vorliegen, wonach mindestens 30 % der in diesen Werkstätten oder Unternehmen Beschäftigten Menschen mit Behinderungen oder benachteiligte Personen sind; Buchstabe b entspricht § 3 Absatz 5 Buchstabe k VOL/A (Vergabe an Justizvoll"
         }
       ],
-      "export_zeit": "2026-06-22T12:42:35.102666"
+      "export_zeit": "2026-06-27T10:38:35.173129"
     },
     {
-      "query": "Ab welchem Betrag ist eine Beschaffung durchzuführen (UVgO, VV ÖA, LHO)",
-      "answer": "**Kurzantwort:**  \n- **VV ÖA (Verwaltungsverordnung für öffentliche Aufträge):** Direktauftrag ohne Vergabeverfahren ist nur bis zu einem geschätzten Auftragswert von **10 000 € (ohne MwSt)** zulässig. Ab dem nächst höheren Betrag (also ab > 10 000 €) muss ein Vergabeverfahren eingeleitet werden.  \n- **UVgO (Unterschwellenvergabeordnung):** Für Liefer‑ und Dienstleistungsaufträge gelten die in § 3 UVgO genannten Schwellenwerte: bis zu **100 000 € (ohne MwSt)** kann eine Verhandlungs­ oder freihändige Vergabe ohne Teilnahmewettbewerb vorgenommen werden; darüber hinaus ist ein öffentlicher Ausschreibungsverfahren erforderlich.  \n- **LHO (Landes‑Hochschulordnung) § 55 Abs. 1/LGHO & § 22 Abs. 1 GemHVO:** Die LHO selbst setzt keine konkrete Geldsumme, sondern verlangt grundsätzlich eine öffentliche oder beschränkte Ausschreibung, sofern keine Ausnahmesituation vorliegt.\n\n---\n\n### 1. VV ÖA – Direktauftragsgrenze  \n> **„Liefer-, Dienst- und Bauleistungen können bis zu einem geschätzten Auftragswert von 10 000 € ohne Umsatzsteuer ohne ein Vergabeverfahren (Direktauftrag) beschafft werden.“**  \n(Quelle: *Min. Wirtschaft, Verkehr, Landwirtschaft und Weinbau – Direktauftragsgrenze, Nummer 4.3 der Verwaltungsvorschrift*)\n\nDamit gilt:\n- **≤ 10 000 €** – keine Vergabe­prozedur erforderlich (Direktauftrag).  \n- **> 10 000 €** – ein Vergabeverfahren (öffentliche oder beschränkte Ausschreibung) ist einzuleiten.\n\n---\n\n### 2. UVgO – Schwellenwerte für Liefer‑ und Dienstleistungsaufträge  \n> **„Verhandlungsvergaben sind … zulässig, wenn der geschätzte Auftragswert nach § 3 VgV nicht überschreitet: … Liefer- und Dienstleistungen nach UVgO 100.000 €.“**  \n(Quelle: *UVgO‑Abschnitt zu Verhandlungsvergaben*)\n\nFolglich:\n- **≤ 100 000 € (ohne MwSt)** – Verhandlungsvergabe bzw. freihändige Vergabe möglich, ohne dass ein öffentlicher Teilnahmewettbewerb erforderlich ist.\n- **> 100 000 €** – Ein Verfahren mit öffentlichem Ausschreibungs­ oder Teilnahmewettbewerb wird benötigt.\n\n*(Für Bauleistungen gelten zusätzliche Schwellenwerte – 250 k €/VOB/A und 1 Mio €/Wohnungsbau, jedoch liegen diese Angaben ebenfalls in der UVgO‑Dokumentation.)*\n\n---\n\n### 3. LHO (Landes‑Hochschulordnung)  \n> **§ 55 Abs. 1 LHO & § 22 Abs. 1 GemHVO** verlangen: *„…eine öffentliche Ausschreibung oder eine beschränkte Ausschreibung mit Teilnahmewettbewerb … vorausgehen, sofern nicht die Natur des Geschäfts oder besondere Umstände eine Ausnahme rechtfertigen.“*\n\nDie LHO gibt hier **keine explizite Geldsumme an**, sondern übernimmt das Grundprinzip der Vergaberechtsprechung:  \n- Für jeden Auftragswert muss geprüft werden, ob einer der gesetzlichen Ausnahmetatbestände (z. B. preisgebundene Bücher) vorliegt; gilt er nicht, ist eine Ausschreibung erforderlich.\n\n---\n\n## Fazit – „Ab welchem Betrag ist eine Beschaffung durchzuführen?“\n\n| Rechtsgrundlage | Mindestrang für die Durchführung eines Vergabeverfahrens |\n|-----------------|----------------------------------------------------------|\n| **VV ÖA** | > 10 000 € (ohne MwSt) |\n| **UVgO** | > 100 000 € (für Liefer‑ und Dienstleistungsaufträge ohne spezielle Ausnahmetatbestände) |\n| **LHO** | Keine konkrete Zahl – die Durchführung einer Beschaffung richtet sich nach den generellen Ausschreibungs­regeln des Vergaberechts, sofern keine spezifischen Ausnahmen zutreffen. |\n\n**Wichtig:** Die genannten Schwellenwerte gelten ausschließlich für die *Verwaltung der Vergabeverfahren*.  Für eine Beschaffung ohne Einhaltung dieser Verfahren (z. B. Direktauftrag) ist die in der VV ÖA festgelegte Grenze von **10 000 €** maßgeblich; ab dem nächst höheren Betrag muss ein Vergabeverfahren eingeleitet werden, wobei weitere Schwellenwerte (UVgO, VOB/A usw.) im Einzelfall zu prüfen sind.",
+      "query": "   Ab welchem Betrag ist eine Beschaffung durchzuführen (UVgO, VV ÖA, LHO)?",
+      "answer": "**Ab welchem Betrag ist eine Beschaffung – basierend auf den vorliegenden Dokumenten**\n\n| Rechtsgrundlage | Angabe des Schwellenwerts (aus dem Kontext) | Bemerkungen |\n|-----------------|--------------------------------------------|-------------|\n| **UVgO** | Keine konkreten Zahlen in den ausgezogenen Textstellen. Die UVgO beschreibt Verfahrenstypen, enthält jedoch keinen expliziten Betrag, der einen Beschaffungs­pflicht auslöst. | Das Dokument nennt lediglich die Art der Verfahren (öffentliche Ausschreibung, beschränkte Ausschreibung etc.) und das Prinzip „Verhandlungsvergabe“, aber keine finanzielle Schwelle. |\n| **VV ÖA RLP** | Auch hier finden sich in den bereitgestellten Auszügen nur Regelungen zu Verfahrensarten (§ 8–14) – keine Angabe eines konkreten Betrags. | Der VV ÖA regelt die Wahl der Verfahren, legt jedoch keinen numerischen Schwellenwert für Beschaffung fest. |\n| **LHO** | § 55 Abs. 1 LHO und § 22 Abs. 1 GemHVO verlangen grundsätzlich eine öffentliche Ausschreibung oder beschränkte Ausschreibung mit Teilnahmewettbewerb vor Abschluss von Verträgen bzw. Vergaben – wenn keine Ausnahme greift. Der ausgezügte Text enthält jedoch keinen konkreten Geldwert als Schwellen­betrag. | Das Prinzip ist „verpflichtend, sofern keine Ausnahmesituation vorliegt“, aber die Höhe des Auftrags wird nicht genannt. |\n| **Direktauftrag (im Kontext)** | Leistungen bis zu einem voraussichtlichen Auftragswert von **1 000 € ohne Umsatzsteuer** können ohne Vergabeverfahren beschafft werden (§ 14). | Direktauftrag gilt für alle Beschaffungen unter 1 000 €, unabhängig von der Rechtsgrundlage. |\n| **Preisgebundene Bücher (im Kontext)** | Für preisgebundene Bücherversorgung kann, sofern der Auftragswert bis zu **10 000 € ohne Umsatzsteuer** liegt, direkt an ein Unternehmen vergeben werden – abweichend vom in § 5.4 Buchst. a festgelegten Grundsatz. | Spezifische Ausnahme nur für Bücher, nicht generisch für alle Beschaffungen. |\n| **EU‑Schwellenwerte (im Kontext)** | Im Auszug zur Spezialbedarf­beschaffung wird die EU‑Schwelle genannt: „…die EU‑Schwellenwerte nach § 106 Abs. 2 GWB erreichen oder überschreiten“. | Der genaue Betrag (z. B. 25 000 € für Waren/Dienstleistungen, 5 000 € für Bau) ist im Text nicht konkretisiert und kann daher nicht aus den vorliegenden Auszügen entnommen werden. |\n\n**Zusammenfassung**\n\n- Für **Direktaufträge** gilt: ≤ 1 000 € (ohne MwSt.).  \n- Für **preisgebundene Bücher** gilt: ≤ 10 000 € (ohne MwSt.) – direkte Vergabe möglich.  \n- In den vorliegenden Textstellen der UVgO, VV ÖA RLP und LHO sind keine spezifischen Betrags­schwellen genannt; die Regelungen verlangen lediglich einen öffentlichen oder beschränkten Ausschreibungsvorgang, sofern keine Ausnahme vorliegt.  \n\nSollte eine konkrete finanzielle Schwelle für UVgO, VV ÖA oder LHO in der gesamten Rechtsquelle existieren, wurde sie in den ausgezogenen Dokumenten nicht angegeben.",
       "model": "gpt-oss:20b",
       "quellen": [
         {
           "quelle": 1,
           "datei": "VVöffAw.pdf",
           "seite": 17,
-          "score": 0.01531,
+          "score": 0.02604,
           "relevanz": "hoch",
           "abschnitt": "Nach § 55 Abs. 1 LHO\nund § 22 Abs. 1 GemHVO  muss dem Abschluss von Verträgen über Lieferungen und Leis-\ntungen beziehungsweise der Vergabe von Aufträgen eine öffentliche Ausschreibung oder\neine beschränkte Ausschreibung mit Teilnahmewettbewerb vorausgehen, sofern nicht die\nNatur des Geschäfts oder "
         },
         {
           "quelle": 2,
-          "datei": "Rundschreiben_MWVLW_v._31.12.2024_Entbürokratisierung.pdf",
-          "seite": 3,
-          "score": 0.01511,
-          "relevanz": "mittel",
-          "abschnitt": "MINISTERIUM  FÜR \nWIRTSCHAFT,  VERKEHR,  \nLANDWIRTSCHAFT  \nUND  WEINBAUSeite  3\nc) keine Beschränkung  auf in der Region  oder am Ort ansässige  Unternehmen\nd) der Zuschlag  auf das wirtschaftlichste  Angebot  erfolgt  und\ne) die einzelnen  Schritte der Vergabe,  insbesondere  das Wechselgebot  zu \n"
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.02465,
+          "relevanz": "hoch",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
         },
         {
           "quelle": 3,
-          "datei": "Rundschreiben_MWVLW_v._31.12.2024_Entbürokratisierung.pdf",
-          "seite": 2,
-          "score": 0.01428,
-          "relevanz": "mittel",
-          "abschnitt": "Verhandlungsvergaben  sind ohne nähere Begründung  \nzugelassen,  wenn bei einer  zu vergebenden  Leistung  der geschätzte  Auftragswert \nnach § 3 der Vergabeverordnung  (VgV)  - jeweils  ohne Umsatzsteuer  - bestimmte  \nWertgrenzen  nicht überschreitet:\nBeschränkte  Ausschreibung\nohne Teilnahmewettb"
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Die „Freihändige Vergabe“ in der VOL/A wurde in die „Verhandlungsvergabe“ umbenannt, um deutlicher zu signalisieren, dass\nes sich hierbei um ein reguläres, in der Regel wettbewerbliches Verfahren handelt, bei dem über die Angebotsinhalte im\nRegelfall verhandelt wird. Damit gelten für die Gestaltung\n"
         },
         {
           "quelle": 4,
-          "datei": "VVöffAw.pdf",
-          "seite": 36,
-          "score": 0.00984,
-          "relevanz": "niedrig",
-          "abschnitt": "Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren gr"
+          "datei": "UVgO.pdf",
+          "seite": 2,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "– Allgemeine Bestimmungen § 1 Gegenstand und Anwendungsbereich § 2 Grundsätze der Vergabe § 3 Wahrung der Vertraulichkeit § 4 Vermeidung von Interessenkonflikten § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens § 6 Dokumentation Unterabschnitt 2 – Kommunikation § 7 Grundsätze der Kommunikati"
         },
         {
           "quelle": 5,
           "datei": "VVöffAw.pdf",
-          "seite": 17,
-          "score": 0.00952,
-          "relevanz": "niedrig",
-          "abschnitt": "Bei der\nBeschaffung preisgebundener Bücher kann jedoch generell davon ausgegangen werden,\ndass der Ausnahmetatbestand erfüllt ist.\n \n \nDiese Aufträge können daher in einem wettbewerbsoffenen Verfahren ( Nummer 5.4 ) an\ngeeignete Unternehmen vergeben werden; in geeigneten Fällen kann das Instrument d"
+          "seite": 22,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
+        },
+        {
+          "quelle": 6,
+          "datei": "UVgO.pdf",
+          "seite": 27,
+          "score": 0.02059,
+          "relevanz": "hoch",
+          "abschnitt": "Zu § 9 Öffentliche Ausschreibung\n§ 9 beschreibt den Ablauf der Öffentlichen Ausschreibung und entspricht dabei in Teilen § 15 VgV zum offenen Verfahren.\nZu § 10 Beschränkte Ausschreibung mit Teilnahmewettbewerb\nAbsatz 1 entspricht im Wesentlichen § 16 Absatz 1 VgV zum nicht offenen Verfahren im Ober"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.02035,
+          "relevanz": "hoch",
+          "abschnitt": "Im Rahmen der Beschaffung von Spezialbedarf informiert der Bedarfsträger die jeweils zuständi-\nge Zentrale Beschaffungsstelle möglichst drei Monate vor Einleitung eines Vergabeverfahrens,\nsofern der geschätzte Auftragswert für die zu vergebenden Liefer- und Dienstleistungen ohne\nUmsatzsteuer die EU-"
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "1.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.Unterabschnitt 1\nVerfahrensarten\n§ 8\nWahl der Verfahrensart\n(1) Die Vergabe von öffentlichen Aufträgen erfolgt durch Öffentliche Ausschreibung, durch Beschränkte Ausschreibung mit\noder ohne Teilnahmewettbewerb und durch Verhandlungsvergabe mit oder ohne Teilna"
+        },
+        {
+          "quelle": 9,
+          "datei": "VVöffAw.pdf",
+          "seite": 5,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "3.6 Vergabehandbücher\n \n \n \n4 Vergabeverfahrensarten, Auftragswertgrenzen, Direktauftrag\n \n \n \n4.1 Vergabeverfahrensarten\n \n \n \n4.2 Auftragswertgrenzen\n \n \n \n4.3 Direktauftrag\n \n \n \n5 Sonderregelungen für bestimmte Vergaben\n \n \n \n5.1 Aufträge über preisgebundene Literatur\n \n \n \n5.2 Vergabe freiberuf"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffAw.pdf",
+          "seite": 1,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahrensvorschriften\n   3.3 Binnenmarktrelevanz\n   3.4 Bestimmungen bei gemeinsamer Auftragsvergabe\n   3.5 Zusätzliche Bestimmungen für das Vergabeverfahren\n   3.6 Vergabehandbücher\n 4 Vergabeverfahrensarten, Auftragswertgrenzen, Direktauftrag\n   4.1 Vergabeverfahrensarten\n   4.2 Auftragswe"
+        },
+        {
+          "quelle": 11,
+          "datei": "UVgO.pdf",
+          "seite": 9,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": ".\n§ 14\nDirektauftrag\nLeistungen bis zu einem voraussichtlichen Auftragswert von 1 000 Euro ohne Umsatzsteuer können unter Berücksichtigung\nder Haushaltsgrundsätze der Wirtschaftlichkeit und Sparsamkeit ohne die Durchführung eines Vergabeverfahrens beschafft\nwerden (Direktauftrag). Der Auftraggeber s"
+        },
+        {
+          "quelle": 12,
+          "datei": "UVgO.pdf",
+          "seite": 27,
+          "score": 0.01839,
+          "relevanz": "hoch",
+          "abschnitt": "der Nummer 10 denkbar sein, Nummer 8 entspricht in Teilen § 3 Absatz 4 Buchstabe b VOL/A und gestattet die Verhandlungsvergabe, wenn eine Öffentliche Ausschreibung oder eine Beschränkte Ausschreibung mit oder ohne Teilnahmewettbewerb für den Auftraggeber oder die Bewerber/Bieter einen unverhältnismä"
+        },
+        {
+          "quelle": 13,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 3 bleibt unberührt.\n(3) Der Auftraggeber kann Aufträge im Wege der Beschränkten Ausschreibung ohne Teilnahmewettbewerb vergeben, wenn\neine Öffentliche Ausschreibung kein wirtschaftliches Ergebnis gehabt hat oder\neine Öffentliche Ausschreibung oder eine Beschränkte Ausschreibung mit Teilnah"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "Kann der Bedarf nicht durch ein Verfahren bei der zentralen Beschaffungsstelle ge-\ndeckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen.\n \n \n \n5.4 Verbundverfahren\n \n \nSofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder-\nEbene v"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "bei der zentralen Beschaffungsstelle ge- deckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen. 5.4 Verbundverfahren Sofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder- Ebene vom Bund oder von einem anderen Bundesland für die üb"
         }
       ],
-      "export_zeit": "2026-06-22T12:42:35.102674"
+      "export_zeit": "2026-06-27T10:38:35.173135"
     },
     {
-      "query": "Ist der Höchstbetrag in Brutto oder Netto anzugeben (UVgO, VgV, VV ÖA)",
-      "answer": "Nach den Angaben im Kontext müssen die Höchstbeträge ausschließlich **netto** (ohne Umsatzsteuer) angegeben werden – etwa:\n\n* „bis zu einem Auftragswert von 20 000 Euro (netto)“  \n* „bis zu einem Auftragswert von 25 000 Euro (ohne Umsatzsteuer)“  \n* „bis zu einem Auftragswert von 10 000 Euro (ohne Umsatzsteuer)“\n\nDamit folgt die UVgO sowie die in den genannten Auszügen verwendeten Vergabeverfahren, dass der aufzugebende Höchstbetrag im **netto‑Wert** zu verstehen ist.  \n\nFalls für einen bestimmten Teil des Gesetzes oder einer Regelung keine explizite Angabe vorhanden wäre, könnte man das nicht aus dem Kontext schließen – aber in den vorliegenden Auszügen wird eindeutig die Nettoformulierung verwendet.",
+      "query": "  Wie lange dauert ein Vergabeverfahren (UVgO, VgV)?",
+      "answer": "Nach den Angaben im Kontext lassen sich keine festgelegten Gesamtfristen für ein UVgO‑ bzw. VgV‑Vergabeverfahren bestimmen – die Dokumente nennen lediglich die Mindest- und Höchstfristen, die in den einzelnen Phasen einzuhalten sind:\n\n| Phase | Frist gemäß Text |\n|-------|------------------|\n| **Vertragsabschluss nach Bekanntmachung** | mindestens **10 Kalendertage** ab dem Tag nach der Veröffentlichung der Bekanntmachung. |\n| **Bewertung eines Teilnahmeantrags (in öffentlicher Ausschreibung)** | innerhalb von **10 Arbeitstagen** nach Eingang des Antrags. |\n| **Angebotsfrist (offenes Verfahren, dynamisches Beschaffungssystem)** | mindestens **30 Tage** ab dem Tag nach Absendung der Einladung zur Angebotsabgabe; wenn keine einvernehmliche Frist vereinbart wird, gilt mindestens **10 Tage**. |\n| **Verlängerungen bei besonderen Schwierigkeiten** | darf nicht länger als **2 Wochen** dauern (siehe § 13/§ 15 im Kontext). |\n| **Angebotsfrist verkürzen bei elektronischer Übermittlung** | um **5 Tage** verkürzt, sofern die elektronische Übergabe akzeptiert wird. |\n\nKeine der genannten Passagen enthält eine Aussage darüber, wie lange das gesamte Vergabeverfahren insgesamt dauert. Für einen konkreten Gesamtzeitrahmen wäre daher zusätzliche Rechtsgrundlage oder ein spezifisches Verfahren erforderlich, die im vorliegenden Kontext nicht enthalten sind.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.02791,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 2 – Vergabeverfahren\nUnterabschnitt 1 – Verfahrensarten\nZu § 8 Wahl der Verfahrensart\n§ 8 regelt insbesondere die Zulassungsvoraussetzungen für die Wahl der einzelnen Verfahrensarten:\nÖffentliche Ausschreibung,\nBeschränkte Ausschreibung mit Teilnahmewettbewerb,\nBeschränkte Ausschreibung oh"
+        },
+        {
+          "quelle": 2,
+          "datei": "GWB.pdf",
+          "seite": 105,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "der Vertrag nicht vor Ablauf einer Frist von mindestens zehn Kalendertagen, gerechnet ab dem Tag nach\nder Veröffentlichung dieser Bekanntmachung, abgeschlossen wurde.\n \nDie Bekanntmachung nach Satz 1 Nummer 2 muss den Namen und die Kontaktdaten des öffentlichen\nAuftraggebers, die Beschreibung des Ve"
+        },
+        {
+          "quelle": 3,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "Eine solche Zustimmung darf nicht allgemein, sondern nur in Bezug auf die beabsichtigte Mitteilung bestimmter\nInformationen erteilt werden.\n(6) Beabsichtigt der Auftraggeber, nach geführten Verhandlungen diese abzuschließen, so unterrichtet er die Bieter und legt\neine einheitliche Frist für die Einr"
+        },
+        {
+          "quelle": 4,
+          "datei": "GWB.pdf",
+          "seite": 117,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "Dieser\nZeitraum soll nicht länger als zwei Wochen dauern. Dieser\nZeitraum soll nicht länger als zwei Wochen dauern. Er begründet diese Verfügung schriftlich.\n(2) Die Beteiligten haben an der Aufklärung des Sachverhalts mitzuwirken, wie es einem auf Förderung und\nraschen Abschluss des Verfahrens beda"
+        },
+        {
+          "quelle": 5,
+          "datei": "UVgO.pdf",
+          "seite": 33,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 6 – Einreichung, Form und Umgang mit Teilnahmeanträgen und Angeboten\nZu § 37 Aufforderung zur Angebotsabgabe oder zur Verhandlung nach Teilnahmewettbewerb\nAbsatz 1 entspricht im Wesentlichen § 52 Absatz 1 VgV.\nAbsatz 1 entspricht § 52 Absatz 2 Nummer 1, 2 und 4.\nZu § 38 Form und Überm"
+        },
+        {
+          "quelle": 6,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "Zu § 12 Verhandlungsvergabe mit oder ohne Teilnahmewettbewerb\nDie Vorschrift orientiert sich zum Teil an der bisherigen Vorschrift zur Freihändigen Vergabe nach § 3 Absatz 1 Satz 3 VOL/A\nsowie an § 17 VgV zum Verhandlungsverfahren.\nGemäß Absatz 2 Satz 1 sind auch bei der Verhandlungsvergabe ohne Tei"
+        },
+        {
+          "quelle": 7,
+          "datei": "GWB.pdf",
+          "seite": 117,
+          "score": 0.01892,
+          "relevanz": "mittel",
+          "abschnitt": "Bei besonderen tatsächlichen oder rechtlichen Schwierigkeiten kann der Vorsitzende\nim Ausnahmefall die Frist durch Mitteilung an die Beteiligten um den erforderlichen Zeitraum verlängern. Bei besonderen tatsächlichen oder rechtlichen Schwierigkeiten kann der Vorsitzende\nim Ausnahmefall die Frist dur"
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 9,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 2\nBesondere Methoden und Instrumente in Vergabeverfahren\n§ 15\nRahmenvereinbarungen\n(1) Rahmenvereinbarungen sind Vereinbarungen zwischen einem oder mehreren Auftraggebern und einem oder mehreren\nUnternehmen, die dazu dienen, die Bedingungen für die öffentlichen Aufträge, die während e"
+        },
+        {
+          "quelle": 9,
+          "datei": "UVgO.pdf",
+          "seite": 27,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Zu § 9 Öffentliche Ausschreibung § 9 beschreibt den Ablauf der Öffentlichen Ausschreibung und entspricht dabei in Teilen § 15 VgV zum offenen Verfahren."
+        },
+        {
+          "quelle": 10,
+          "datei": "VgV.pdf",
+          "seite": 19,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "Sobald die Aufforderung zur Angebotsabgabe für die\nerste einzelne Auftragsvergabe im Rahmen eines dynamischen Beschaffungssystems abgesandt worden ist,\ngelten keine weiteren Fristen für den Eingang der Teilnahmeanträge.\n(3) Der öffentliche Auftraggeber bewertet den Antrag eines Unternehmens auf Teil"
+        },
+        {
+          "quelle": 11,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber kann die\nZahl geeigneter Bewerber, die zur Angebotsabgabe aufgefordert werden, gemäß § 51 begrenzen.\n(5) Die Angebotsfrist beträgt mindestens 30 Tage, gerechnet ab dem Tag nach der Absendung der Aufforderung\nzur Angebotsabgabe.\n(6) Mit Ausnahme oberster Bundesbehörden ka"
+        },
+        {
+          "quelle": 12,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber kann die\nZahl geeigneter Bewerber, die zur Angebotsabgabe aufgefordert werden, gemäß § 51 begrenzen.\n(5) Die Angebotsfrist beträgt mindestens 30 Tage, gerechnet ab dem Tag nach der Absendung der Aufforderung\nzur Angebotsabgabe.\n(6) Mit Ausnahme oberster Bundesbehörden ka"
+        },
+        {
+          "quelle": 13,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.01628,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 14,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.01591,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 15,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.01556,
+          "relevanz": "hoch",
+          "abschnitt": "Eine solche Zustimmung darf nicht allgemein, sondern nur in Bezug auf die beabsichtigte Mitteilung bestimmter\nInformationen erteilt werden.\n(6) Beabsichtigt der Auftraggeber, nach geführten Verhandlungen diese abzuschließen, so unterrichtet er die Bieter und legt\neine einheitliche Frist für die Einr"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173136"
+    },
+    {
+      "query": " Ist der Höchstbetrag in Brutto oder Netto anzugeben (UVgO, VgV, VV ÖA)?",
+      "answer": "In den vorliegenden Vergabedokumenten wird jeder Höchstbetrag ausschließlich **netto** – d.h. ohne Umsatzsteuer – angegeben.\n\n- Die UVgO (§ 49, § 50) sowie die genannten Auftragswertgrenzen (z.B. 25 000 € bzw. 20 000 €, immer mit der Präposition „ohne Umsatzsteuer“) beziehen sich explizit auf den Nettobetrag.  \n- In § 3 „Schätzung des Auftragswerts“ wird klar festgelegt, dass bei der Schätzung vom voraussichtlichen Gesamtwert ohne Umsatzsteuer auszugehen ist und auch Optionen oder Vertragsverlängerungen mit einbezogen werden müssen – ebenfalls im Netto.\n- Für die VgV (z.B. §§ 30, 77) sowie für VV ÖA sind keine Angaben zu einem Bruttobetrag enthalten; die genannten Schwellenwerte (bis 40 000 € bzw. 80 000 € usw.) sind analog zur UVgO als Netto-Beträge definiert.\n\nDaher ist der Höchstbetrag, soweit er in den angegebenen Regelwerken (UVgO, VgV, VV ÖA) genannt wird, immer im **Netto** anzugeben – Umsatzsteuer‑frei.",
       "model": "gpt-oss:20b",
       "quellen": [
         {
           "quelle": 1,
           "datei": "UVgO.pdf",
           "seite": 36,
-          "score": 0.01623,
+          "score": 0.03196,
           "relevanz": "hoch",
           "abschnitt": "Für alle hier nicht aufgeführten Dienstleistungen gelten die sonstigen Vergaberegeln des Abschnitts 2 der UVgO.\n§ 49 UVgO gilt entsprechend § 1 Absatz 1 UVgO nur für die sozialen und anderen besonderen Dienstleistungen, deren\ngeschätzter Auftragswert ohne Umsatzsteuer den maßgeblichen EU-Schwellenwe"
         },
@@ -116,36 +404,1140 @@
           "quelle": 2,
           "datei": "VVöffAw.pdf",
           "seite": 18,
-          "score": 0.01619,
-          "relevanz": "mittel",
+          "score": 0.03089,
+          "relevanz": "hoch",
           "abschnitt": "a  niedergelegten Grundsatz bis zu einer Auftragswertgrenze von 25.000 Euro (ohne\nUmsatzsteuer) auch ohne Aufforderung weiterer Planungsbüros zur Abgabe eines Angebots\nmit nur einem Planungsbüro verhandelt werden.\n \n \n§ 30 UVgO gilt entsprechend.\n \n \n§ 77 VgV gilt entsprechend. a  niedergelegten Gru"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw.pdf",
+          "seite": 36,
+          "score": 0.02857,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstlei"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.02854,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsauft räge mit einem geschätzten \nAuftragswert bis 20.000 Euro (netto) können für eine  Übergangszeit (bis 31. Mai \n2022) noch mittels einfacher E-Mail durchgeführt werden."
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw.pdf",
+          "seite": 16,
+          "score": 0.02482,
+          "relevanz": "hoch",
+          "abschnitt": "4.2 Auftragswertgrenzen\n \n \nBei öffentlichen Aufträgen über Liefer- und Dienstleistungen sind ohne weitere Einzelbe-\ngründung zulässig:\n \n \na)Verhandlungsvergaben bis zu 40.000 Euro (§ 8 Abs. 4 Nr. 17 UVgO),\n \n \n \nb)beschränkte Ausschreibungen ohne Teilnahmewettbewerb bis zu 80.000 Euro.\n \n \n \nBei ö"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.02364,
+          "relevanz": "hoch",
+          "abschnitt": "I S. 674),\nsind alle öffentlichen Auftraggeber im Sinne des § 99 GWB bei der Vergabe eines öffentli-\nchen Auftrags zur Übermittlung von Informationen über vergebene Aufträge an das Statisti-\nsche Bundesamt verpflichtet, wenn\n \n \na)der Auftragswert ohne Umsatzsteuer 25.000 Euro überschreitet (Bagatel"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.02341,
+          "relevanz": "hoch",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffAw.pdf",
+          "seite": 11,
+          "score": 0.02253,
+          "relevanz": "hoch",
+          "abschnitt": "Zudem dient sie dem von der Landesregierung verfolgten Ziel einer nachhaltigen Entwick-\nlung im Bereich der öffentlichen Beschaffung, wie es sich aus den entwicklungspolitischen\nLeitlinien des Landes und dem Nachhaltigkeitsbericht der Landesregierung ergibt.\n \n \n \n2 Anwendungsbereich und Begriffsbes"
+        },
+        {
+          "quelle": 9,
+          "datei": "VgV.pdf",
+          "seite": 10,
+          "score": 0.02187,
+          "relevanz": "mittel",
+          "abschnitt": "Das Beschaffungsamt des BMI trifft die erforderlichen technischen und organisatorischen Maßnahmen,\num die Verfügbarkeit, die Integrität, die Authentizität und die Vertraulichkeit der im Datenservice Öffentlicher\nEinkauf verarbeiteten personenbezogenen Daten entsprechend dem jeweiligen Stand der Tech"
+        },
+        {
+          "quelle": 10,
+          "datei": "UVgO.pdf",
+          "seite": 3,
+          "score": 0.02059,
+          "relevanz": "mittel",
+          "abschnitt": "ohne Umsatzsteuer die Schwellenwerte gemäß §\n106 des Gesetzes gegen Wettbewerbsbeschränkungen unterschreitet.\n(2) Diese Verfahrensordnung ist ungeachtet des Erreichens des jeweiligen Schwellenwerts gemäß § 106 des Gesetzes gegen\nWettbewerbsbeschränkungen ferner nicht auf Sachverhalte anzuwenden, für"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 18,
+          "score": 0.02058,
+          "relevanz": "hoch",
+          "abschnitt": "I S. 2636 –) dürfen abweichend von dem in Nummer 5.4\nBuchst. a  niedergelegten Grundsatz bis zu einer Auftragswertgrenze von 25.000 Euro (ohne\nUmsatzsteuer) auch ohne Aufforderung weiterer Planungsbüros zur Abgabe eines Angebots\nmit nur einem Planungsbüro verhandelt werden.\n \n \n§ 30 UVgO gilt entspr"
+        },
+        {
+          "quelle": 12,
+          "datei": "GWB.pdf",
+          "seite": 88,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Fußnote\n(+++ § 105: Zur Anwendung vgl. § 41 Abs. 2 MessbG +++)\n§ 106  Schwellenwerte\n(1) Dieser Teil gilt für die Vergabe von öffentlichen Aufträgen und Konzessionen sowie die Ausrichtung von\nWettbewerben, deren geschätzter Auftrags- oder Vertragswert ohne Umsatzsteuer die jeweils festgelegten\nSchwe"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsauft räge mit einem geschätzten \nAuftragswert bis 20.000 Euro (netto) können für eine  Übergangszeit (bis 31. Mai \n2022) noch mittels einfacher E-Mail durchgeführt werden."
+        },
+        {
+          "quelle": 14,
+          "datei": "VgV.pdf",
+          "seite": 5,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": ".\n§ 3 Schätzung des Auftragswerts\n(1) Bei der Schätzung des Auftragswerts ist vom voraussichtlichen Gesamtwert der vorgesehenen Leistung ohne\nUmsatzsteuer auszugehen. Zudem sind etwaige Optionen oder Vertragsverlängerungen zu berücksichtigen.\nSieht der öffentliche Auftraggeber Prämien oder Zahlungen"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.01628,
+          "relevanz": "hoch",
+          "abschnitt": "15.3 Abfragepflicht, Abfragemöglichkeit\n \n \nÖffentliche Auftraggeber im Sinne des § 99 GWB sind verpflichtet, vor Erteilung des Zu-\nschlags in einem Vergabeverfahren mit einem geschätzten Auftragswert ab 30.000 Euro\n(ohne Umsatzsteuer) das Wettbewerbsregister zu demjenigen Bieter, an den der öffentl"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173137"
+    },
+    {
+      "query": "Warum ist ein Vergabeverfahren durchzuführen (LHO, UVgO, VgV, VV ÖA)?",
+      "answer": "**Warum ein Vergabeverfahren durchzuführen ist – kurz zusammengefasst aus dem vorliegenden Kontext**\n\n| Rechtsgrundlage | Wesentliche Pflicht bzw. Zweck im Rahmen des Dokumentes |\n|-----------------|--------------------------------------------------------|\n| **Landeshaushaltsordnung (LHO)** | Regelt, dass die Haushaltsplanung der Landeshauptstadt und damit sämtliche Aufträge den gesetzlichen Finanz- und Planungsvorgaben unterliegen. Ohne einen klaren Vergabeprozess könnten Mittel ohne gesetzliche Kontrolle verwendet werden. |\n| **Unterschwellenvergabeordnung (UVgO)** | Schafft für Aufträge unterhalb der EU‑Schwellenwerte einen einheitlichen, aber vereinfachten Ablauf. Sie definiert, welche Verfahrensarten zulässig sind (§ 8) und stellt damit sicher, dass selbst bei kleineren Beträgen die Transparenz, Gleichbehandlung und Nachvollziehbarkeit gewahrt bleiben. |\n| **Vergabegesetzverordnung (VgV)** | Ergänzt das GWB mit detaillierten Vorgaben zur Durchführung von Vergabeverfahren: Wahrung der Vertraulichkeit (§ 3), Vermeidung von Interessenkonflikten (§ 4), Mitwirkung der Unternehmen bei der Vorbereitung (§ 5) sowie Dokumentation (§ 6). Diese Regeln sichern, dass die Vergabe fair, nachvollziehbar und rechtskonform abläuft. |\n| **Verwaltungsvorschrift für die Durchführung der Landeshaushaltsordnung (VV ÖA)** | Setzt die Vorgaben der LHO konkret um – etwa in Bezug auf Kommunikation (§ 7), besondere Verfahren (§§ 15–18) oder die Anwendung von Rahmenvereinbarungen (§ 15). Sie bildet die operative Basis, damit jedes Vergabeverfahren den rechtlichen Standards entspricht. |\n\n**Schlüsselfunktionen eines Vergabeverfahrens (aus dem Kontext)**  \n\n1. **Rechtliche Konformität** – Die Vorschriften bilden die Rechtsgrundlage für alle öffentlichen Aufträge; ein fehlendes Verfahren würde einen Gesetzesverstoß darstellen.  \n2. **Transparenz und Nachvollziehbarkeit** – Durch die klar definierten Verfahrensarten (öffentliche Ausschreibung, beschränkte Ausschreibung mit/ohne Teilnahmewettbewerb, Verhandlungsvergabe) wird sichergestellt, dass potenzielle Bieter jederzeit nachvollziehen können, welche Kriterien angewendet wurden.  \n3. **Gleichbehandlung und Wettbewerb** – Die UVgO regelt die Zulassungsvoraussetzungen und die Möglichkeit, zwei Unternehmen in Ausnahmefällen anzufordern (§ 13). Das verhindert willkürliche Vergaben.  \n4. **Dokumentation und Kontrolle** – VgV verlangt eine klare Dokumentation (§ 6), sodass Auftragsverläufe jederzeit überprüfbar sind und später bei Nachprüfungen die Entscheidungsgründe nachvollzogen werden können.  \n5. **Förderung von Qualität, Innovation und Nachhaltigkeit** – Der Kontext verweist auf Aspekte wie soziale, umweltbezogene oder innovative Anforderungen (§ 3.2). Diese werden über das Vergabeverfahren integriert, sodass sie im Auftragsergebnis berücksichtigt werden.\n\nKurz gesagt: Das Vergabeverfahren ist notwendig, weil es die gesetzlichen Rahmenbedingungen (LHO, UVgO, VgV, VV ÖA) erfüllt und damit Rechtssicherheit, Transparenz, Gleichbehandlung und effiziente Mittelverwendung gewährleistet. Ohne ein formelles Verfahren würde der öffentliche Beschaffungsprozess rechtlich nicht haltbar sein.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.02916,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 2 – Vergabeverfahren\nUnterabschnitt 1 – Verfahrensarten\nZu § 8 Wahl der Verfahrensart\n§ 8 regelt insbesondere die Zulassungsvoraussetzungen für die Wahl der einzelnen Verfahrensarten:\nÖffentliche Ausschreibung,\nBeschränkte Ausschreibung mit Teilnahmewettbewerb,\nBeschränkte Ausschreibung oh"
+        },
+        {
+          "quelle": 2,
+          "datei": "UVgO.pdf",
+          "seite": 25,
+          "score": 0.02754,
+          "relevanz": "hoch",
+          "abschnitt": "–\n–\n–\n–\n–\n–\n–§ 3 entspricht wortgleich dem § 5 VgV zur Wahrung der Vertraulichkeit.\nZu § 4 Vermeidung von Interessenkonflikten\n§ 4 entspricht wortgleich dem § 6 VgV zur Vermeidung von Interessenkonflikten.\nZu § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens\n§ 5 entspricht mit Ausnahme des Ab"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw.pdf",
+          "seite": 13,
+          "score": 0.02477,
+          "relevanz": "hoch",
+          "abschnitt": "Aspekte der Qualität und der Innovation sowie soziale und umweltbezogene Aspekte wer-\nden nach Maßgabe dieser Verwaltungsvorschrift und der anzuwendenden Verfahrensvor-\nschriften ( Nummer 3.2 ) berücksichtigt.\n \n \n3.2 Anzuwendende Vergabeverfahrensvorschriften\n \n \nFür öffentliche Aufträge unterhalb "
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 22,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "  Seite 4   \n4  Aufgenommen wurde die Möglichkeit einer verlängerten  Bindefrist (§ 10 Abs. 4 \nVOB/A) bei wirtschaftlich bedeutsamen Bauvergaben im S inne der Landesverord- \nnung über die Nachprüfung von Vergabeverfahren durch Vergabeprüfstellen. e) Strategische Beschaffung (VV Nr. 8 bis 12"
+        },
+        {
+          "quelle": 6,
+          "datei": "UVgO.pdf",
+          "seite": 2,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "– Allgemeine Bestimmungen § 1 Gegenstand und Anwendungsbereich § 2 Grundsätze der Vergabe § 3 Wahrung der Vertraulichkeit § 4 Vermeidung von Interessenkonflikten § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens § 6 Dokumentation Unterabschnitt 2 – Kommunikation § 7 Grundsätze der Kommunikati"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw.pdf",
+          "seite": 15,
+          "score": 0.01945,
+          "relevanz": "hoch",
+          "abschnitt": "-\nbung oder beschränkter Ausschreibung mit Teilnahmewettbewerb ( § 55 Abs. 1 LHO , § 22\nAbs. 1 GemHVO , § 8 Abs. 2 Satz 1 UVgO, § 3 a Abs. 1 Satz 1 VOB/A)."
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.01944,
+          "relevanz": "mittel",
+          "abschnitt": "Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Nicht gestattet ist es\naber, unter Berufung auf Absatz 1 nur ein Unternehmen aufzufordern. D"
+        },
+        {
+          "quelle": 9,
+          "datei": "UVgO.pdf",
+          "seite": 31,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Zu § 25 Nebenangebote\n§ 25 ist im Wesentlichen § 35 Absatz 1 VgV nachgebildet mit dem Unterschied, dass ein Auftraggeber im\nUnterschwellenbereich die Vorlage von Nebenangeboten nicht vorschreiben darf.\nAuf die Übernahme von § 35 Absatz 2 und 3 VgV wurde bewusst verzichtet, um stattdessen allgemeiner"
+        },
+        {
+          "quelle": 10,
+          "datei": "UVgO.pdf",
+          "seite": 29,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 2 – Besondere Methoden und Instrumente in Vergabeverfahren\nZu § 15 Rahmenvereinbarungen\nAbsatz 1 orientiert sich an der Definition des Begriffs der Rahmenvereinbarung in § 103 Absatz 5 GWB.\nAbsatz 2 entspricht wortgleich § 21 Absatz 1 VgV.\nAbsatz 3 entspricht im Wesentlichen § 21 Absa"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 3,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Sie sind in den Fällen von Bedeutung, wenn mehre re öffentliche Auftraggeber \nmit voneinander abweichenden Vergaberechtsregimen eine n öffentlichen Auftrag \ngemeinsam ausschreiben. b) Vergabeverfahren, Auftragswertgrenzen, Sonderrege lungen (VV Nr. 4, 5) \n Die Auftragswertgrenzen für nichtöffentlic"
+        },
+        {
+          "quelle": 12,
+          "datei": "GWB.pdf",
+          "seite": 93,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "der Leistungsbeschreibung, der Bekanntmachung, der Verfahrensarten und des Ablaufs des\nVergabeverfahrens, der Nebenangebote, der Vergabe von Unteraufträgen sowie der Vergabe öffentlicher\nAufträge und Konzessionen, die soziale und andere besondere Dienstleistungen betreffen,\n \n3.   der besonderen Met"
+        },
+        {
+          "quelle": 13,
+          "datei": "UVgO.pdf",
+          "seite": 29,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "Zu § 16 Gelegentliche gemeinsame Auftragsvergabe; zentrale Beschaffung\nVorschrift erklärt § 120 Absatz 4 GWB und § 4 VgV zur zentralen Beschaffung und zur gemeinsamen Auftragsvergabe für\nentsprechend anwendbar.\nZu § 17 Dynamische Beschaffungssysteme\nDie Absätze 1 bis 5 entsprechen § 22 VgV.."
+        },
+        {
+          "quelle": 14,
+          "datei": "GWB.pdf",
+          "seite": 123,
+          "score": 0.01628,
+          "relevanz": "hoch",
+          "abschnitt": "Fußnote\n(+++ § 183: Zur Anwendung vgl. 2 MessbG +++)\n§ 183  Korrekturmechanismus der Kommission\n(1) Erhält die Bundesregierung im Laufe eines Vergabeverfahrens vor Abschluss des Vertrags eine Mitteilung\nder Europäischen Kommission, dass diese der Auffassung ist, es liege ein schwerer Verstoß gegen d"
+        },
+        {
+          "quelle": 15,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.01591,
+          "relevanz": "hoch",
+          "abschnitt": "1.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.Unterabschnitt 1\nVerfahrensarten\n§ 8\nWahl der Verfahrensart\n(1) Die Vergabe von öffentlichen Aufträgen erfolgt durch Öffentliche Ausschreibung, durch Beschränkte Ausschreibung mit\noder ohne Teilnahmewettbewerb und durch Verhandlungsvergabe mit oder ohne Teilna"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173138"
+    },
+    {
+      "query": "  Welcher Preis ist zu beachten (VV ÖA)?",
+      "answer": "**Welcher Preis ist zu beachten – gemäß der Verwaltungsverordnung für die öffentliche Auftragsvergabe (VV ÖA)?**\n\n- **Preis des Angebots**  \n  Der entscheidende Preis im Vergabeverfahren ist der Preis, den jeder Bieter in seinem Angebot vorlegt. Für die Ermittlung des wirtschaftlichsten Angebotes muss dieser Angebotspreis – zusammen mit eventuellen Kosten und weiteren Qualifikationskriterien – berücksichtigt werden.\n\n- **Beachtung verbindlicher Preisvorgaben**  \n  In diesem Zusammenhang gilt: *„Verbindliche Vorschriften zur Preisgestaltung sind bei der Ermittlung des wirtschaftlichsten Angebots zu beachten.“* Das heißt, wenn es vordefinierte Preisrichtlinien gibt (z. B. staatliche Preisbindungen oder Vorgaben aus der Vergabeverordnung), müssen diese bei der Bewertung des Angebotspreises einfließen.\n\n- **Indexierungsklausel**  \n  Für die Berechnung von Auftragswertänderungen ist ebenfalls zu berücksichtigen, dass *„Enthält der Vertrag eine Indexierungsklausel, wird für die Wertberechnung… der höhere Preis als Referenzwert herangezogen.“*  \n\nKurz gesagt: In der VV ÖA gilt **der im Angebot ausgewiesene Preis** (unter Berücksichtigung möglicher bindender Preisregeln), wobei bei indexierten Verträgen der höhere von den beiden Vergleichspreisen die Basis für Wertberechnungen bildet.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 19,
+          "score": 0.02756,
+          "relevanz": "hoch",
+          "abschnitt": "Orten ansässig sind,\n \n \n \nd)der Zuschlag erfolgt auf das wirtschaftlichste Angebot,\n \n \n \ne)die einzelnen Schritte der Vergabe, insbesondere die Beachtung des Wechselgebots sind\nzu dokumentieren."
+        },
+        {
+          "quelle": 2,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.02258,
+          "relevanz": "mittel",
+          "abschnitt": "Die §§ 19 und 20 bleiben unberührt. (3) Das Bundeskartellamt kann von Amts wegen oder auf Antrag eines gebundenen Abnehmers die Preisbindung für unwirksam erklären und die Anwendung einer neuen gleichartigen Preisbindung verbieten, wenn 1. die Preisbindung missbräuchlich gehandhabt wird oder 2. die "
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02187,
+          "relevanz": "mittel",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 4,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.02121,
+          "relevanz": "mittel",
+          "abschnitt": "Die §§ 19 und 20 bleiben unberührt.\n(3) Das Bundeskartellamt kann von Amts wegen oder auf Antrag eines gebundenen Abnehmers die Preisbindung\nfür unwirksam erklären und die Anwendung einer neuen gleichartigen Preisbindung verbieten, wenn\n1.   die Preisbindung missbräuchlich gehandhabt wird oder\n \n2. "
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 3,
+          "score": 0.02088,
+          "relevanz": "hoch",
+          "abschnitt": "Sie sind in den Fällen von Bedeutung, wenn mehre re öffentliche Auftraggeber \nmit voneinander abweichenden Vergaberechtsregimen eine n öffentlichen Auftrag \ngemeinsam ausschreiben. b) Vergabeverfahren, Auftragswertgrenzen, Sonderrege lungen (VV Nr. 4, 5) \n Die Auftragswertgrenzen für nichtöffentlic"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 5,
+          "score": 0.02,
+          "relevanz": "mittel",
+          "abschnitt": "14) zu verstehen; das bede utet, dass der komplette \nAbschnitt 4.3 mit den Anlagen 6 und 7 sowie Abschnitt 1.3.3 dieser Verwaltungs- \nvorschrift als Grundlagen für die beim Ministerium für Finanzen eingerichtete Melde- \nund Informationsstelle außer Kraft treten. 14) zu verstehen; das bede utet, dass"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.01944,
+          "relevanz": "mittel",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 8,
+          "datei": "GWB.pdf",
+          "seite": 101,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Das\nwirtschaftlichste Angebot bestimmt sich nach dem besten Preis-Leistungs-Verhältnis. Zu dessen Ermittlung\nkönnen neben dem Preis oder den Kosten auch qualitative, umweltbezogene oder soziale Aspekte berücksichtigt\nwerden.\n(2) Verbindliche Vorschriften zur Preisgestaltung sind bei der Ermittlung d"
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 103,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "bei Liefer- und Dienstleistungsaufträgen nicht mehr als 10 Prozent und bei Bauaufträgen nicht mehr als 15\nProzent des ursprünglichen Auftragswertes beträgt.\n \nBei mehreren aufeinander folgenden Änderungen ist der Gesamtwert der Änderungen maßgeblich.\n(4) Enthält der Vertrag eine Indexierungsklausel,"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "  Seite 4   \n4  Aufgenommen wurde die Möglichkeit einer verlängerten  Bindefrist (§ 10 Abs. 4 \nVOB/A) bei wirtschaftlich bedeutsamen Bauvergaben im S inne der Landesverord- \nnung über die Nachprüfung von Vergabeverfahren durch Vergabeprüfstellen. e) Strategische Beschaffung (VV Nr. 8 bis 12"
+        },
+        {
+          "quelle": 11,
+          "datei": "VgV.pdf",
+          "seite": 6,
+          "score": 0.0175,
+          "relevanz": "mittel",
+          "abschnitt": "Bei\nallen übrigen Planungswettbewerben entspricht der Auftragswert der Summe der Preisgelder und Zahlungen an\ndie Teilnehmer einschließlich des Werts des Dienstleistungsauftrags, der vergeben werden könnte, soweit der\nöffentliche Auftraggeber diese Vergabe in der Wettbewerbsbekanntmachung des Planun"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 1,
+          "score": 0.01707,
+          "relevanz": "mittel",
+          "abschnitt": "Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort. Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort."
+        },
+        {
+          "quelle": 13,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.01667,
+          "relevanz": "mittel",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01628,
+          "relevanz": "mittel",
+          "abschnitt": "Das Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsinnenrecht zuzuordnen. Bietern und Bewerbern ist – anders als im Oberschwel-\nlenbereich (§ 97 Abs. 6 GWB) – kein subjektiv einklagbares Recht eingeräumt. Dennoch\ngibt es seit dem 1. Juni 2021 erstmals im "
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 8,
+          "score": 0.01591,
+          "relevanz": "mittel",
+          "abschnitt": "Bei dessen Berechnung\nsind die Gesamtkosten einschließlich der Kosten für die Bewirtschaftung und Pflege der Verträge\nsowie für den Betrieb der Vergabe- und Bestellplattform zu berücksichtigen.\n \n \n \n5 Beschaffung von Liefer- und Dienstleistungen\n \n \n5.1 Standardbedarf\n \n \nZiel der zentralen Beschaf"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173139"
+    },
+    {
+      "query": " Als Mitarbeitender oder Professor*in möchte ich wissen, ob Beträge, Preise und Kostenschätzungen in Brutto oder Netto anzugeben sind, um das korrekte Verfahren bestimmen zu können.",
+      "answer": "**Antwort**\n\nIm vorliegenden Vergabe‑Kontext wird konsequent auf **Netto‑Beträge (ohne Umsatzsteuer)** Bezug genommen:\n\n| Quelle | Hinweis |\n|--------|---------|\n| § 3 Absatz 1 – Schätzung des Auftragswerts | „Bei der Schätzung des Auftragswerts ist vom voraussichtlichen Gesamtwert … ohne Umsatzsteuer auszugehen.“ |\n| Vergabe­verfahren über Liefer‑ und Dienstleistungsaufträge | „Mit einem geschätzten Auftragswert bis 20.000 Euro (netto) können…“ |\n| Schwellenwerte in Abschnitt 4–2 (Auftragswertgrenzen) | Alle genannten Grenzen sind **ohne Umsatzsteuer** zu verstehen (z.B. 40.000 €, 80.000 € usw.). |\n\nDaraus folgt:\n\n* Für die Festlegung des Vergabeverfahrens müssen alle Angaben – Preis, Kostenschätzung, Auftragswert etc. – in **Netto** angegeben werden, d.h. ohne Umsatzsteuer.  \n* Optionen, Vertragsverlängerungen oder Indexierungs­klauseln werden ebenfalls im Netto‑Wert berücksichtigt (vgl. § 3 Absatz 1 bzw. die Erwähnung von Optionen/Verlängerungen).\n\nDa der gesamte Kontext eindeutig auf Netto‑Beträge verweist, ist keine weitere Klarstellung nötig – bei allen genannten Schwellen und Verfahren gilt: **Netto**.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VgV.pdf",
+          "seite": 10,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Das Beschaffungsamt des BMI trifft die erforderlichen technischen und organisatorischen Maßnahmen,\num die Verfügbarkeit, die Integrität, die Authentizität und die Vertraulichkeit der im Datenservice Öffentlicher\nEinkauf verarbeiteten personenbezogenen Daten entsprechend dem jeweiligen Stand der Tech"
+        },
+        {
+          "quelle": 2,
+          "datei": "UVgO.pdf",
+          "seite": 3,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "§ 48 Aufhebung von Vergabeverfahren Abschnitt 3 – Vergabe von Aufträgen für besondere Leistungen; Planungswettbewerbe § 49 Vergabe von öffentlichen Aufträgen über soziale und andere besondere Dienstleistungen § 50 Sonderregelung zur Vergabe von freiberuflichen Leistungen § 51 Vergabe von verteidigun"
         },
         {
           "quelle": 3,
           "datei": "VVöffAw_Einführungsschreiben.pdf",
           "seite": 4,
-          "score": 0.01558,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteiligten Unternehmen gelten die Vorgabe n der Vergabeverfahrensord- \nnungen (UVgO, VOB/A). 13, 14) \n Für die Kommunikation zwischen den Vergabestellen und d en an einem Vergabe- \nverfahren beteilig"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.02059,
+          "relevanz": "hoch",
+          "abschnitt": "Aus verfahrensökonomi schen und korruptions- \npräventiven Gründen wird aber empfohlen, alle Vergabe verfahren über eine eVer- \ngabeplattform abzuwickeln. Vergabeverfahren über Liefer- und Dienstleistungsauft räge mit einem geschätzten \nAuftragswert bis 20.000 Euro (netto) können für eine  Übergangsz"
+        },
+        {
+          "quelle": 5,
+          "datei": "UVgO.pdf",
+          "seite": 36,
+          "score": 0.02,
           "relevanz": "mittel",
-          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsauft räge mit einem geschätzten \nAuftragswert bis 20.000 Euro (netto) können für eine  Übergangszeit (bis 31. Mai \n2022) noch mittels einfacher E-Mail durchgeführt werden."
+          "abschnitt": "Zu § 50 Sonderregelung zur Vergabe von freiberuflichen Leistungen\nDie Vergabe von freiberuflichen Leistungen ist in § 50 speziell geregelt."
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw.pdf",
+          "seite": 18,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "a  niedergelegten Grundsatz bis zu einer Auftragswertgrenze von 25.000 Euro (ohne\nUmsatzsteuer) auch ohne Aufforderung weiterer Planungsbüros zur Abgabe eines Angebots\nmit nur einem Planungsbüro verhandelt werden.\n \n \n§ 30 UVgO gilt entsprechend.\n \n \n§ 77 VgV gilt entsprechend. a  niedergelegten Gru"
+        },
+        {
+          "quelle": 7,
+          "datei": "VgV.pdf",
+          "seite": 20,
+          "score": 0.01934,
+          "relevanz": "hoch",
+          "abschnitt": "neuen, nach unten korrigierten Preisen, wenn der Zuschlag allein aufgrund des Preises erfolgt, oder\n \n2.   neuen, nach unten korrigierten Preisen oder neuen, auf bestimmte Angebotskomponenten abstellenden\nWerten, wenn das Angebot mit dem besten Preis-Leistungs-Verhältnis oder, bei Verwendung eines K"
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 9,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 2\nBesondere Methoden und Instrumente in Vergabeverfahren\n§ 15\nRahmenvereinbarungen\n(1) Rahmenvereinbarungen sind Vereinbarungen zwischen einem oder mehreren Auftraggebern und einem oder mehreren\nUnternehmen, die dazu dienen, die Bedingungen für die öffentlichen Aufträge, die während e"
+        },
+        {
+          "quelle": 9,
+          "datei": "VVöffAw.pdf",
+          "seite": 36,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstlei"
+        },
+        {
+          "quelle": 10,
+          "datei": "VgV.pdf",
+          "seite": 5,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Ein Service des Bundesministeriums der Justiz sowie des Bundesamts für\nJustiz ‒ www.gesetze-im-internet.de\n- Seite 5 von 45 -§ 2 Vergabe von Bauaufträgen\nFür die Vergabe von Bauaufträgen sind Abschnitt 1 und Abschnitt 2, Unterabschnitt 2 anzuwenden. Im Übrigen ist\nTeil A Abschnitt 2 der Vergabe- und"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "15.3 Abfragepflicht, Abfragemöglichkeit\n \n \nÖffentliche Auftraggeber im Sinne des § 99 GWB sind verpflichtet, vor Erteilung des Zu-\nschlags in einem Vergabeverfahren mit einem geschätzten Auftragswert ab 30.000 Euro\n(ohne Umsatzsteuer) das Wettbewerbsregister zu demjenigen Bieter, an den der öffentl"
+        },
+        {
+          "quelle": 12,
+          "datei": "GWB.pdf",
+          "seite": 103,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "bei Liefer- und Dienstleistungsaufträgen nicht mehr als 10 Prozent und bei Bauaufträgen nicht mehr als 15\nProzent des ursprünglichen Auftragswertes beträgt.\n \nBei mehreren aufeinander folgenden Änderungen ist der Gesamtwert der Änderungen maßgeblich.\n(4) Enthält der Vertrag eine Indexierungsklausel,"
+        },
+        {
+          "quelle": 13,
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 2 – Vergabeverfahren\nUnterabschnitt 1 – Verfahrensarten\nZu § 8 Wahl der Verfahrensart\n§ 8 regelt insbesondere die Zulassungsvoraussetzungen für die Wahl der einzelnen Verfahrensarten:\nÖffentliche Ausschreibung,\nBeschränkte Ausschreibung mit Teilnahmewettbewerb,\nBeschränkte Ausschreibung oh"
+        },
+        {
+          "quelle": 14,
+          "datei": "UVgO.pdf",
+          "seite": 22,
+          "score": 0.01628,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 3\nVergabe von Aufträgen für besondere Leistungen; Planungswettbewerbe\n§ 49\nVergabe von öffentlichen Aufträgen über soziale und andere besondere Dienstleistungen\n(1) Abweichend von § 8 Absatz 2 steht dem Auftraggeber für die Vergabe öffentlicher Aufträge über soziale und andere\nbesondere Di"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffAw.pdf",
+          "seite": 16,
+          "score": 0.01591,
+          "relevanz": "hoch",
+          "abschnitt": "4.2 Auftragswertgrenzen\n \n \nBei öffentlichen Aufträgen über Liefer- und Dienstleistungen sind ohne weitere Einzelbe-\ngründung zulässig:\n \n \na)Verhandlungsvergaben bis zu 40.000 Euro (§ 8 Abs. 4 Nr. 17 UVgO),\n \n \n \nb)beschränkte Ausschreibungen ohne Teilnahmewettbewerb bis zu 80.000 Euro.\n \n \n \nBei ö"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173140"
+    },
+    {
+      "query": "Als Institutssekretariat möchte ich wissen, welche Dokumente der Beschaffungsstelle vorgelegt werden müssen, um eine Bestellung rechtssicher einzuleiten.",
+      "answer": "Nach den vorliegenden Auszügen aus der Vergabeverordnung des Landes Rheinland‑Pfalz ist für die rechtssichere Einleitung einer Bestellung in erster Linie eine **Bedarfsmeldung (Bedarfsinformation)** an die zuständige zentrale Beschaffungsstelle einzureichen.  \nDiese Meldung muss:\n\n1. **Der Bedarfsträger** – hier das Institutssekretariat – spätestens drei Monate vor der geplanten Vergabe informieren, sofern der geschätzte Auftragswert ohne Umsatzsteuer die EU‑Schwellenwerte nach § 106 Abs. 2 GWB erreicht oder überschreitet.  \n2. Den **geschätzten Auftragswert** sowie sämtliche Angaben zu Art, Menge und Qualifikationsanforderungen enthalten.  \n\nNach Erhalt der Bedarfsmeldung prüft die zentrale Beschaffungsstelle dann, ob bereits eine Abrufmöglichkeit aus bestehenden Verträgen besteht oder ob gemäß § 132 GWB eine Auftragserweiterung zur Bedarfsdeckung möglich ist.  \nKeine weiteren Dokumente werden in den genannten Regelungen ausdrücklich verlangt – das reicht als Grundlage für eine rechtssichere Bestellung.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.02417,
+          "relevanz": "hoch",
+          "abschnitt": "Im Rahmen der Beschaffung von Spezialbedarf informiert der Bedarfsträger die jeweils zuständi-\nge Zentrale Beschaffungsstelle möglichst drei Monate vor Einleitung eines Vergabeverfahrens,\nsofern der geschätzte Auftragswert für die zu vergebenden Liefer- und Dienstleistungen ohne\nUmsatzsteuer die EU-"
+        },
+        {
+          "quelle": 2,
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Die „Freihändige Vergabe“ in der VOL/A wurde in die „Verhandlungsvergabe“ umbenannt, um deutlicher zu signalisieren, dass\nes sich hierbei um ein reguläres, in der Regel wettbewerbliches Verfahren handelt, bei dem über die Angebotsinhalte im\nRegelfall verhandelt wird. Damit gelten für die Gestaltung\n"
+        },
+        {
+          "quelle": 3,
+          "datei": "UVgO.pdf",
+          "seite": 2,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "– Allgemeine Bestimmungen § 1 Gegenstand und Anwendungsbereich § 2 Grundsätze der Vergabe § 3 Wahrung der Vertraulichkeit § 4 Vermeidung von Interessenkonflikten § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens § 6 Dokumentation Unterabschnitt 2 – Kommunikation § 7 Grundsätze der Kommunikati"
         },
         {
           "quelle": 4,
           "datei": "VVöffAw.pdf",
-          "seite": 36,
-          "score": 0.01538,
-          "relevanz": "niedrig",
-          "abschnitt": "Vergabeverfahren über Liefer- und Dienstleistungsaufträge mit einem geschätzten Auf-\ntragswert bis 20.000 Euro (ohne Umsatzsteuer) können bis zum 31. Es wird\nempfohlen, alle Vergabeverfahren grundsätzlich mithilfe elektronischer Mittel durchzufüh-\nren.\n \n \nVergabeverfahren über Liefer- und Dienstlei"
+          "seite": 22,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
         },
         {
           "quelle": 5,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.02059,
+          "relevanz": "hoch",
+          "abschnitt": "1.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.Unterabschnitt 1\nVerfahrensarten\n§ 8\nWahl der Verfahrensart\n(1) Die Vergabe von öffentlichen Aufträgen erfolgt durch Öffentliche Ausschreibung, durch Beschränkte Ausschreibung mit\noder ohne Teilnahmewettbewerb und durch Verhandlungsvergabe mit oder ohne Teilna"
+        },
+        {
+          "quelle": 6,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 3 bleibt unberührt.\n(3) Der Auftraggeber kann Aufträge im Wege der Beschränkten Ausschreibung ohne Teilnahmewettbewerb vergeben, wenn\neine Öffentliche Ausschreibung kein wirtschaftliches Ergebnis gehabt hat oder\neine Öffentliche Ausschreibung oder eine Beschränkte Ausschreibung mit Teilnah"
+        },
+        {
+          "quelle": 7,
           "datei": "VVöffAw.pdf",
-          "seite": 17,
-          "score": 0.01489,
-          "relevanz": "niedrig",
-          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+          "seite": 5,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "3.6 Vergabehandbücher\n \n \n \n4 Vergabeverfahrensarten, Auftragswertgrenzen, Direktauftrag\n \n \n \n4.1 Vergabeverfahrensarten\n \n \n \n4.2 Auftragswertgrenzen\n \n \n \n4.3 Direktauftrag\n \n \n \n5 Sonderregelungen für bestimmte Vergaben\n \n \n \n5.1 Aufträge über preisgebundene Literatur\n \n \n \n5.2 Vergabe freiberuf"
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 9,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "1.\n2.Unternehmen von allen Informationen, die für die Erstellung des Angebots erforderlich sind, unter gewöhnlichen Umständen\nKenntnis nehmen können.\n(4) Die nach Absatz 1 gesetzten Fristen sind, soweit erforderlich, angemessen zu verlängern, wenn\nzusätzliche wesentliche Informationen vom Auftraggeb"
+        },
+        {
+          "quelle": 9,
+          "datei": "VVöffAw.pdf",
+          "seite": 1,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Vergabeverfahrensvorschriften\n   3.3 Binnenmarktrelevanz\n   3.4 Bestimmungen bei gemeinsamer Auftragsvergabe\n   3.5 Zusätzliche Bestimmungen für das Vergabeverfahren\n   3.6 Vergabehandbücher\n 4 Vergabeverfahrensarten, Auftragswertgrenzen, Direktauftrag\n   4.1 Vergabeverfahrensarten\n   4.2 Auftragswe"
+        },
+        {
+          "quelle": 10,
+          "datei": "UVgO.pdf",
+          "seite": 27,
+          "score": 0.01795,
+          "relevanz": "mittel",
+          "abschnitt": "Zu § 9 Öffentliche Ausschreibung\n§ 9 beschreibt den Ablauf der Öffentlichen Ausschreibung und entspricht dabei in Teilen § 15 VgV zum offenen Verfahren.\nZu § 10 Beschränkte Ausschreibung mit Teilnahmewettbewerb\nAbsatz 1 entspricht im Wesentlichen § 16 Absatz 1 VgV zum nicht offenen Verfahren im Ober"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 16,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "B.\ndie Bauleistungen für etwa die Herstellung eines beabsichtigten Bauvorhabens in mehreren\nLosen vergeben, ist – insofern abweichend von § 3 Abs. 7 VgV – der Auftragswert des jewei-\nligen Loses maßgeblich.\n \n \nDas für die Angelegenheiten des öffentlichen Auftragswesens zuständige Ministerium kann\nd"
+        },
+        {
+          "quelle": 12,
+          "datei": "UVgO.pdf",
+          "seite": 29,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "Durch die\nFormulierung „Direktauftrag“ statt wie bisher „Direktkauf“ soll verdeutlicht werden, dass nicht nur Liefer-, sondern auch\nDienstleistungen umfasst sind.\nDurch die systematische Stellung des Direktauftrags am Ende des Unterschabschnitts 1 und dadurch, dass er nicht im Katalog\ndes § 8 Absatz"
+        },
+        {
+          "quelle": 13,
+          "datei": "UVgO.pdf",
+          "seite": 23,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "§ 51\nVergabe von verteidigungs- oder sicherheitsspezifischen öffentlichen Aufträgen\n(1) Abweichend von § 8 Absatz 2 stehen dem Auftraggeber für die Vergabe von verteidigungs- oder sicherheitsspezifischen\nöffentlichen Aufträgen im Sinne von § 104 des Gesetzes gegen Wettbewerbsbeschränkungen die Besch"
+        },
+        {
+          "quelle": 14,
+          "datei": "GWB.pdf",
+          "seite": 97,
+          "score": 0.01591,
+          "relevanz": "hoch",
+          "abschnitt": "Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerben oder Liefer-, Bau- und Dienstleistungsaufträge mittels zentraler\nBeschaffungsstellen vergeben. Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerb"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.01556,
+          "relevanz": "hoch",
+          "abschnitt": "Die unter den Nummern 5.2  bis 5.5 geregelten Ausnah-\nmetatbestände bleiben unberührt.\n \n \n \n4 Aufgaben, Zuständigkeit und Finanzierung der zentralen Beschaffungsstellen\n \n \n \n4.1 Aufgaben und Zuständigkeit\n \n \nDie zentralen Beschaffungsstellen sind Servicestellen für die Bedarfsträger und unterstüt"
         }
       ],
-      "export_zeit": "2026-06-22T12:42:35.102676"
+      "export_zeit": "2026-06-27T10:38:35.173142"
+    },
+    {
+      "query": " Als wissenschaftlich Mitarbeitender möchte ich wissen, wie lange eine Ausschreibung offen sein muss und welche Fristen für Angebotsabgabe und Zuschlag gelten.",
+      "answer": "**Ausschreibungsdauer (offen bleiben)**  \nIm vorliegenden Material wird nicht explizit geregelt, wie lange die Bekanntmachung einer Ausschreibung im öffentlichen Gremienblatt bzw. auf der Website „offen“ sein muss. Die Fristen, die in den Texten genannt werden, betreffen ausschließlich die **Einreichungs­frist** für Teilnahmeanträge und Angebote – die Dauer, bis zu welcher Bieter ihre Unterlagen einreichen dürfen.  In der Regel gilt dabei: solange die Ausschreibung läuft (also bis zur Ablauf‑ bzw. Fristende) können Unternehmen ihre Unterlagen nach den angegebenen Fristen abgeben.\n\n---\n\n### Fristen für die Angebotsabgabe\n\n| Verfahren / Kontext | Minimal­frist für Angebotseinreichung | Hinweis zur Verlängerung / Verkürzung |\n|---------------------|----------------------------------------|--------------------------------------|\n| **Verhandlungsverfahren mit Teilnahmewettbewerb** (standard) | **30 Tage**, gerechnet ab dem Tag nach Absendung der Aufforderung zur Angebotsabgabe | – Keine Angabe über Verlängerung; bei elektronischer Einreichung kann die Frist um 5 Tage verkürzt werden. |\n| **Verhandlungsverfahren ohne Teilnahmewettbewerb** | **30 Tage**, gerechnet ab dem Tag nach Absendung der Aufforderung zur Angebotsabgabe | – Bei fehlender einvernehmlicher Festlegung gilt sonst mindestens 10 Tage (siehe § 8‑§ 9). |\n| **Allgemein zugängliche Ausschreibung** (alle Interessierten) | **35 Tage**, gerechnet ab dem Tag nach Absendung der Auftragsbekanntmachung | – Bei elektronischer Übermittlung kann die Frist um 5 Tage verkürzt werden. <br>– Für dringende Fälle darf die Frist mindestens 15 Tage betragen (nicht unterschreiten). |\n| **Dringliche bzw. besondere Umstände** | Min. **10 Tage**, gerechnet ab dem Tag nach Absendung der Aufforderung zur Angebotsabgabe (wenn keine einvernehmliche Festlegung) | – In dringenden Fällen darf die Frist 10 Tage nicht unterschreiten; in § 8‑§ 9 wird die Frist auf 15 Tage festgelegt. |\n\n> **Bemerkungen**  \n> * Alle Bieter erhalten gleiche Fristen (vgl. § 13 Abs. 2).  \n> * Fristverlängerungen sind nur zulässig, wenn sie in den Vergabeunterlagen genannt und keine Aufforderung zur Angebotsabgabe während der verlängerten Periode gesendet wurde.\n\n---\n\n### Fristen für den Zuschlag\n\nIm bereitgestellten Kontext wird **nicht** konkret erwähnt, wie lange nach Ablauf der Angebotsfrist die Vergabe bzw. der Zuschlag erfolgen muss.  Das Dokument enthält lediglich Angaben zu Teilnahme‑ und Angebotsfristen sowie zu möglichen Verlängerungen. Daher lässt sich aus diesen Texten keine feste Regelung für einen Zuschlagszeitraum ableiten.\n\n---\n\n**Kurzantwort:**  \nDie Ausschreibung gilt solange offen, bis die festgelegte Angebotsfrist (mindestens 30 / 35 Tage – je nach Verfahren) abläuft.  Für die Angebotsabgabe gelten Mindestfristen von 30 Tag(e) bei Teilnahmewettbewerb oder 35 Tag(e) für allgemein zugängliche Ausschreibungen; bei fehlender einvernehmlicher Festlegung kann sie auch nur 10 Tage betragen.  Ein Zuschlag muss im vorliegenden Dokument nicht innerhalb einer spezifischen Frist erfolgen – diese Information fehlt.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.02732,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber kann die\nZahl geeigneter Bewerber, die zur Angebotsabgabe aufgefordert werden, gemäß § 51 begrenzen.\n(5) Die Angebotsfrist beträgt mindestens 30 Tage, gerechnet ab dem Tag nach der Absendung der Aufforderung\nzur Angebotsabgabe.\n(6) Mit Ausnahme oberster Bundesbehörden ka"
+        },
+        {
+          "quelle": 2,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.02659,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber kann die\nZahl geeigneter Bewerber, die zur Angebotsabgabe aufgefordert werden, gemäß § 51 begrenzen.\n(5) Die Angebotsfrist beträgt mindestens 30 Tage, gerechnet ab dem Tag nach der Absendung der Aufforderung\nzur Angebotsabgabe.\n(6) Mit Ausnahme oberster Bundesbehörden ka"
+        },
+        {
+          "quelle": 3,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.02625,
+          "relevanz": "hoch",
+          "abschnitt": "Eine solche Zustimmung darf nicht allgemein, sondern nur in Bezug auf die beabsichtigte Mitteilung bestimmter\nInformationen erteilt werden.\n(6) Beabsichtigt der Auftraggeber, nach geführten Verhandlungen diese abzuschließen, so unterrichtet er die Bieter und legt\neine einheitliche Frist für die Einr"
+        },
+        {
+          "quelle": 4,
+          "datei": "VgV.pdf",
+          "seite": 14,
+          "score": 0.02592,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber kann\ndie Zahl geeigneter Bewerber, die zur Angebotsabgabe aufgefordert werden, gemäß § 51 begrenzen.\n(5) Bei einem Verhandlungsverfahren ohne Teilnahmewettbewerb erfolgt keine öffentliche Aufforderung zur\nAbgabe von Teilnahmeanträgen, sondern unmittelbar eine Aufforderun"
+        },
+        {
+          "quelle": 5,
+          "datei": "VgV.pdf",
+          "seite": 17,
+          "score": 0.02355,
+          "relevanz": "hoch",
+          "abschnitt": "sechs Tage vor Ablauf der Angebotsfrist zur Verfügung gestellt werden; in den Fällen des § 15 Absatz 3, § 16 Absatz 7 oder § 17 Absatz 8 beträgt dieser Zeitraum vier Tage, oder 2. wenn der öffentliche Auftraggeber wesentliche Änderungen an den Vergabeunterlagen vornimmt."
+        },
+        {
+          "quelle": 6,
+          "datei": "VgV.pdf",
+          "seite": 20,
+          "score": 0.02341,
+          "relevanz": "hoch",
+          "abschnitt": "Ein Service des Bundesministeriums der Justiz sowie des Bundesamts für\nJustiz ‒ www.gesetze-im-internet.de\n- Seite 20 von 45 -Frist verlängern, sofern während der verlängerten Frist keine Aufforderung zur Angebotsabgabe versandt wird.\nDie Fristverlängerung ist in den Vergabeunterlagen anzugeben."
+        },
+        {
+          "quelle": 7,
+          "datei": "VgV.pdf",
+          "seite": 16,
+          "score": 0.0231,
+          "relevanz": "hoch",
+          "abschnitt": "Mit dem Teilnahmeantrag übermitteln die Unternehmen die vom öffentlichen\nAuftraggeber geforderten Informationen für die Prüfung ihrer Eignung.\n(3) Die Frist für den Eingang der Teilnahmeanträge beträgt mindestens 30 Tage, gerechnet ab dem Tag nach der\nAbsendung der Auftragsbekanntmachung.\n(4) Nur di"
+        },
+        {
+          "quelle": 8,
+          "datei": "VgV.pdf",
+          "seite": 14,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(8) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n6 unmöglich mach"
+        },
+        {
+          "quelle": 9,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.02216,
+          "relevanz": "hoch",
+          "abschnitt": "Bei der Festlegung der Fristen sind\ninsbesondere die Komplexität der Leistung, die beizubringenden Erklärungen und Nachweise (Unterlagen), die Zeit für die\nAusarbeitung der Teilnahmeanträge und Angebote, die Zeit für die Auswertung der Teilnahmeanträge und Angebote, die\ngewählten Kommunikationsmitte"
+        },
+        {
+          "quelle": 10,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.02205,
+          "relevanz": "hoch",
+          "abschnitt": "Jedes interessierte Unternehmen kann ein Angebot\nabgeben.\n(2) Die Frist für den Eingang der Angebote (Angebotsfrist) beträgt mindestens 35 Tage, gerechnet ab dem Tag\nnach der Absendung der Auftragsbekanntmachung.\n(3) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Fri"
+        },
+        {
+          "quelle": 11,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 12,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.02168,
+          "relevanz": "hoch",
+          "abschnitt": "Bei der Festlegung der Fristen sind\ninsbesondere die Komplexität der Leistung, die beizubringenden Erklärungen und Nachweise (Unterlagen), die Zeit für die\nAusarbeitung der Teilnahmeanträge und Angebote, die Zeit für die Auswertung der Teilnahmeanträge und Angebote, die\ngewählten Kommunikationsmitte"
+        },
+        {
+          "quelle": 13,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 14,
+          "datei": "VgV.pdf",
+          "seite": 19,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Sobald die Aufforderung zur Angebotsabgabe für die\nerste einzelne Auftragsvergabe im Rahmen eines dynamischen Beschaffungssystems abgesandt worden ist,\ngelten keine weiteren Fristen für den Eingang der Teilnahmeanträge.\n(3) Der öffentliche Auftraggeber bewertet den Antrag eines Unternehmens auf Teil"
+        },
+        {
+          "quelle": 15,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Eine solche Zustimmung darf nicht allgemein, sondern nur in Bezug auf die beabsichtigte Mitteilung bestimmter\nInformationen erteilt werden.\n(6) Beabsichtigt der Auftraggeber, nach geführten Verhandlungen diese abzuschließen, so unterrichtet er die Bieter und legt\neine einheitliche Frist für die Einr"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173142"
+    },
+    {
+      "query": "Als wissenschaftlich Mitarbeitende möchte ich erfahren, ob Angebote selbst eingeholt werden dürfen oder ob dies durch die Beschaffungsstelle erfolgt.",
+      "answer": "**Worauf die Dokumente hinweisen**\n\n| Situation | Handlungsanweisung aus den Unterlagen |\n|-----------|----------------------------------------|\n| **Reguläre Beschaffung im internen Dienstverhältnis** | Nach Zustimmung der zuständigen zentralen Beschaffungsstelle und des betroffenen Ministeriums erfolgt die Beschaffung durch diese zentrale Stelle. Der Bedarfsträger (z. B. wissenschaftliche Mitarbeitende) reicht den Bedarf zur Genehmigung ein, aber die Angebote werden nicht selbst eingeholt – sie werden von der Beschaffungsstelle vergeben. |\n| **Ad‑hoc‑Beschaffung wegen Dringlichkeit** | Wenn aus Dringlichkeitsgründen die Durchführung eines Vergabeverfahrens durch die zentrale Beschaffungsstelle nicht möglich ist, formuliert der Bedarfsträger den Bedarf gegenüber der zentralen Beschaffungsstelle. Die eigentliche Vergabe kann dort dann noch erfolgen – es bleibt bei der Beschaffung über die zentrale Stelle, solange diese das Verfahren durchführen kann. |\n| **Keine Möglichkeit der zentralen Beschaffungsstelle im festgelegten Zeitraum** | Wenn die zentrale Beschaffungsstelle den Bedarf nicht innerhalb des abgestimmten Zeitrahmens decken kann, *kann* die Beschaffung durch die Bedarfsträger erfolgen. In diesem Fall sind die wissenschaftlichen Mitarbeitenden berechtigt, selbst Angebote einzuholen und das Verfahren zu führen – vorausgesetzt, es liegt keine andere gesetzliche Vorgabe vor (z. B. öffentliche Ausschreibungspflichten). |\n\n**Kurz gesagt:**  \nUnter normalen Umständen werden die Angebote von der zentralen Beschaffungsstelle eingeholt. Nur wenn diese nicht innerhalb des vereinbarten Zeitrahmens agieren kann – z. B. bei dringenden Sonderbedarfen – dürfen die Bedarfsträger (z. B. wissenschaftliche Mitarbeitende) selbst die Beschaffung durchführen und die Angebote einholen.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.03045,
+          "relevanz": "hoch",
+          "abschnitt": "Soweit innerhalb der unmittelbaren Landesverwaltung ein Spezialbedarf von mehreren Behör-\nden und Einrichtungen angemeldet wird, kann die Beschaffung nach Zustimmung der zuständi-\ngen zentralen Beschaffungsstelle und des betroffenen federführenden Ministeriums durch die\nzentrale Beschaffungsstelle e"
+        },
+        {
+          "quelle": 2,
+          "datei": "GWB.pdf",
+          "seite": 97,
+          "score": 0.02996,
+          "relevanz": "hoch",
+          "abschnitt": "Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerben oder Liefer-, Bau- und Dienstleistungsaufträge mittels zentraler\nBeschaffungsstellen vergeben. Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerb"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.02955,
+          "relevanz": "hoch",
+          "abschnitt": "Sollte eine Beschaffung durch die\nzentrale Beschaffungsstelle in dem abgestimmten Zeitrahmen nicht möglich sein, kann die Be-\nschaffung durch die Bedarfsträger erfolgen.\n \n \nDie zentralen Beschaffungsstellen legen in gemeinsamer Beschlussfassung die grundsätzliche\nAufteilung der Beschaffungszuständi"
+        },
+        {
+          "quelle": 4,
+          "datei": "GWB.pdf",
+          "seite": 97,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Er kann insbesondere\nbeim Abschluss von Rahmenvereinbarungen eingesetzt werden und Abbildungen, Preisinformationen und\nProduktbeschreibungen umfassen.\n(4) Eine zentrale Beschaffungsstelle ist ein öffentlicher Auftraggeber, der für andere öffentliche Auftraggeber\ndauerhaft Liefer- und Dienstleistunge"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.02219,
+          "relevanz": "hoch",
+          "abschnitt": "Kann der Bedarf nicht durch ein Verfahren bei der zentralen Beschaffungsstelle ge-\ndeckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen.\n \n \n \n5.4 Verbundverfahren\n \n \nSofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder-\nEbene v"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.02194,
+          "relevanz": "hoch",
+          "abschnitt": "Kann der Bedarf nicht durch ein Verfahren bei der zentralen Beschaffungsstelle ge-\ndeckt werden, ist ein gesondertes Vergabeverfahren durch den Bedarfsträger durchzuführen.\n \n \n \n5.4 Verbundverfahren\n \n \nSofern Liefer- und Dienstleistungen im Rahmen von Beschaffungsverfahren auf Bund-Länder-\nEbene v"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "Sollte eine Beschaffung durch die\nzentrale Beschaffungsstelle in dem abgestimmten Zeitrahmen nicht möglich sein, kann die Be-\nschaffung durch die Bedarfsträger erfolgen.\n \n \nDie zentralen Beschaffungsstellen legen in gemeinsamer Beschlussfassung die grundsätzliche\nAufteilung der Beschaffungszuständi"
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "Die unter den Nummern 5.2  bis 5.5 geregelten Ausnah-\nmetatbestände bleiben unberührt.\n \n \n \n4 Aufgaben, Zuständigkeit und Finanzierung der zentralen Beschaffungsstellen\n \n \n \n4.1 Aufgaben und Zuständigkeit\n \n \nDie zentralen Beschaffungsstellen sind Servicestellen für die Bedarfsträger und unterstüt"
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 97,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "Er kann insbesondere\nbeim Abschluss von Rahmenvereinbarungen eingesetzt werden und Abbildungen, Preisinformationen und\nProduktbeschreibungen umfassen.\n(4) Eine zentrale Beschaffungsstelle ist ein öffentlicher Auftraggeber, der für andere öffentliche Auftraggeber\ndauerhaft Liefer- und Dienstleistunge"
+        },
+        {
+          "quelle": 10,
+          "datei": "VgV.pdf",
+          "seite": 21,
+          "score": 0.01885,
+          "relevanz": "hoch",
+          "abschnitt": "um Angebote zu erstellen, die den Anforderungen des zu vergebenden Einzelauftrags entsprechen; dieses Verfahren ist in der Auftragsbekanntmachung oder den Vergabeunterlagen für den Abschluss einer Rahmenvereinbarung anzukündigen; der Bieter kann diese Methode der Datenerhebung ablehnen. (4) Hat der "
+        },
+        {
+          "quelle": 11,
+          "datei": "VgV.pdf",
+          "seite": 14,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(8) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n6 unmöglich mach"
+        },
+        {
+          "quelle": 12,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 13,
+          "datei": "VgV.pdf",
+          "seite": 13,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "Erfolgt keine einvernehmliche\nFestlegung der Angebotsfrist, beträgt diese mindestens zehn Tage, gerechnet ab dem Tag nach der Absendung\nder Aufforderung zur Angebotsabgabe.\n(7) Für den Fall, dass eine hinreichend begründete Dringlichkeit die Einhaltung der Angebotsfrist gemäß Absatz\n5 unmöglich mach"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.01707,
+          "relevanz": "hoch",
+          "abschnitt": "Sie sind\nverantwortlich für die Durchführung der Vergabeverfahren, den Abschluss zentraler Liefer- oder\nDienstleistungsverträge, sowie das Vertragsmanagement, soweit die Nummern 5.2  bis 5.5 kei-\nne Anwendung finden. Sie sind\nverantwortlich für die Durchführung der Vergabeverfahren, den Abschluss ze"
+        },
+        {
+          "quelle": 15,
+          "datei": "VgV.pdf",
+          "seite": 22,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "Dies gilt nicht für die Vergabe von\nAufträgen, die im Rahmen einer freiberuflichen Tätigkeit erbracht oder im Wettbewerb mit freiberuflichen Tätigen\nangeboten werden und deren Gegenstand eine Aufgabe ist, deren Lösung nicht vorab eindeutig und erschöpfend\nbeschrieben werden kann.\n§ 30 Aufteilung nac"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173144"
+    },
+    {
+      "query": "  Als Projektleiter*in oder Mitarbeitender möchte ich verstehen, was ein Vergabeverfahren bzw. eine Beschaffung im Kontext der Vergaberegelungen bedeutet.",
+      "answer": "**Vergabeverfahren**\n\nEin Vergabeverfahren ist der *formal geregelte Ablauf zur Vergabe* eines öffentlichen Auftrags.  \nIm vorliegenden Text wird darauf hingewiesen, dass die verschiedenen Verfahrensteile in § 8–14 der Verwaltungsvorschrift (VV ÖA RLP) definiert sind und die folgenden Verfahrensarten ausdrücklich genannt werden:\n\n| Verfahrensart | Kurzbeschreibung |\n|---------------|------------------|\n| Öffentliche Ausschreibung | Allgemeine öffentliche Bekanntmachung, ohne Einschränkung der Teilnahme. |\n| Beschränkte Ausschreibung mit Teilnahmewettbewerb | Eingeschränktes Einladen von Bewerbern, jedoch Teilnahme nach Teilnahmebedingungen möglich. |\n| Beschränkte Ausschreibung ohne Teilnahmewettbewerb | Eingeschränktes Einladen von Bewerbern; keine Teilnahmeprüfung nötig. |\n| Verhandlungsvergabe mit oder ohne Teilnahmewettbewerb | Direkte Verhandlungen mit einer oder mehreren Interessenten, ggf. nach Erstangeboten. |\n| Direktauftrag | Vergabe ohne Ausschreibung an einen einzelnen Anbieter, wenn die Voraussetzungen des GWB bzw. der VgV erfüllt sind. |\n\nDiese Arten stellen die möglichen Wege dar, wie ein öffentlicher Auftragnehmer rechtlich korrekt ausgewählt und beauftragt wird.\n\n---\n\n**Beschaffung**\n\nBeschaffung bezeichnet den **gesamten Prozess**, der weit über das Vergabeverfahren hinausgeht.  \nAus dem Text lässt sich folgendes definieren:\n\n* **Bedarfsermittlung** – die Ausgangsfrage, welche Leistungen oder Güter benötigt werden.  \n* **Bündelung und Standardisierung** – Zusammenfassen mehrerer Bedarfe bzw. Festlegen einheitlicher Anforderungen, um Effizienz zu erzielen.  \n* **Durchführung des Vergabeverfahrens** – Der eigentliche Ausschreibungs‑/Vergabeprozess (vgl. oben), der von den zentralen Beschaffungsstellen organisiert wird.  \n* **Bereitstellung von Leistungen** – Die zentrale Beschaffung sorgt dafür, dass die beschafften Güter oder Dienstleistungen tatsächlich an die Bedarfsträger ausgeliefert bzw. erbracht werden.  \n* **Finanzierung und Koordination** – Regelungen zur Kostendeckung (z. B. § 4.2) sowie Abstimmung der Zuständigkeiten für verschiedene Warengruppen durch zentrale Beschaffungsstellen.  \n\nZusätzlich wird erwähnt, dass in Ausnahmefällen, wenn die zentrale Beschaffung nicht innerhalb des vorgesehenen Zeitrahmens agieren kann, die **Bedarfsträger** selbst beschaffen dürfen („Solle eine Beschaffung durch die zentrale Beschaffungsstelle … nicht möglich sein, kann die Beschaffung durch die Bedarfsträger erfolgen.“ – aus § 2.3).  \n\nInsgesamt umfasst also „Beschaffung“ alle Phasen von der Bedarfsdefinition bis zur endgültigen Lieferung oder Leistungserbringung, während ein Vergabeverfahren nur den formal geregelten Auswahl- und Beauftragungsprozess darstellt.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.03089,
+          "relevanz": "hoch",
+          "abschnitt": "Sollte eine Beschaffung durch die\nzentrale Beschaffungsstelle in dem abgestimmten Zeitrahmen nicht möglich sein, kann die Be-\nschaffung durch die Bedarfsträger erfolgen.\n \n \nDie zentralen Beschaffungsstellen legen in gemeinsamer Beschlussfassung die grundsätzliche\nAufteilung der Beschaffungszuständi"
+        },
+        {
+          "quelle": 2,
+          "datei": "UVgO.pdf",
+          "seite": 2,
+          "score": 0.02776,
+          "relevanz": "hoch",
+          "abschnitt": "– Allgemeine Bestimmungen § 1 Gegenstand und Anwendungsbereich § 2 Grundsätze der Vergabe § 3 Wahrung der Vertraulichkeit § 4 Vermeidung von Interessenkonflikten § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens § 6 Dokumentation Unterabschnitt 2 – Kommunikation § 7 Grundsätze der Kommunikati"
+        },
+        {
+          "quelle": 3,
+          "datei": "VgV.pdf",
+          "seite": 6,
+          "score": 0.02687,
+          "relevanz": "hoch",
+          "abschnitt": "Die Möglichkeiten zur Nutzung von zentralen Beschaffungsstellen bleiben\nunberührt.\n(2) Soweit das Vergabeverfahren im Namen und im Auftrag aller öffentlichen Auftraggeber insgesamt gemeinsam\ndurchgeführt wird, sind diese für die Einhaltung der Bestimmungen über das Vergabeverfahren gemeinsam\nverantw"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 5,
+          "score": 0.02307,
+          "relevanz": "hoch",
+          "abschnitt": "I Nr. 167), sind oder\n \n \n \n–kommunale Gebietskörperschaften und deren Einrichtungen, die öffentliche Auftraggeber\nnach § 99 GWB sind, die mit einer der zentralen Beschaffungsstellen des Landes eine ent-\nsprechende Vereinbarung geschlossen haben.\n \n \n \n \n2.3 Zentrale Beschaffung\n \n \nDie zentrale Bes"
+        },
+        {
+          "quelle": 5,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Nicht gestattet ist es\naber, unter Berufung auf Absatz 1 nur ein Unternehmen aufzufordern. D"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw.pdf",
+          "seite": 28,
+          "score": 0.02222,
+          "relevanz": "hoch",
+          "abschnitt": "In allen Phasen einer Beschaffung, von der Definition der Leistung über die Festlegung von\nEignungs- und Zuschlagskriterien bis hin zur Vorgabe von Ausführungsbedingungen kön-\nnen qualitative, soziale, umweltbezogene oder innovative Aspekte einbezogen werden.\n \n \nBei der Erstellung der Leistungsbesc"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 3,
+          "score": 0.02211,
+          "relevanz": "hoch",
+          "abschnitt": "Sie sind in den Fällen von Bedeutung, wenn mehre re öffentliche Auftraggeber \nmit voneinander abweichenden Vergaberechtsregimen eine n öffentlichen Auftrag \ngemeinsam ausschreiben. b) Vergabeverfahren, Auftragswertgrenzen, Sonderrege lungen (VV Nr. 4, 5) \n Die Auftragswertgrenzen für nichtöffentlic"
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffAw.pdf",
+          "seite": 22,
+          "score": 0.02059,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 97,
+          "score": 0.02044,
+          "relevanz": "hoch",
+          "abschnitt": "Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerben oder Liefer-, Bau- und Dienstleistungsaufträge mittels zentraler\nBeschaffungsstellen vergeben. Öffentliche Auftraggeber können Liefer- und Dienstleistungen\nvon zentralen Beschaffungsstellen erwerb"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 7,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "Sollte eine Beschaffung durch die\nzentrale Beschaffungsstelle in dem abgestimmten Zeitrahmen nicht möglich sein, kann die Be-\nschaffung durch die Bedarfsträger erfolgen.\n \n \nDie zentralen Beschaffungsstellen legen in gemeinsamer Beschlussfassung die grundsätzliche\nAufteilung der Beschaffungszuständi"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 10,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "Soweit innerhalb der unmittelbaren Landesverwaltung ein Spezialbedarf von mehreren Behör-\nden und Einrichtungen angemeldet wird, kann die Beschaffung nach Zustimmung der zuständi-\ngen zentralen Beschaffungsstelle und des betroffenen federführenden Ministeriums durch die\nzentrale Beschaffungsstelle e"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 13,
+          "datei": "UVgO.pdf",
+          "seite": 29,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "Unterabschnitt 2 – Besondere Methoden und Instrumente in Vergabeverfahren\nZu § 15 Rahmenvereinbarungen\nAbsatz 1 orientiert sich an der Definition des Begriffs der Rahmenvereinbarung in § 103 Absatz 5 GWB.\nAbsatz 2 entspricht wortgleich § 21 Absatz 1 VgV.\nAbsatz 3 entspricht im Wesentlichen § 21 Absa"
+        },
+        {
+          "quelle": 14,
+          "datei": "GWB.pdf",
+          "seite": 93,
+          "score": 0.01795,
+          "relevanz": "hoch",
+          "abschnitt": "der Leistungsbeschreibung, der Bekanntmachung, der Verfahrensarten und des Ablaufs des\nVergabeverfahrens, der Nebenangebote, der Vergabe von Unteraufträgen sowie der Vergabe öffentlicher\nAufträge und Konzessionen, die soziale und andere besondere Dienstleistungen betreffen,\n \n3.   der besonderen Met"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 4,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "  Seite 4   \n4  Aufgenommen wurde die Möglichkeit einer verlängerten  Bindefrist (§ 10 Abs. 4 \nVOB/A) bei wirtschaftlich bedeutsamen Bauvergaben im S inne der Landesverord- \nnung über die Nachprüfung von Vergabeverfahren durch Vergabeprüfstellen. e) Strategische Beschaffung (VV Nr. 8 bis 12"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173145"
+    },
+    {
+      "query": "Als Projektleiter*in einer rheinland-pfälzischen Hochschule möchte ich wissen, warum Vergabeverfahren durchgeführt werden müssen und warum eine direkte Vergabe an einen Wunschlieferanten nicht zulässig ist.",
+      "answer": "**Warum ein Vergabeverfahren geführt werden muss**\n\n1. **Rechtsgrundlage und Pflicht zur Öffnung**  \n   § 8 der Vorgaben zum Vergabeverfahren legt explizit fest, dass die Vergabe von öffentlichen Aufträgen ausschließlich durch eines der vier vorgesehenen Verfahren erfolgen darf:  \n   * Öffentliche Ausschreibung,  \n   * Beschränkte Ausschreibung mit Teilnahmewettbewerb,  \n   * Beschränkte Ausschreibung ohne Teilnahmewettbewerb und  \n   * Verhandlungsvergabe (mit oder ohne Teilnahmewettbewerb).  \n\n   Die Vorgaben betonen, dass die öffentliche Ausschreibung sowie die beschränkte Ausschreibung mit Teilnahmewettbewerb „nach seiner Wahl zur Verfügung stehen“ (§ 8 Abs. 2). Damit ist ein zwangsläufiger Rahmen definiert: jede Vergabe muss sich innerhalb dieser Formalitäten bewegen.\n\n2. **Grundsatz der Wettbewerbsgarantie**  \n   In den Unterabschnitten zu § 7 und § 9–13 wird wiederholt betont, dass „der Vergabe regelmäßig eine öffentliche Ausschreibung oder eine beschränkte Ausschreibung mit Teilnahmewettbewerb vorausgeht“. Dies bedeutet konkret, dass das Verfahren mindestens einen Wettbewerb beinhaltet – sonst würde die Vergabe nicht als rechtlich zulässig gelten.\n\n3. **Dokumentationspflichten und Transparenz**  \n   Die Unterabschnitte zu § 6 (Dokumentation) verlangen die Aufzeichnung von Gründen für etwaige Abweichungen von der Beschränkten Ausschreibung ohne Teilnahmewettbewerb, Gründe für den Verzicht auf Teil- bzw. Fachlose sowie die Namen aller beteiligten Bieter und deren Ablehnungsgründe (§ 7 Abs. 1). Diese Vorgaben sind ein Hinweis darauf, dass das Verfahren nach außen hin nachvollziehbar sein muss – ein wesentliches Ziel der Vergaberechtsprechung.\n\n4. **Klarstellung zur Beschaffung**  \n   Die Abschnittstitel „Beschaffungsvorgänge der rheinland‑pfälzischen Hochschulen“ verdeutlichen, dass Beschaffung den gesamten Prozess umfasst (Bedarfsfestlegung, Leistungsbeschaffung, Kostenübernahme etc.). Das Vergabeverfahren ist lediglich die formal geregelte Phase innerhalb dieses Prozesses – damit wird die rechtliche Struktur festgelegt und die Einhaltung der gesetzlichen Vorgaben sichergestellt.\n\n---\n\n**Warum eine direkte Vergabe an einen Wunschlieferanten nicht zulässig ist**\n\n1. **Keine Ausnahmeregelung im vorliegenden Kontext**  \n   Der Text macht deutlich, dass „Bei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf einer Ausschreibung nur ein Unternehmen gemeldet hat“, die Preisüberwachungsstelle eingeschaltet werden kann (§ 7). Das deutet darauf hin, dass in solchen Fällen das Verfahren nicht als reine Direktvergabe gilt; vielmehr bleibt es innerhalb eines regulierten Rahmens. Eine unbefugte direkte Vergabe an einen Wunschlieferanten wird damit nicht ausdrücklich unterstützt.\n\n2. **Verpflichtung zur Durchführung einer zulässigen Ausschreibung**  \n   In § 8 Abs. 1 steht, dass die Vergabe von öffentlichen Aufträgen ausschließlich durch die aufgeführten Verfahren erfolgen muss. Es gibt keine Hinweisstelle im Kontext, die eine „freie Wahl des Auftraggebers“ für eine direkte Vergabe erlaubt; die einzige Ausnahme, die in den Texten auftaucht, ist der Direktauftrag als eigenständiges Verfahren (§ 14). Der Direktauftrag kann jedoch nur verwendet werden, wenn alle gesetzlichen Voraussetzungen erfüllt sind – was bei einer willkürlichen Wahl eines Wunschlieferanten nicht gegeben ist.\n\n3. **Dokumentations- und Nachvollziehbarkeitsanforderung**  \n   Die Abschnitte zu § 6 betonen die Notwendigkeit von Begründungen für Abweichungen, Namen der Bieter usw. Bei einer direkten Vergabe an einen Wunschlieferanten wären diese Informationen nicht vorhanden bzw. würden sie gegen die Pflicht zur Dokumentation verstoßen.\n\n4. **Strategische Beschaffung und Vorbildfunktion**  \n   Der Abschnitt „8 Strategische Beschaffung“ (Unterabschnitt 1) betont, dass das Land und seine Untergliederungen im Rahmen von Beschaffungen eine Vorbildfunktion übernehmen müssen („In Wahrnehmung seiner verfassungsrechtlichen Aufgabe… mit gutem Beispiel vorangehen“) (§ 8 Allgemeine Grundsätze). Eine unrechtmäßige direkte Vergabe würde diese Prinzipien verletzen.\n\n---\n\n**Kurz gesagt:**  \nEin Vergabeverfahren ist zwingend erforderlich, weil die gesetzlichen Vorgaben (§ 8 und damit verbundene Unterabschnitte) festlegen, dass jede öffentliche Vergabe mindestens einen Wettbewerb (öffentliche Ausschreibung oder beschränkte Ausschreibung mit Teilnahmewettbewerb) beinhalten muss. Eine direkte Vergabe an einen Wunschlieferanten ist nicht zulässig, weil sie weder im Rahmen eines erlaubten Verfahrens steht noch die Transparenz‑ und Dokumentationspflichten erfüllt – es sei denn, es handelt sich ausdrücklich um einen Direktauftrag nach den gesetzlichen Voraussetzungen, was im vorliegenden Kontext nicht gegeben ist.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 4,
+          "score": 0.03226,
+          "relevanz": "hoch",
+          "abschnitt": "I S. 2730) im Wege der Organleihe\ndurchgeführt werden, und\n \n \n \n–Beschaffungsvorgänge der rheinland-pfälzischen Hochschulen. I S. 2730) im Wege der Organleihe\ndurchgeführt werden, und\n \n \n \n–Beschaffungsvorgänge der rheinland-pfälzischen Hochschulen. Den Hochschulen wird insbe-\nsondere für den Verw"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 4,
+          "score": 0.02616,
+          "relevanz": "hoch",
+          "abschnitt": "I S. 2730) im Wege der Organleihe\ndurchgeführt werden, und\n \n \n \n–Beschaffungsvorgänge der rheinland-pfälzischen Hochschulen. Den Hochschulen wird insbe-\nsondere für den Verwaltungsbedarf empfohlen, mit den zentralen Beschaffungsstellen eine\nNutzung des KdL-rlp zu vereinbaren.\n \n \n \n \n2 Begriffe\n \n "
+        },
+        {
+          "quelle": 3,
+          "datei": "UVgO.pdf",
+          "seite": 26,
+          "score": 0.02527,
+          "relevanz": "hoch",
+          "abschnitt": "Abschnitt 2 – Vergabeverfahren\nUnterabschnitt 1 – Verfahrensarten\nZu § 8 Wahl der Verfahrensart\n§ 8 regelt insbesondere die Zulassungsvoraussetzungen für die Wahl der einzelnen Verfahrensarten:\nÖffentliche Ausschreibung,\nBeschränkte Ausschreibung mit Teilnahmewettbewerb,\nBeschränkte Ausschreibung oh"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 22,
+          "score": 0.02187,
+          "relevanz": "hoch",
+          "abschnitt": "des\nKapitals oder der Stimmanteile im Eigentum eines oder mehrerer Unternehmen befinden,\ndie dieser KMU-Definition nicht entsprechen.\n \n \n \n7.2 Vergabeverfahren und Bedingungen\n \n \n \n7.2.1 Teilnahme am Wettbewerb\n \n \nDie Teilnahme kleiner und mittlerer Unternehmen am Wettbewerb soll insbesondere da-"
+        },
+        {
+          "quelle": 5,
+          "datei": "VgV.pdf",
+          "seite": 35,
+          "score": 0.02121,
+          "relevanz": "hoch",
+          "abschnitt": "Der öffentliche Auftraggeber gibt im Vergabevermerk die\nGründe an, warum er die Einreichung der Angebote mithilfe anderer als elektronischer Mittel für erforderlich hält.\n(5) Auf dem Postweg oder direkt übermittelte Interessensbekundungen, Interessensbestätigungen,\nTeilnahmeanträge und Angebote sind"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02059,
+          "relevanz": "hoch",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 7,
+          "datei": "UVgO.pdf",
+          "seite": 25,
+          "score": 0.02,
+          "relevanz": "hoch",
+          "abschnitt": "Die Dokumentation sollte aber mindestens folgende Angaben enthalten:\ndie Gründe für die Anwendung der Beschränkten Ausschreibung ohne Teilnahmewettbewerb und der Verhandlungsvergabe,\ndie Gründe für den Verzicht auf die Vergabe von Teil- und Fachlosen,\ndie Gründe, warum der Gegenstand des Auftrags di"
+        },
+        {
+          "quelle": 8,
+          "datei": "UVgO.pdf",
+          "seite": 6,
+          "score": 0.01985,
+          "relevanz": "hoch",
+          "abschnitt": "1.\n2.\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10.\n11.Unterabschnitt 1\nVerfahrensarten\n§ 8\nWahl der Verfahrensart\n(1) Die Vergabe von öffentlichen Aufträgen erfolgt durch Öffentliche Ausschreibung, durch Beschränkte Ausschreibung mit\noder ohne Teilnahmewettbewerb und durch Verhandlungsvergabe mit oder ohne Teilna"
+        },
+        {
+          "quelle": 9,
+          "datei": "UVgO.pdf",
+          "seite": 25,
+          "score": 0.01944,
+          "relevanz": "hoch",
+          "abschnitt": "warum in diesen Fällen\nNachweise verlangt werden müssen, die über die Eigenerklärungen hinausgehen,\ndie Namen der berücksichtigten Bewerber oder Bieter und die Gründe für ihre Auswahl,\ndie Namen der nicht berücksichtigten Bewerber oder Bieter und die Gründe für ihre Ablehnung,\nden Namen des erfolgre"
+        },
+        {
+          "quelle": 10,
+          "datei": "UVgO.pdf",
+          "seite": 2,
+          "score": 0.01892,
+          "relevanz": "hoch",
+          "abschnitt": "– Allgemeine Bestimmungen § 1 Gegenstand und Anwendungsbereich § 2 Grundsätze der Vergabe § 3 Wahrung der Vertraulichkeit § 4 Vermeidung von Interessenkonflikten § 5 Mitwirkung an der Vorbereitung des Vergabeverfahrens § 6 Dokumentation Unterabschnitt 2 – Kommunikation § 7 Grundsätze der Kommunikati"
+        },
+        {
+          "quelle": 11,
+          "datei": "GWB.pdf",
+          "seite": 123,
+          "score": 0.01842,
+          "relevanz": "hoch",
+          "abschnitt": "2 MessbG +++)\n§ 183  Korrekturmechanismus der Kommission\n(1) Erhält die Bundesregierung im Laufe eines Vergabeverfahrens vor Abschluss des Vertrags eine Mitteilung\nder Europäischen Kommission, dass diese der Auffassung ist, es liege ein schwerer Verstoß gegen das Recht der\nEuropäischen Union zur Ver"
+        },
+        {
+          "quelle": 12,
+          "datei": "VgV.pdf",
+          "seite": 6,
+          "score": 0.0175,
+          "relevanz": "hoch",
+          "abschnitt": "Die Möglichkeiten zur Nutzung von zentralen Beschaffungsstellen bleiben\nunberührt.\n(2) Soweit das Vergabeverfahren im Namen und im Auftrag aller öffentlichen Auftraggeber insgesamt gemeinsam\ndurchgeführt wird, sind diese für die Einhaltung der Bestimmungen über das Vergabeverfahren gemeinsam\nverantw"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffAw.pdf",
+          "seite": 41,
+          "score": 0.01667,
+          "relevanz": "hoch",
+          "abschnitt": "mit Unterstützung des rheinland-pfälzischen Wirtschaftsministeriums die Auftragsbera-\ntungsstelle Rheinland-Pfalz eingerichtet.\n \n \nAufgabe der Auftragsberatungsstelle Rheinland-Pfalz ist es, rheinland-pfälzische Unterneh-\nmen aus Industrie, Handel, Handwerk und Dienstleistung\n \n \na)über das öffentl"
+        },
+        {
+          "quelle": 14,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.01628,
+          "relevanz": "hoch",
+          "abschnitt": "Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Dies\nbedeutet, dass in begründeten Ausnahmefällen auch nur zwei Unternehmen aufgefordert werden dürfen. Nicht gestattet ist es\naber, unter Berufung auf Absatz 1 nur ein Unternehmen aufzufordern. D"
+        },
+        {
+          "quelle": 15,
+          "datei": "GWB.pdf",
+          "seite": 93,
+          "score": 0.01591,
+          "relevanz": "hoch",
+          "abschnitt": "der Leistungsbeschreibung, der Bekanntmachung, der Verfahrensarten und des Ablaufs des\nVergabeverfahrens, der Nebenangebote, der Vergabe von Unteraufträgen sowie der Vergabe öffentlicher\nAufträge und Konzessionen, die soziale und andere besondere Dienstleistungen betreffen,\n \n3.   der besonderen Met"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:38:35.173146"
     }
   ]
 }

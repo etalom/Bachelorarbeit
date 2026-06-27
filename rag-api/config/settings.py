@@ -16,14 +16,14 @@ OLLAMA_URL = os.getenv("OLLAMA_URL", "http://ollama:11434/api/generate")
 EMBEDDING_URL = os.getenv("EMBEDDING_URL", "http://ollama:11434/api/embeddings")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "bge-m3:latest")
 
-AVAILABLE_MODELS = ["gpt-oss:20b", "mistral:latest"]
+AVAILABLE_MODELS = ["gpt-oss:20b", "mistral:latest", "mistral:7b", "gemma3:4b"]
 DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "gpt-oss:20b")
 
 # ── Hybrid Search Gewichte ──
-HYBRID_BM25_W = float(os.getenv("HYBRID_BM25_W", "0.4"))
-HYBRID_VECTOR_W = float(os.getenv("HYBRID_VECTOR_W", "0.6"))
-RRF_K = int(os.getenv("RRF_K", "60"))
-TOP_K_RESULTS = int(os.getenv("TOP_K_RESULTS", "5"))
+HYBRID_BM25_W = float(os.getenv("HYBRID_BM25_W", "0.7"))
+HYBRID_VECTOR_W = float(os.getenv("HYBRID_VECTOR_W", "0.3"))
+RRF_K = int(os.getenv("RRF_K", "30"))
+TOP_K_RESULTS = int(os.getenv("TOP_K_RESULTS", "15"))
 
 # ── Token Limits pro Intent ──
 TOKEN_LIMITS = {

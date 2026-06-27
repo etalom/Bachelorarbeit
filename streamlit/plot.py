@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Richtige Werte
 labels = ["Correctness", "Completeness", "Faithfulness", "Clarity"]
-scores = [5.0, 4.67, 5.0, 5.0]
+scores = [4.75, 4.33, 4.33, 4.67]
 
 # Farben (wie dein Plot: blau + grün)
 colors = ["#3b8ec2", "#2ecc71", "#2ecc71", "#2ecc71"]
@@ -18,7 +18,7 @@ for bar in bars:
 
 plt.ylim(0, 5.5)
 plt.ylabel("Score (1–5)")
-plt.title("LLM-as-a-Judge Evaluation\n(Overall: 4.92/5)")
+plt.title("LLM-as-a-Judge Evaluation\n(Overall: 4.52/5)")
 
 plt.grid(axis='y', linestyle='--', alpha=0.6)
 plt.tight_layout()

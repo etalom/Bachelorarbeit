@@ -79,7 +79,7 @@ def ensure_index():
         return False
 
 
-def index_document(doc_id: str, content: str, filename: str, page: int) -> bool:
+def index_document(doc_id: str, content: str, filename: str, page: int = 0) -> bool:
     """Indexiere ein Dokument mit Embedding"""
     try:
         es = get_es()
@@ -108,13 +108,37 @@ def index_document(doc_id: str, content: str, filename: str, page: int) -> bool:
         return False
 
 
+QUERY_EXPANSIONS = {
+    "dauern": "Frist Dauer Zeitraum Tage Wochen Angebotsfrist",
+    "wie lange": "Frist Tage Dauer",
+    "dauer": "Frist Tage Wochen",
+    "betrag": "Wertgrenze Schwellenwert Preis Kosten",
+    "brutto": "Umsatzsteuer netto ohne",
+    "netto": "ohne Umsatzsteuer brutto",
+    "preis": "Kosten Wert Betrag Vergütung",
+    "angebot": "Angebotsfrist Angebotsabgabe Bieter",
+    "verfahren": "Ausschreibung Vergabe Verfahrensart",
+    "beschaffung": "Vergabe Beschaffungsstelle Einkauf",
+}
+
+def expand_query(query: str) -> str:
+    q = query.lower()
+    extra = set()
+    for word, expansion in QUERY_EXPANSIONS.items():
+        if word in q:
+            extra.update(expansion.split())
+    return " ".join(extra) if extra else ""
+
 def search_bm25(query: str, intent: str, size: int = 15) -> list[dict]:
-    """BM25-Suche (lexikalisch)"""
+    """BM25-Suche (lexikalisch) mit Query-Expansion"""
     boost_terms = INTENT_BOOST.get(intent, [])
+    expanded = expand_query(query)
+    expanded_query = (query + " " + expanded).strip()
+    
     should_clauses = [
         {
             "multi_match": {
-                "query": query,
+                "query": expanded_query,
                 "fields": ["text^2", "filename^3"],
                 "type": "best_fields",
                 "fuzziness": "AUTO",
@@ -135,7 +159,7 @@ def search_bm25(query: str, intent: str, size: int = 15) -> list[dict]:
                 "should": should_clauses,
                 "minimum_should_match": 1,
                 "must_not": [
-                    {"match_phrase": {"filename": "Rundschreiben"}}
+                    {"wildcard": {"filename": "*Rundschreiben*"}}
                 ],
             }
         },
@@ -173,7 +197,7 @@ def search_vector(query_embedding: list[float], size: int = 15) -> list[dict]:
             "filter": {
                 "bool": {
                     "must_not": [
-                        {"match_phrase": {"filename": "Rundschreiben"}}
+                        {"wildcard": {"filename": "*Rundschreiben*"}}
                     ]
                 }
             },
@@ -250,7 +274,6 @@ def reciprocal_rank_fusion(bm25_hits: list, vector_hits: list, top_n: int = TOP_
         combined_score = item["bm25_rrf"] + item["vec_rrf"]
         hit["_score"] = round(combined_score, 5)
         hit["_rrf_meta"] = {
-            "rrf_score": hit["_score"],
             "bm25_rank": item["bm25_rank"],
             "bm25_score": round(item["bm25_score"], 3) if item["bm25_score"] else None,
             "vec_rank": item["vec_rank"],
@@ -270,7 +293,7 @@ def search_hybrid(query: str, intent: str) -> tuple[list, float]:
     query_embedding = []
 
     with ThreadPoolExecutor(max_workers=2) as pool:
-        future_bm25 = pool.submit(search_bm25, query, intent, 15)
+        future_bm25 = pool.submit(search_bm25, query, intent, 25)
         future_emb = pool.submit(get_embedding, query)
 
         for future in as_completed([future_bm25, future_emb]):
@@ -279,7 +302,7 @@ def search_hybrid(query: str, intent: str) -> tuple[list, float]:
             elif future == future_emb:
                 query_embedding = future.result()
 
-    vector_hits = search_vector(query_embedding, size=15)
+    vector_hits = search_vector(query_embedding, size=25)
 
     if not bm25_hits and not vector_hits:
         logger.warning("⚠️ Keine Ergebnisse!")

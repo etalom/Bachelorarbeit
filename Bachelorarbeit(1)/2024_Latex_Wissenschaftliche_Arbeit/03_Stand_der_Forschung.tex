@@ -1,0 +1,92 @@
+\section{Stand der Forschung zu LLMs in domänenspezifischen Expertensystemen mit Fokus auf RAG und Retrieval-Methoden} 
+\label{sec:Stand der Forschung}
+\subsection{Aktuelle Ansätze mit LLMs in Expertensystemen}
+\begin{enumerate}
+    \item Domänenspezifische Anpassung: LLMs wie GPT-4, LLaMA oder spezialisierte Varianten (z.B. Lawyer LLaMA für Recht, Self-BioRAG für Medizin) werden zunehmend durch gezielte Integration von Fachwissen und Retrieval-Komponenten an spezifische Domänen angepasst. Dies geschieht meist durch Kombination von domänenspezifischem Training (z.B. Experten-Daten, Supervised Fine-Tuning) und Retrieval-Modulen, die relevante externe Wissensquellen einbinden \cite{Huang2023} \cite{Jeong2024Improving} \cite{Abirami2025Evaluating} \cite{Song2025Injecting}.
+    \item Retrieval-Augmented Generation (RAG): RAG ist der dominierende Ansatz, um Halluzinationen zu reduzieren, Aktualität zu gewährleisten und Quellenangaben zu ermöglichen. Hierbei wird das LLM mit einer externen Wissensbasis (Text, Knowledge Graph, Vektorstore) gekoppelt; relevante Dokumente werden zur Prompt ergänzt \cite{Barron2024Domain-Specific} \cite{Lu2024Empowering} \cite{DeBellis2024Integrating} \cite{Zhang2025A} \cite{Soman2023Biomedical}.
+    \cite{Jeong2024Improving} \cite{Abirami2025Evaluating}.
+    \item Ontologien \& Knowledge Graphs: Für komplexe Domänen werden zunehmend Ontologien und Knowledge Graphs als strukturierte Wissensquellen genutzt, um die Tiefe und Nachvollziehbarkeit der Antworten zu erhöhen \cite{Barron2024Domain-Specific} \cite{Zhang2025A} \cite{DeBellis2024Integrating} \cite{Soman2023Biomedical}.
+    \item Praxisbeispiele: Erfolgreiche Anwendungen finden sich u.a. in Medizin (Self-BioRAG), Recht (Lawyer LLaMA), Bildung (E-Learning-RAG), Finanzen (Multi-Retriever-RAG) und Industrie \cite{Huang2023} \cite{Barron2024Domain-Specific} \cite{Lu2024Empowering} 
+\end{enumerate}
+
+\subsection{Einsatz von RAG in der Praxis}
+\begin{enumerate}
+    \item Verbesserte Genauigkeit \& Faktentreue: RAG-basierte Systeme zeigen signifikante Verbesserungen bei Genauigkeit, Faktentreue und Nachvollziehbarkeit gegenüber reinen LLMs – z.B.+7\% bis +8\% Rouge/Accuracy im medizinischen Bereich  \cite{Jeong2024Improving} \cite{Liao2004} \cite{Murtiyoso2025A}.
+    \item Domänenspezifische Evaluierung: In der Praxis werden verschiedene Metriken eingesetzt: Accuracy, Recall@k, nDCG@k, Halluzinationsrate sowie Expertenbewertungen \cite{Elmitwalli2025Scalable} \cite{Iyer2025Careful}\cite{Wolk2025Evaluating}. Beispiel: Im Gesundheitswesen wurde Mixtral 8×7B im RAG-Setting signifikant besser bewertet als Llama 3.1 70B \cite{Elmitwalli2025Scalable}
+    \item Architekturvarianten: Neben klassischen Textretrievals kommen hybride Pipelines (BM25 + Dense Embeddings), graphbasierte RAG-Systeme sowie adaptive/hierarchische Retrievalstrategien zum Einsatz \cite{Barron2024Domain-Specific}\cite{Jeong2024Improving}\cite{Zhang2025A}\cite{Wolk2025Evaluating}
+    \item Praxisnahe Herausforderungen: Datenschutz (on-premise Deployment), Effizienz (Latenz/Kosten), Integration von Feedbackschleifen und multimodale Inputs sind wichtige Themenfelder \cite{Wolk2025Evaluating}
+\end{enumerate}
+
+
+
+\subsection{Vergleich bestehender Retrieval-Methoden((BM25, Dense, Hybrid))}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|p{3.3cm}|p{2.5cm}|p{2.7cm}|p{3.5cm}|p{2cm}|}
+\hline
+\textbf{Methode} & \textbf{Vorteile} & \textbf{Nachteile / Limitationen} & \textbf{Praxisrelevanz / Ergebnisse} & \textbf{Quellen} \\
+\hline
+
+Sparse/BM25 
+& Schnell, robust bei kleinen Korpora 
+& Schwächen bei Synonymie/Semantik 
+& Oft Baseline; manchmal besser als Dense 
+& \cite{Iyer2025Careful} \cite{Abirami2025Evaluating} \cite{Akarsu2026From} \cite{Mala2025Hybrid}\\
+\hline
+
+Dense/Vektor 
+& Semantische Suche möglich 
+& Teurer im Indexing/Retrieval 
+& Stärker bei komplexen Fragen 
+&\cite{Iyer2025Careful} \cite{Akarsu2026From} \cite{Abirami2025Evaluating}\\
+\hline
+
+Hybrid 
+& Kombiniert Stärken beider Ansätze 
+& Komplexere Architektur 
+& Beste Gesamtperformance; Recall@100 bis 0.997; Accuracy bis 83\% 
+& \cite{Abirami2025Evaluating} \cite{Iyer2025Careful} \cite{Abirami2025Evaluating}\\
+\hline
+
+Cross-Encoding/Reranking 
+& Höchste Präzision möglich 
+& Sehr hohe Kosten/Latenz 
+& Top-nDCG/Precision, aber teuer 
+& \cite{Iyer2025Careful}\\
+\hline
+
+Graph-basiert 
+& Multihop Reasoning, Kontexttiefe 
+& Aufbau/Integration aufwändig 
+& Vorteil bei komplexen Domänenfragen 
+& \cite{Zhang2025A} \cite{Barron2024Domain-Specific}\\
+\hline
+
+\end{tabular}
+\caption{Vergleich bestehender Retrieval-Methoden}
+\end{table}
+\textbf{Kernaussagen aus Studien:}
+\begin{enumerate}
+    \item Hybrid-Retrieval schlägt einzelne Methoden meist deutlich – z.B. +8\% bis +20\% Recall gegenüber Dense/Sparse allein; Cross-Encoding bringt weitere Präzisionsgewinne auf Kosten der Effizienz\cite{Iyer2025Careful} \cite{Abirami2025Evaluating}.
+    \item In manchen Spezialfällen (Finanzen) kann BM25 sogar Dense Methods schlagen; Kontextabhängigkeit ist hoch \cite{Akarsu2026From}.
+    \item Approximate Dense Retriever bieten Skalenvorteile bei großen Korpora mit minimalem Qualitätsverlust  \cite{Wang2024Evaluating}.
+    \item Adaptive Gewichtung zwischen Dense/Sparse je nach Query verbessert Performance weiter ("Dynamic Alpha Tuning") \cite{Hsu2025DAT}.
+\end{enumerate}
+
+\subsection{Forschungslücken und Herausforderungen }
+Standardisierte Evaluation fehlt: Es gibt bislang keine einheitlichen Benchmarks oder Frameworks zur Bewertung von RAG-Systemen speziell für domänenspezifische Anwendungen – insbesondere fehlen standardisierte Metriken für Faktentreue/Halluzination und Nutzerakzeptanz \cite{Gao2023Retrieval-Augmented} \cite{Elmitwalli2025Scalable} \cite{Murtiyoso2025A}.
+
+Komplexe Reasoning-Aufgaben: Multihop-Retrieval und reasoning über mehrere Dokumente hinweg sind weiterhin eine Herausforderung – insbesondere für komplexe medizinische oder juristische Fragestellungen \cite{Zhang2025A}.
+
+Dynamik \& Aktualität: Die kontinuierliche Aktualisierung externer Wissensbasen sowie die Integration neuer Datenquellen ist technisch wie organisatorisch ungelöst ("Knowledge Drift", Outdatedness) \cite{Liu2024DRAK}.
+
+Explainability \& Transparenz: Die Nachvollziehbarkeit der Antwortentstehung bleibt trotz Quellenangabe oft limitiert; Erklärbarkeit ist ein aktives Forschungsfeld ("Chain-of-thought", "Retrieval Path") \cite{Feng2023Knowledge}
+
+Ethik \& Datenschutz: Ethische Aspekte sowie sichere Integration sensibler Daten sind unterrepräsentiert – besonders im Gesundheitswesen fehlen Leitlinien zur sicheren Nutzung von RAG-Systemen im Produktivbetrieb \cite{Elmitwalli2025Scalable}
+
+\vspace{1cm}
+\textbf{Fazit}\\
+Die Forschung zeigt einen klaren Trend hin zu hybriden und adaptiven RAG-Systemen für domänenspezifische Expertensysteme mit LLMs. Während die technische Machbarkeit belegt ist und erste Benchmarks existieren, bestehen weiterhin große Herausforderungen bei Evaluation, Explainability und nachhaltiger Integration aktueller Wissensquellen – hier liegen zentrale Forschungsfelder für die nächsten Jahre.
+\clearpage

@@ -1,0 +1,163 @@
+% Titelseite
+% % % % % % % % % %
+\thispagestyle{empty} % no header, no footer
+
+%\ThisCenterWallPaper{0.9}{Deckblatt/Hintergrund_Grau.png}
+%\setlength{\wpXoffset}{1cm}
+%\setlength{\wpYoffset}{-5cm}
+
+\hspace*{3.5cm} \includegraphics[scale=0.6]{Deckblatt/Hochschule_Koblenz_Logo.png}
+
+\begin{center}
+\vspace*{2.2cm}
+{\LARGE\textbf {Bachelorarbeit}}\\[0.7cm]
+Koblenz, \today\\
+\vspace*{2cm}
+{\Large\textbf{Analyse der Nutzbarkeit von Large Language Models(LLMs) in Thematisch fokussierten Expertensystem in Verbindung mit Text-Retrieval Methode}}\\[1cm]
+{\Large{Name: Emmanuel Talom Goumlepoue}}\\[3mm]
+{\Large{Mat.-Nr.: 552 772}}
+\end{center}
+
+\vfill
+
+\begin{flushleft}
+{\Large{Hochschule   \hspace*{1cm} Koblenz}}\\[3mm]
+{\Large{Fachbereich  \hspace*{0.85cm} Ingenieurwesen}}\\[3mm]
+{\Large{Studiengang  \hspace*{0.7cm} Bachelor of Engineering Informationstechnik}}
+
+\vspace*{0.8cm}
+
+Bearbeitungszeitraum: 01.04.2026 - 23.06.2026\\
+\vspace*{0.4cm}
+Betreuer:  \hspace*{1.7cm}Prof. Dr. Dr. Sergej Sizov   \\
+Firmen-Betreuer: \hspace*{0.1cm} evtl. streichen
+
+\vspace*{0.4cm}
+
+Erstgutachter:  \hspace*{0.7cm}  \\
+Zweitgutachter: \hspace*{0.45cm}
+\end{flushleft}
+
+\clearpage
+\pagenumbering{Roman} % roman page numbers for preamble
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Erklärung
+% % % % % % % % % % % % % % % % % % % % % % %
+\lhead{Selbständigkeitserklärung}
+\section*{\centerline{\large{Selbständigkeitserklärung}}}
+%%% Erklärung
+Hiermit erkläre ich, dass ich die vorliegende Arbeit selbständig und ohne unerlaubte fremde Hilfe angefertigt, keine anderen als die angegebenen Quellen und Hilfsmittel verwendet und die den verwendeten Quellen und Hilfsmitteln wörtlich oder inhaltlich entnommenen Stellen als solche kenntlich gemacht habe.
+
+%%% Unterschriften Felder
+\vspace*{2cm}\noindent
+\parbox{6cm}{\hrulefill\\\centering(Ort, Datum)}
+\hfill
+\parbox{6cm}{\hrulefill\\\centering(Unterschrift)}
+
+
+\clearpage
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Kurzfassung
+% % % % % % % % % % % % % % % % % % % % % % %
+\lhead{Kurzfassung}
+\section*{\centerline{\large{Kurzfassung}}}
+\textbf{Zusammenfassung:} 
+Diese Arbeit untersucht die Nutzbarkeit von Large Language Models (LLMs) in einem thematisch fokussierten Expertensystem unter Einsatz moderner Text-Retrieval-Methoden. Ausgangspunkt ist die Problematik, dass LLMs zwar leistungsfähig in der Generierung natürlicher Sprache sind, jedoch zu sogenannten Halluzinationen neigen und somit nicht zuverlässig ausschließlich faktenbasierte Antworten liefern.
+
+Zur Lösung dieses Problems wird ein Retrieval-Augmented-Generation-Ansatz (RAG) verfolgt, bei dem relevante Informationen aus einer externen Wissensbasis abgerufen und als Kontext für die Antwortgenerierung verwendet werden. Die Wissensbasis wird mithilfe von Elasticsearch realisiert, wobei eine Hybrid Search zum Einsatz kommt, die sowohl eine lexikalische Suche mittels BM25 als auch eine semantische Vektorsuche kombiniert. Ziel ist es, die jeweils relevantesten Textabschnitte (Top-k) zu identifizieren und dem LLM bereitzustellen.
+
+Im Rahmen der Arbeit wird ein vollständiges System entwickelt, das die Indexierung von Dokumenten, die Durchführung hybrider Suchanfragen sowie die Generierung kontextbasierter Antworten umfasst. Besonderer Wert wird darauf gelegt, dass die generierten Antworten ausschließlich auf den bereitgestellten Textabschnitten basieren und die entsprechenden Quellen transparent angegeben werden. Zudem wird ein Mechanismus implementiert, der erkennt, wenn keine ausreichenden Informationen vorliegen, und in solchen Fällen auf eine Antwort verzichtet.
+
+Die Evaluation des Systems erfolgt anhand definierter Metriken zur Bewertung der Retrieval-Qualität sowie der inhaltlichen Korrektheit der generierten Antworten. Die Ergebnisse zeigen, dass die Kombination aus BM25 und Vektorsuche die Relevanz der Suchergebnisse verbessert und dadurch die Qualität der generierten Antworten signifikant erhöht. Gleichzeitig kann die Häufigkeit von Halluzinationen reduziert werden.
+
+Die Arbeit leistet somit einen Beitrag zur Entwicklung verlässlicher und nachvollziehbarer KI-gestützter Expertensysteme und zeigt das Potenzial hybrider Retrieval-Methoden in Kombination mit Large Language Models auf.
+
+\vspace{0.3\paperheight} %Können Sie Löschen. Dient nur als Platzhalter
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Abstract
+% % % % % % % % % % % % % % % % % % % % % % %
+\lhead{Abstract}
+\section*{\centerline{\large{Abstract}}}
+
+\textbf{Abstract:} 
+This thesis investigates how Large Language Models (LLMs) can be integrated into a thematically focused expert system that utilises modern text retrieval methods. The starting point is the problem that, whilst LLMs are highly proficient at generating natural language, they are prone to so-called hallucinations and therefore cannot be considered reliable when it comes to providing exclusively fact-based answers.
+
+A Retrieval-Augmented Generation (RAG) approach is adopted to solve this problem: it retrieves relevant information from an external knowledge base and uses it as context for generating the response. The knowledge base is implemented using Elasticsearch, employing a hybrid search that combines lexical search via BM25 with semantic vector search. The aim is to identify the most important text sections (Top-k) and make them available to the LLM.
+
+This thesis designs a comprehensive system that encompasses document indexing, the execution of hybrid search queries, and the generation of context-based responses. It is of great importance that the responses generated are based solely on the text passages provided and that the sources are clearly cited. Furthermore, a mechanism is introduced that detects when the information is insufficient and, in such cases, does not provide a response.
+
+To evaluate the system, established metrics are used to assess the retrieval quality and the factual accuracy of the generated responses. The results demonstrate that the relevance of search results is improved by combining BM25 and vector search, which significantly enhances the quality of the generated responses.  Furthermore, it is possible to reduce the frequency of hallucinations.
+
+The work thus contributes to the creation of reliable and transparent AI-supported expert systems and highlights the potential of hybrid retrieval methods in conjunction with large language models.
+
+\clearpage
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Inhaltsverzeichnis
+% % % % % % % % % % % % % % % % % % % % % % %
+
+
+%\addcontentsline{toc}{section}{Inhaltsverzeichnis} % Add entry to table of contents
+\lhead{Inhaltsverzeichnis}
+\tableofcontents %Inhaltsverzeichnis
+\newpage
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Abbildungsverzeichnis
+% % % % % % % % % % % % % % % % % % % % % % %
+
+\lhead{Abbildungsverzeichnis}
+\addcontentsline{toc}{section}{Abbildungsverzeichnis}  % Add entry to table of contents
+\listoffigures % Abbildungsverzeichnis
+\clearpage
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Tabellenverzeichnis
+% % % % % % % % % % % % % % % % % % % % % % %
+
+\addcontentsline{toc}{section}{Tabellenverzeichnis} % Add entry to table of contents
+\lhead{Tabellenverzeichnis}
+\listoftables % Tabellenverzeichnis
+\clearpage
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% Abkürzungsverzeichnis
+% % % % % % % % % % % % % % % % % % % % % % %
+\section*{Abkürzungsverzeichnis} % no section number, no entry in table of
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis} % Add entry to table of contents
+\lhead{Abkürzungsverzeichnis}
+
+
+\begin{tabular}{@{\bf}ll}
+	LLMs			  & Large Language Models\\
+	KI   		  & Künstliche Intelligenz \\ 
+	RAG			  & Retrieval-Augmented Generation\\
+	  BM25		  &  Best Matching 25 (Rankingfunktion im Information Retrieval)\\
+      
+
+
+
+   
+  
+  
+	 	
+\end{tabular}
+
+\newpage
+
+
+% % % % % % % % % % % % % % % % % % % % % % %
+% 
+% % % % % % % % % % % % % % % % % % % % % % %
+
+\lhead{\leftmark}
+\pagenumbering{arabic} % arabic page numbers for following pages

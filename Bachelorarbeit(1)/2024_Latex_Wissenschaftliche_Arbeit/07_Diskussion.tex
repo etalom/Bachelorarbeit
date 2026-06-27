@@ -1,0 +1,23 @@
+\section{Diskussion}
+\label{sec:Diskussion}
+
+Aufbauend auf den Ergebnissen der Evaluation erfolgt im Folgenden eine übergeordnete Einordnung und kritische Reflexion des entwickelten Systems.
+
+Die durchgeführten Experimente zeigen, dass das vorgestellte Retrieval-Augmented-Generation-System grundsätzlich in der Lage ist, vergaberechtliche Fragestellungen mit hoher Qualität zu beantworten, sofern relevante Kontextinformationen verfügbar sind. Insbesondere die Ergebnisse der In-Context-Evaluation verdeutlichen, dass sowohl die Dokumentensuche als auch die darauf basierende Antwortgenerierung zuverlässig funktionieren.
+
+Ein zentrales Ergebnis der Arbeit ist die beobachtete Wirksamkeit des hybriden Retrieval-Ansatzes. Die Kombination aus BM25 und Vektorsuche ermöglicht es, sowohl lexikalische Übereinstimmungen als auch semantische Zusammenhänge zu berücksichtigen. Die geringe Überschneidung der jeweils gefundenen Dokumente deutet darauf hin, dass beide Verfahren unterschiedliche Aspekte von Relevanz erfassen und sich somit sinnvoll ergänzen. In der Gesamtbetrachtung führt dies zu einer verbesserten Abdeckung relevanter Dokumente im Vergleich zu einzelnen Retrieval-Ansätzen.
+
+Gleichzeitig wird deutlich, dass die Qualität der generierten Antworten maßgeblich von der Qualität der Retrieval-Ergebnisse abhängt. Diese enge Kopplung ist charakteristisch für RAG-Systeme und stellt eine zentrale Limitation dar: Unvollständige oder nicht optimal gerankte Dokumente wirken sich unmittelbar auf die Antwortqualität aus. Die in der Evaluation beobachteten Einschränkungen hinsichtlich der Vollständigkeit lassen sich vor diesem Hintergrund plausibel erklären.
+
+Die Ergebnisse der Out-of-Context-Evaluation verdeutlichen zudem die Grenzen des Systems. Ohne geeignete Kontextgrundlage sinkt die Qualität der generierten Antworten signifikant. Gleichzeitig zeigt sich jedoch ein positives Verhalten im Hinblick auf die Vermeidung von Halluzinationen: Das System tendiert dazu, Unsicherheiten zu erkennen und entsprechend zurückhaltend zu reagieren, anstatt nicht fundierte Informationen zu generieren. Dieses Verhalten ist insbesondere im juristischen Anwendungskontext von hoher Relevanz, da die Verlässlichkeit der bereitgestellten Informationen eine zentrale Anforderung darstellt.
+
+Neben den Stärken des Systems sind auch mehrere Limitationen zu berücksichtigen. Die Aussagekraft der Evaluation ist durch die begrenzte Größe des Datensatzes eingeschränkt. Insbesondere kann die Verwendung weniger Testfragen dazu führen, dass bestimmte Fehlermuster oder Randfälle nicht ausreichend erfasst werden. Darüber hinaus basiert die Bewertung der Antwortqualität auf einem LLM-as-a-Judge-Ansatz, der trotz strukturierter Bewertungskriterien keine vollständig objektive Beurteilung ersetzen kann.
+
+Ein weiterer Aspekt betrifft die Aggregation der Ergebnisse über Durchschnittswerte. Diese ermöglicht zwar eine kompakte Darstellung der Gesamtleistung, kann jedoch individuelle Abweichungen und spezifische Schwächen einzelner Antworten überdecken. Für eine detailliertere Analyse wäre daher eine ergänzende fallbasierte Betrachtung sinnvoll.
+
+Im Kontext verwandter Arbeiten ordnen sich die Ergebnisse in bestehende Erkenntnisse zu Retrieval-Augmented-Generation-Systemen ein. Insbesondere bestätigt sich die zentrale Rolle des Retrievals als limitierender Faktor für die Gesamtleistung sowie der Nutzen hybrider Suchansätze zur Verbesserung der Dokumentenabdeckung.
+
+Für zukünftige Arbeiten ergeben sich mehrere Ansatzpunkte. Eine Erweiterung des Evaluationsdatensatzes sowie die Einbeziehung menschlicher Expertinnen und Experten in den Bewertungsprozess könnten die Aussagekraft der Ergebnisse deutlich erhöhen. Darüber hinaus erscheint die Optimierung des Retrieval-Rankings, beispielsweise durch Re-Ranking-Strategien oder domänenspezifisches Fine-Tuning, als vielversprechender Ansatz zur weiteren Steigerung der Systemleistung.
+
+Insgesamt zeigen die Ergebnisse, dass das entwickelte System eine solide Grundlage für ein domänenspezifisches Assistenzsystem im vergaberechtlichen Kontext darstellt, gleichzeitig jedoch weitere Optimierungspotenziale bestehen.
+\clearpage

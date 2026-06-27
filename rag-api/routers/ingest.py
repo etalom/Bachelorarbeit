@@ -20,7 +20,7 @@ def chunk_text(text: str, chunk_size: int = CHUNK_SIZE, overlap: int = CHUNK_OVE
 
 @router.on_event("startup")
 async def startup():
-    await ensure_index()
+    ensure_index()
 
 @router.post("/ingest")
 async def ingest(file: UploadFile = File(...)):
@@ -52,7 +52,7 @@ async def ingest(file: UploadFile = File(...)):
         for idx, chunk in enumerate(chunks):
             doc_id = f"{file.filename}_{idx}_{uuid.uuid4()}"
             try:
-                await index_document(doc_id, chunk, file.filename)
+                index_document(doc_id, chunk, file.filename)
             except Exception as e:
                 logger.error(f"Indexing Error für Chunk {idx}: {e}")
         

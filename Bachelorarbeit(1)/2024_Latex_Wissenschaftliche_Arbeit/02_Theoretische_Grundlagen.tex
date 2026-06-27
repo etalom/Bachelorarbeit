@@ -1,0 +1,52 @@
+\section{Theoretische Grundlagen}
+\label{sec:theoretische-grundlagen}
+
+In diesem Kapitel werden die Konzepte vorgestellt, die für diese Arbeit von Bedeutung sind. Zuerst erfolgt eine Erklärung von Large Language Models (LLMs) sowie ihrer wichtigsten Stärken und Schwächen. Daraufhin werden Expertensysteme als Anwendungsbereich betrachtet, bevor die Grundlagen des Information Retrievals, der semantischen Suche, der Hybrid Search und von Retrieval-Augmented Generation (RAG) erläutert werden..
+
+\subsection{Large Language Models (LLMs):Funktionsweise, Stärken und Schwächen}
+
+Large Language Models (LLMs) sind neuronale Netze, die auf riesigen Textkorpora trainiert werden und dadurch in der Lage sind, vielfältige Aufgaben der natürlichen Sprachverarbeitung zu lösen \cite{Huang2023},\cite{Sharma2025},\cite{Alansari2025},\cite{Xu2024Hallucination}.Sie speichern Wissen in ihren Parametern („parametrisches Wissen“) und können Texte generieren, Fragen beantworten oder Zusammenfassungen erstellen \cite{Brown2025A}.Zu den Stärken zählen ihre Generalisierungsfähigkeit und Flexibilität bei unterschiedlichsten Aufgaben \cite{Sharma2025},\cite{Brown2025A}.
+
+Ein zentrales Problem ist jedoch das Phänomen der Halluzination: LLMs erzeugen plausible, aber faktisch falsche oder unbelegte Inhalte \cite{Huang2023},\cite{Alansari2025},\cite{Xu2024Hallucination}.Ursachen hierfür liegen u.a. in veralteten Trainingsdaten, fehlender Anbindung an aktuelle Wissensquellen und Limitierungen im Modell selbst \cite{Huang2023} \cite{Alansari2025} \cite{Xu2024Hallucination}.Auch mit Retrieval-Augmented Generation (RAG) lassen sich Halluzinationen reduzieren, aber nicht vollständig eliminieren \cite{Huang2023} \cite{Alansari2025}.
+
+
+\subsection{Expertensysteme: Definition und Eigenschaften – Klassische vs. moderne Ansätze}
+
+Expertensysteme sind wissensbasierte Computersysteme, die menschliches Expertenwissen elektronisch repräsentieren und anwenden, um Probleme zu lösen, die normalerweise menschliche Intelligenz erfordern würden \cite{HayesRoth1984} \cite{Salmanova2024} \cite{Nikolopoulos1997} \cite{Liao2004}. Sie bestehen typischerweise aus einer Wissensbasis (Knowledge Base), einem Inferenzmechanismus (Inference Engine) und einer Benutzerschnittstelle \cite{HayesRoth1984} \cite{Salmanova2024}.
+
+Klassische Expertensysteme basieren meist auf regelbasierten Systemen („if-then“-Regeln), während moderne Ansätze zunehmend maschinelles Lernen, neuronale Netze oder hybride Architekturen integrieren \cite{HayesRoth1984} \cite{Liao2004}.Moderne Systeme können Unsicherheiten besser handhaben und lernen teilweise neues Wissen hinzu („self-learning“), was klassische Systeme nicht konnten \cite{Salmanova2024} \cite{Nikolopoulos1997}.
+
+
+\subsection{Information Retrieval: Grundlagen \& BM25-Algorithmus}
+
+Information Retrieval (IR) beschäftigt sich mit dem effizienten Auffinden relevanter Informationen aus großen Textsammlungen. Klassische IR-Systeme nutzen meist statistische Methoden wie TF-IDF oder BM25 zur Bewertung der Relevanz von Dokumenten zu einer Suchanfrage \cite{Farivar2025} \cite{Singh2025}.
+BM25 ist ein probabilistisches Rankingverfahren, das Termfrequenz (TF), inverse Dokumentfrequenz (IDF) und Dokumentlänge kombiniert, um eine Relevanzbewertung zu berechnen. Es ist robust für exakte Wortübereinstimmungen und bildet bis heute einen starken Standard für lexikalische Suche \cite{Farivar2025}.
+
+
+\subsection{Semantische Suche:Embeddings \& Vektorraummodelle}
+
+Semantische Suche erweitert klassische IR-Methoden durch die Nutzung von Embeddings – dichte Vektorrepräsentationen von Texten –, die semantische Ähnlichkeiten zwischen Wörtern/Sätzen abbilden können \cite{Farivar2025} \cite{Kamalloo2023}. Moderne Modelle wie BERT oder Sentence Transformers erzeugen solche Embeddings; Suchanfragen und Dokumente werden als Vektoren im hochdimensionalen Raum verglichen („Vektorraummodell“) \cite{Farivar2025} \cite{Kamalloo2023}.
+
+Diese Methode ermöglicht es, auch bei Synonymie oder Paraphrasierung relevante Inhalte zu finden – ein Vorteil gegenüber rein lexikalischen Verfahren wie BM25. Allerdings sind semantische Modelle rechenintensiver und benötigen spezialisierte Infrastruktur wie Vektor-Datenbanken für effiziente Suche \cite{Kamalloo2023}, \cite{Manoorkar2025}.
+
+\subsection{Hybrid Search: Kombination von BM25 und Vektorsuche – Vorteile \& Herausforderungen}
+
+RAG verbindet LLMs mit externem Information Retrieval: Bei jeder Anfrage werden relevante Dokumente aus einer Wissensbasis abgerufen („retrieval“), diese als Kontext dem LLM bereitgestellt („augmentation“) und darauf basierend eine Antwort generiert („generation“) \cite{Sharma2025} \cite{Sharma2026A}
+ \cite{Zhang2023Sirens}
+Die RAG-Architektur besteht typischerweise aus einem Retriever-Modul (z.B. BM25/Embeddings/Hybrid), einem Augmentationsmodul zur Kontextaufbereitung sowie dem Generator-Modul (LLM). RAG adressiert zentrale Schwächen von LLMs wie Halluzinationen oder veraltetes Wissen durch faktisches Grounding an aktuellen Datenquellen – besonders wichtig für Expertensysteme mit hohen Anforderungen an Nachvollziehbarkeit und Aktualität des Wissens \cite{Sharma2025} \cite{Sharma2026A}.
+Herausforderungen bestehen weiterhin bei der Qualität des Retrievals, der Integration heterogener Datenquellen sowie bei Effizienz/Kosten im Echtzeitbetrieb; zudem bleibt Halluzination auch mit RAG ein Thema – wenn etwa irrelevante oder fehlerhafte Kontexte abgerufen werden \cite{Sharma2025} \cite{Sharma2026A} \cite{Zhang2023Sirens}
+
+\subsection{Retrieval-Augmented Generation (RAG)}
+
+Retrieval-Augmented Generation (RAG) erweitert ein generatives Sprachmodell um einen externen Retrieval-Schritt. Statt ausschließlich auf parametrisches Wissen zu vertrauen, werden für eine Nutzeranfrage zunächst relevante Dokumentpassagen aus einer Wissensbasis abgerufen und anschließend als Kontext in den Prompt des LLM eingebunden \cite{Sharma2025,Brown2025A,Oche2025}. Die generierte Antwort basiert damit stärker auf überprüfbaren Quellen als bei einer rein promptbasierten Beantwortung.
+
+\textbf{Grundidee/Architektur:}
+RAG koppelt einen Retriever mit einem Generator:
+\begin{enumerate}
+    \item Query → Retrieval von relevanten Dokument‑Chunks (BM25, Dense, Hybrid).
+    \item Top‑k‑Chunks werden dem LLM als Kontext übergeben.
+    \item LLM generiert Antwort, konditioniert auf Query + Belege.
+\end{enumerate}
+RAG reduziert Halluzinationen und verbessert Faktentreue, macht Wissen leicht aktualisierbar, da nur der Index geändert werden muss.\cite{Oche2025} \cite{Brown2025A}
+Für Expertensysteme ist RAG besonders relevant, weil domänenspezifische, dynamische Wissensbasen eingebunden und Entscheidungen transparent über Quellen belegt werden können.\cite{Oche2025} \cite{Sharma2025}
+\clearpage

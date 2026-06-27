@@ -1,0 +1,140 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.0
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - XPACK_SECURITY_ENABLED=false
+    ports:
+      - "5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  rag-api:
+    build: ./rag-api
+    container_name: rag-api
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - DOCUMENTS_FOLDER=/app/Dokuments
+      - ES_INDEX=pdf_index
+      - ES_URL=http://elasticsearch:9200 
+    volumes:
+      - ./Dokuments:/app/Dokuments:ro
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  frontend:
+    image: nginx:alpine
+    container_name: frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - rag-api
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  jupyter:
+    image: quay.io/jupyter/scipy-notebook:2025-12-31
+    container_name: jupyter
+    ports:
+      - "10000:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    command: >
+      start-notebook.py
+      --ServerApp.token=''
+      --ServerApp.password=''
+      --ServerApp.token_generated=''
+      --ServerApp.disable_check_xsrf=True
+      --ServerApp.password_required=False
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+  streamlit:
+    build: ./streamlit
+    container_name: streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./streamlit:/app
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - rag-api
+    networks:
+      - elastic-net
+    restart: unless-stopped
+    stop_grace_period: 5s
+
+volumes:
+  esdata:
+  ollama_data:
+
+networks:
+  elastic-net:
+    driver: bridge
+

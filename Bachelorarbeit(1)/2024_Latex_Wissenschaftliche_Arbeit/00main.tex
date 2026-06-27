@@ -1,0 +1,66 @@
+\documentclass[ngerman,12pt]{article} % alternativ auch document class scrartcl
+\PassOptionsToPackage{draft}{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} %Deutsche Formatierungen. Zeilenumbrüche, Umlaute..
+\usepackage{lmodern}
+%\usepackage{wallpaper}
+%\usepackage{pgfplots} % Diagramme wie sin(x)
+\usepackage{hyperref}  % Verlinkung in pdf-Dokumenten
+
+%\usepackage{listings}  % Quellcode: C++, Pascal und mehr
+\usepackage{amssymb}
+\usepackage{xcolor}     % Farbe
+\usepackage[autostyle=true]{csquotes}
+
+%\usepackage{pdfpages}
+
+\usepackage{chngcntr}    		 % Numerierung
+\counterwithin{figure}{section}  % Numerierung Bilder
+\counterwithin{table}{section}   % Numerierung Tabellen
+
+\usepackage{multirow} 
+
+\usepackage{amsmath}     			%Numerierung
+\numberwithin{equation}{section} % Numerierung Formeln
+
+\usepackage{float}
+\usepackage{setspace}
+
+\usepackage[center,labelfont={bf,sf},font={small},%
+  labelsep=space]{caption}
+
+\usepackage{paralist}
+\usepackage{mathtools}
+\usepackage{url} % URL benutzen
+\bibliographystyle{alpha} % Literaturdesign
+\urlstyle{rm} % URL-style in Literaturverzeichnis
+
+\DeclareUnicodeCharacter{2212}{-}
+
+\input{00settings}
+\graphicspath{{./Bilder/}{./}} % Ordner für Bilder
+\sloppy
+
+
+\begin{document}
+\renewcommand{\figurename}{Abb.} % Abkürzung für Abbildungen
+\renewcommand{\arraystretch}{1.2}
+\onehalfspacing %Zeilenabstand
+
+% Es Empfiehlt sich für jedes Kapitel ein eigenes Tex Programm zu erstellen
+	\input{00preamble}
+	\input{01_Einleitung}
+	\input{02_Theoretische_Grundlagen}
+	\input{03_Stand_der_Forschung}
+	\input{04_Anforderungsanalyse_und_Systemkonzeption}
+    \input{05_Implementierung}
+    \input{06_Evaluation}
+    \input{07_Diskussion}
+    \input{08_Fazit_und_Ausblick}
+	\begin{appendix}
+	\interlinepenalty 10000 %Seitenumbruch mitten in der Quelle verhindern
+	\input{00literatur}
+	\input{B_Allgemeiner_Anhang}
+	\end{appendix}
+\end{document}

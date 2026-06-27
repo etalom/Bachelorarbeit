@@ -1,0 +1,32 @@
+\section{Fazit und Ausblick} 
+\subsection{Fazit}
+Die Untersuchung hatte zum Ziel, die Anwendbarkeit von Large Language Models (LLMs) in einem thematisch fokussierten Expertensystem zusammen mit hybriden Retrieval-Methoden zu bewerten. Ein Retrieval-Augmented-Generation-(RAG)-System wurde hierfür entwickelt, das eine BM25-basierte Volltextsuche mit einer semantischen Vektorsuche innerhalb von Elasticsearch kombiniert und die ermittelten Informationen zur kontextuellen Antwortgenerierung an ein Large Language Model übergibt.  
+
+Die Evaluationsergebnisse belegen, dass die Antwortqualität erheblich verbessert werden kann, wenn man Retrieval-Mechanismen und LLMs kombiniert. Gerade das Einfügen von relevanten Textabschnitten erlaubt es, die Generierung stärker zu steuern und verbessert die inhaltliche Nachvollziehbarkeit der Antworten. So kann das Risiko von Halluzinationen verringert werden, obwohl es nicht gänzlich ausgeschlossen werden kann.  
+
+Eine hybride Suchstrategie hat sich als besonders wirkungsvoll erwiesen, weil sie einerseits exakte Treffer durch lexikalische Verfahren und andererseits semantisch ähnliche Inhalte umfasst. Eine bessere Trefferqualität im Retrieval-Schritt ist das Ergebnis dessen, was wiederum eine entscheidende Grundlage für die Qualität der generierten Antworten ist.  
+
+Die Arbeit demonstriert zudem, dass ein solches System domänenspezifisches Wissen aus großen Dokumentensammlungen effizient zugänglich macht und nutzerfreundlich aufbereitet.  Dies bietet einen erheblichen Vorteil, besonders wenn es um komplizierte Regelungen wie die im Vergaberecht geht.  
+
+Es wird jedoch auch offensichtlich, dass die Effizienz des Systems stark von der Qualität der zugrunde liegenden Daten, der ausgewählten Retrieval-Strategie und der Gestaltung der Prompt abhängt.  Um sicherzustellen, dass die Ergebnisse verlässlich sind, ist es unerlässlich, das System sorgfältig zu konzipieren. 
+
+Es ist festzustellen, dass die Nutzung von Large Language Models zusammen mit hybriden Retrieval-Methoden grundsätzlich sinnvoll und umsetzbar ist, um die Forschungsfrage zu beantworten. Vor allem, wenn man datengestütztes Retrieval mit generativer Sprachverarbeitung kombiniert, kann man die Qualität, Nachvollziehbarkeit und Relevanz der Antworten erheblich verbessern.  
+
+Alles in allem ist Retrieval-Augmented-Generation ein vielversprechender Ansatz für den Einsatz von Large Language Models in Expertensystemen und bietet eine praktikable Möglichkeit, die Vorzüge datengetriebener Sprachmodelle mit strukturierten Wissensquellen zu vereinen.
+\subsection{Einschränkungen}
+Obwohl die Ergebnisse positiv sind, hat das entwickelte System einige Einschränkungen. Eine wesentliche Herausforderung bleibt die Möglichkeit, dass das eingesetzte Sprachmodell ungenaue oder unvollständige Antworten generiert.  Selbst wenn der Einsatz von Retrieval Halluzinationen mindert, sind sie dennoch nicht vollständig zu vermeiden.
+
+Ein weiterer begrenzender Aspekt ist die Abhängigkeit von der Qualität und dem Umfang der indexierten Dokumente. Informationen, die fehlen oder veraltet sind, beeinflussen die Qualität der Antwort direkt. Auch die Chunking-Strategie kann die Retrieval-Ergebnisse beeinflussen, weil relevante Informationen möglicherweise auf mehrere Textabschnitte verteilt sind.
+
+Eine weitere Einschränkung ergibt sich durch den gewählten Evaluationsansatz. Die generierten Antworten werden durch ein LLM-as-a-Judge-Verfahren bewertet. Die Bewertung kann durch modellabhängige Verzerrungen beeinträchtigt werden, obwohl ein anderes Modell dafür verwendet wird. Eine komplett objektive Bewertung ist somit nicht gewährleistet.
+\subsection{Ausblick }
+Es gibt mehrere Ansatzpunkte zur Weiterentwicklung des Systems in zukünftigen Arbeiten. Eine mögliche Verbesserung besteht darin, Re-Ranking-Mechanismen einzuführen, wie etwa Cross-Encoder, um die Relevanz der abgerufenen Dokumente weiter zu steigern.
+
+Außerdem wäre es möglich, das System um kontextbezogene Dialogfähigkeiten zu erweitern, sodass es mehrstufige Anfragen und Folgefragen verarbeiten kann.  Das würde die Benutzerfreundlichkeit und die praktische Anwendbarkeit weiter verbessern.
+
+Eine andere Herangehensweise besteht darin, die Evaluationsmethodik zu verfeinern. Um subjektive Verzerrungen zu minimieren und robustere Ergebnisse zu erzielen, wäre es hilfreich, mehrere unterschiedliche Bewertungsmodelle zu nutzen.
+
+Schließlich gibt es ein großes Potenzial, das System auf andere Fachdomänen zu übertragen. Die ausgearbeitete Architektur ist eine gute Basis für die Entwicklung weiterer domänenspezifischer Expertensysteme, etwa im Steuerrecht, im Gesundheitswesen oder im technischen Support.
+
+Diese Arbeit kommt zu dem Schluss, dass die Verbindung von Large Language Models mit hybriden Retrieval-Methoden ein großes Potenzial für die Schaffung von leistungsfähigen und zuverlässigen Expertensystemen hat, und dass dessen Weiterentwicklung ein vielversprechendes Forschungsfeld ist.
+\label{sec:Fazit und Ausblick} 

@@ -1,0 +1,647 @@
+{
+  "export_zeit": "2026-06-27T10:40:11.597912",
+  "app": "Chatbot-Vergabe",
+  "run_name": "best_chunks_and_answer",
+  "entries": [
+    {
+      "query": " Wie mache ich eine Mondlandung?",
+      "answer": "Die vorliegenden Unterlagen befassen sich ausschließlich mit dem Vergaberecht und den damit verbundenen Verfahren in Rheinland‑Pfalz. Sie enthalten keine Informationen zu Raumfahrttechnologie, Weltraummissionen oder Mondlandungen. Daher lässt sich Ihre Frage nicht auf Basis der gegebenen Dokumente beantworten.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02258,
+          "relevanz": "mittel",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.02187,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 1,
+          "score": 0.02121,
+          "relevanz": "niedrig",
+          "abschnitt": "Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort. Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort."
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.02059,
+          "relevanz": "niedrig",
+          "abschnitt": "Eine Verpflichtung zur Abfrage besteht nicht bei Sachverhalten, für die das Vergaberecht\nAusnahmen von der Anwendbarkeit des Vergaberechts vorsieht (§ 6 Abs. 1 Satz 3 WRegG).\nAuf eine erneute Anfrage zu konkreten Unternehmen kann verzichtet werden, wenn inner-\nhalb der letzten zwei Monate zu dem Unt"
+        },
+        {
+          "quelle": 5,
+          "datei": "VgV.pdf",
+          "seite": 3,
+          "score": 0.02028,
+          "relevanz": "niedrig",
+          "abschnitt": "von sozialen und anderen besonderen Dienstleistungen § 64 Vergabe von Aufträgen für soziale und andere besondere Dienstleistungen § 65 Ergänzende Verfahrensregeln § 66 Veröffentlichungen, Transparenz Abschnitt 4 Besondere Vorschriften für die Beschaffung energieverbrauchsrelevanter Leistungen § 67 B"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 5,
+          "score": 0.02,
+          "relevanz": "mittel",
+          "abschnitt": "14) zu verstehen; das bede utet, dass der komplette \nAbschnitt 4.3 mit den Anlagen 6 und 7 sowie Abschnitt 1.3.3 dieser Verwaltungs- \nvorschrift als Grundlagen für die beim Ministerium für Finanzen eingerichtete Melde- \nund Informationsstelle außer Kraft treten. 14) zu verstehen; das bede utet, dass"
+        },
+        {
+          "quelle": 7,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01944,
+          "relevanz": "niedrig",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01892,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsinnenrecht zuzuordnen. Wei-\ntere Hinweise zum Verfahren sind dem Internetauftritt der Vergabekammer für Rheinland-\nPfalz unter „https://mwvlw.rlp.de/de/ministerium/zugeordnete-institutionen/vergabekam-\nme"
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.01842,
+          "relevanz": "niedrig",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        },
+        {
+          "quelle": 10,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01795,
+          "relevanz": "niedrig",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 2,
+          "score": 0.0175,
+          "relevanz": "mittel",
+          "abschnitt": "e)\n 8 Strategische Beschaffung\n   8.1 Allgemeine Grundsätze\n   8.2 Nachhaltige Beschaffung\n   8.3 Innovative Beschaffung\n   8.4 Energieeffiziente Beschaffung\n   8.5 Gütezeichen\n 9 Berücksichtigung der IAO-Kernarbeitsnormen\n   9.1 Grundsätze zur Berücksichtigung internationaler Arbeitsstandards\n   9."
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01707,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Nachprüfungsverfahren vor der Vergabekammer\nbestimmt sich nach Teil 4 Kapitel 2 (§§ 155 ff.) des Gesetzes gegen Wettbewerbsbeschrän-\nkungen; ergänzend wird auf §§ 134 und 135 GWB sowie auf die Landesverordnung über die\nNachprüfungsbehörden für die Vergabe öffentlicher Aufträge und von Konzession"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01667,
+          "relevanz": "niedrig",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.01628,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 15,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 5,
+          "score": 0.01591,
+          "relevanz": "niedrig",
+          "abschnitt": "Unter Bedarfe sind sämtliche Leistungen zu verstehen, die für Bedarfsträger des Landes Rhein-\nland-Pfalz zu beschaffen sind.\n \n \n \n2.2 Bedarfsträger\n \n \nBedarfsträger sind Behörden und Einrichtungen der unmittelbaren Landesverwaltung, die Leis-\ntungen zur Erfüllung ihrer Aufgaben benötigen. Bedarfst"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:40:11.597892"
+    },
+    {
+      "query": "Wie koche ich Pasta?",
+      "answer": "Leider liegen im vorliegenden Dokumentensatz keine Informationen zum Kochen von Pasta vor – die Inhalte beziehen sich ausschließlich auf Vergaberecht und Beschaffungsprozesse. Ich kann deshalb diese Frage nicht beantworten.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02258,
+          "relevanz": "mittel",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.02187,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 1,
+          "score": 0.02121,
+          "relevanz": "niedrig",
+          "abschnitt": "Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort. Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort."
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.02059,
+          "relevanz": "niedrig",
+          "abschnitt": "Eine Verpflichtung zur Abfrage besteht nicht bei Sachverhalten, für die das Vergaberecht\nAusnahmen von der Anwendbarkeit des Vergaberechts vorsieht (§ 6 Abs. 1 Satz 3 WRegG).\nAuf eine erneute Anfrage zu konkreten Unternehmen kann verzichtet werden, wenn inner-\nhalb der letzten zwei Monate zu dem Unt"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 5,
+          "score": 0.02,
+          "relevanz": "mittel",
+          "abschnitt": "14) zu verstehen; das bede utet, dass der komplette \nAbschnitt 4.3 mit den Anlagen 6 und 7 sowie Abschnitt 1.3.3 dieser Verwaltungs- \nvorschrift als Grundlagen für die beim Ministerium für Finanzen eingerichtete Melde- \nund Informationsstelle außer Kraft treten. 14) zu verstehen; das bede utet, dass"
+        },
+        {
+          "quelle": 6,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01944,
+          "relevanz": "niedrig",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01892,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsinnenrecht zuzuordnen. Wei-\ntere Hinweise zum Verfahren sind dem Internetauftritt der Vergabekammer für Rheinland-\nPfalz unter „https://mwvlw.rlp.de/de/ministerium/zugeordnete-institutionen/vergabekam-\nme"
+        },
+        {
+          "quelle": 8,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.01842,
+          "relevanz": "niedrig",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01795,
+          "relevanz": "niedrig",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffAw.pdf",
+          "seite": 2,
+          "score": 0.0175,
+          "relevanz": "mittel",
+          "abschnitt": "e)\n 8 Strategische Beschaffung\n   8.1 Allgemeine Grundsätze\n   8.2 Nachhaltige Beschaffung\n   8.3 Innovative Beschaffung\n   8.4 Energieeffiziente Beschaffung\n   8.5 Gütezeichen\n 9 Berücksichtigung der IAO-Kernarbeitsnormen\n   9.1 Grundsätze zur Berücksichtigung internationaler Arbeitsstandards\n   9."
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01707,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Nachprüfungsverfahren vor der Vergabekammer\nbestimmt sich nach Teil 4 Kapitel 2 (§§ 155 ff.) des Gesetzes gegen Wettbewerbsbeschrän-\nkungen; ergänzend wird auf §§ 134 und 135 GWB sowie auf die Landesverordnung über die\nNachprüfungsbehörden für die Vergabe öffentlicher Aufträge und von Konzession"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01667,
+          "relevanz": "niedrig",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.01628,
+          "relevanz": "mittel",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 5,
+          "score": 0.01591,
+          "relevanz": "niedrig",
+          "abschnitt": "Unter Bedarfe sind sämtliche Leistungen zu verstehen, die für Bedarfsträger des Landes Rhein-\nland-Pfalz zu beschaffen sind.\n \n \n \n2.2 Bedarfsträger\n \n \nBedarfsträger sind Behörden und Einrichtungen der unmittelbaren Landesverwaltung, die Leis-\ntungen zur Erfüllung ihrer Aufgaben benötigen. Bedarfst"
+        },
+        {
+          "quelle": 15,
+          "datei": "GWB.pdf",
+          "seite": 108,
+          "score": 0.01556,
+          "relevanz": "niedrig",
+          "abschnitt": "Die Sätze 1 und 2 gelten nicht für die Vergabe von\nAufträgen, deren Gegenstand die Beschaffung von Energie oder Brennstoffen zur Energieerzeugung ist.\n(2) Die Auftraggeber nach Absatz 1 erteilen der Europäischen Kommission über das Bundesministerium für\nWirtschaft und Energie Auskunft über die Verga"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:40:11.597900"
+    },
+    {
+      "query": "Wer hat die Relativitätstheorie erfunden?",
+      "answer": "Ich kann die Frage aus den vorliegenden Vergabedokumenten nicht beantworten – dort ist nichts zur Relativitätstheorie oder zu ihren Erfinderinnen bzw. Erfindern enthalten.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.02258,
+          "relevanz": "niedrig",
+          "abschnitt": "Wei-\ntere Hinweise zum Verfahren sind dem Internetauftritt der Vergabekammer für Rheinland-\nPfalz unter „https://mwvlw.rlp.de/de/ministerium/zugeordnete-institutionen/vergabekam-\nmer/“ zu entnehmen.\n \n \nDas Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsi"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02187,
+          "relevanz": "niedrig",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.02121,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.02059,
+          "relevanz": "niedrig",
+          "abschnitt": "Wei-\ntere Hinweise zum Verfahren sind dem Internetauftritt der Vergabekammer für Rheinland-\nPfalz unter „https://mwvlw.rlp.de/de/ministerium/zugeordnete-institutionen/vergabekam-\nmer/“ zu entnehmen.\n \n \nDas Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsi"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw.pdf",
+          "seite": 32,
+          "score": 0.02,
+          "relevanz": "niedrig",
+          "abschnitt": "Sie müssen in der Leis-\ntungsbeschreibung hinreichend klar gefasst sein (Bestimmtheit) und mit Anforderungen\nverbunden werden, die eine effektive Nachprüfung der Richtigkeit der in den Angeboten\nenthaltenen Angaben erlauben (Prüfbarkeit).\n \n \n \n9.4 Vergabe durch andere Stellen\n \n \nDen kommunalen und"
+        },
+        {
+          "quelle": 6,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 5,
+          "score": 0.01944,
+          "relevanz": "niedrig",
+          "abschnitt": "14) zu verstehen; das bede utet, dass der komplette \nAbschnitt 4.3 mit den Anlagen 6 und 7 sowie Abschnitt 1.3.3 dieser Verwaltungs- \nvorschrift als Grundlagen für die beim Ministerium für Finanzen eingerichtete Melde- \nund Informationsstelle außer Kraft treten. 14) zu verstehen; das bede utet, dass"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 1,
+          "score": 0.01892,
+          "relevanz": "niedrig",
+          "abschnitt": "Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort. Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort."
+        },
+        {
+          "quelle": 8,
+          "datei": "VVöffAw.pdf",
+          "seite": 29,
+          "score": 0.01842,
+          "relevanz": "niedrig",
+          "abschnitt": "Über Inhalt, Anforderungen und Bedeutung solcher Nachweise in-\nformiert die Internetplattform „Kompass Nachhaltigkeit“ (https://www.kompass-nachhaltig-\nkeit.de/guetezeichen/).\n \n \n \n9 Berücksichtigung der IAO-Kernarbeitsnormen\n \n \n9.1 Grundsätze zur Berücksichtigung internationaler Arbeitsstandards\n"
+        },
+        {
+          "quelle": 9,
+          "datei": "VVöffAw.pdf",
+          "seite": 13,
+          "score": 0.01795,
+          "relevanz": "niedrig",
+          "abschnitt": "BAnz AT 08.02.2017 B1) und der Teil B der Vergabe- und Vertragsordnung für\nLeistungen (VOL/B) vom 5. August 2003 (BAnz Nummer 178a vom 23.09.2003),\n \n \n \nb)die Vergabe- und Vertragsordnung für Bauleistungen (VOB) – Ausgabe 2019 – Teil A,\nAbschnitt 1 vom 19. Februar 2019 (BAnz AT 19.02.2019 B2), Teil"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffAw.pdf",
+          "seite": 28,
+          "score": 0.0175,
+          "relevanz": "niedrig",
+          "abschnitt": "Solche Merkmale müssen mit dem Auftragsgegenstand in Ver-\nbindung stehen und zu dessen Wert und den Beschaffungszielen verhältnismäßig sein.\n \n \n8.2 Nachhaltige Beschaffung\n \n \nDie „Kompetenzstelle für nachhaltige Beschaffung“ beim Beschaffungsamt des Bundesmi-\nnisteriums des Innern (KNB) ist das ze"
+        },
+        {
+          "quelle": 11,
+          "datei": "GWB.pdf",
+          "seite": 106,
+          "score": 0.01707,
+          "relevanz": "niedrig",
+          "abschnitt": "die Beschaffung von Wasser im Rahmen der Trinkwasserversorgung,\n \n8.   die Beschaffung von Energie oder von Brennstoffen zur Energieerzeugung im Rahmen der\nEnergieversorgung oder\n \n9.   die Weiterveräußerung oder Vermietung an Dritte, wenn\na)   dem Sektorenauftraggeber kein besonderes oder ausschlie"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.01667,
+          "relevanz": "niedrig",
+          "abschnitt": "Eine Verpflichtung zur Abfrage besteht nicht bei Sachverhalten, für die das Vergaberecht\nAusnahmen von der Anwendbarkeit des Vergaberechts vorsieht (§ 6 Abs. 1 Satz 3 WRegG).\nAuf eine erneute Anfrage zu konkreten Unternehmen kann verzichtet werden, wenn inner-\nhalb der letzten zwei Monate zu dem Unt"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 9,
+          "score": 0.01628,
+          "relevanz": "niedrig",
+          "abschnitt": "Eine Standardisierung, wie in Num-\nmer 5.1  bei der Beschaffung des Standardbedarfs beschrieben, erfolgt nicht.\n \n \nRessortinterne Beschaffungsstellen stimmen ihre jährliche Beschaffungsplanung mit den Zentra-\nlen Beschaffungsstellen des Landes ab, um Synergieeffekte zu heben und Doppelarbeit zu ver"
+        },
+        {
+          "quelle": 14,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01591,
+          "relevanz": "niedrig",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 15,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.01556,
+          "relevanz": "niedrig",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        }
+      ],
+      "export_zeit": "2026-06-27T10:40:11.597901"
+    },
+    {
+      "query": "Wie repariere ich einen kaputten Laptop?",
+      "answer": "Die vorliegenden Dokumente beschäftigen sich ausschließlich mit Vergaberecht und administrativen Vorgaben für öffentliche Aufträge in Rheinland‑Pfalz – sie enthalten keine Informationen zur Reparatur eines kaputten Laptops. Daher kann ich dazu leider keine hilfreiche Anleitung geben.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 27,
+          "score": 0.02258,
+          "relevanz": "niedrig",
+          "abschnitt": "e )\n \n \nBei Aufträgen, die ohne Ausschreibung vergeben werden sollen oder bei denen sich auf ei-\nne Ausschreibung nur ein Unternehmen gemeldet hat, kann die für den Auftragnehmer zu-\nständige Preisüberwachungsstelle eingeschaltet werden.\n \n \n \n8 Strategische Beschaffung\n \n \n \n8.1 Allgemeine Grundsät"
+        },
+        {
+          "quelle": 2,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.02187,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 3,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 1,
+          "score": 0.02121,
+          "relevanz": "niedrig",
+          "abschnitt": "Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort. Juli 2021 zu den vergaberecht lichen Erleichterungen \nzur Bewältigung der Flutkatastrophe in Rheinland-Pfalz   \nfort."
+        },
+        {
+          "quelle": 4,
+          "datei": "VVöffAw.pdf",
+          "seite": 39,
+          "score": 0.02059,
+          "relevanz": "niedrig",
+          "abschnitt": "Eine Verpflichtung zur Abfrage besteht nicht bei Sachverhalten, für die das Vergaberecht\nAusnahmen von der Anwendbarkeit des Vergaberechts vorsieht (§ 6 Abs. 1 Satz 3 WRegG).\nAuf eine erneute Anfrage zu konkreten Unternehmen kann verzichtet werden, wenn inner-\nhalb der letzten zwei Monate zu dem Unt"
+        },
+        {
+          "quelle": 5,
+          "datei": "VVöffAw_Einführungsschreiben.pdf",
+          "seite": 5,
+          "score": 0.02,
+          "relevanz": "niedrig",
+          "abschnitt": "14) zu verstehen; das bede utet, dass der komplette \nAbschnitt 4.3 mit den Anlagen 6 und 7 sowie Abschnitt 1.3.3 dieser Verwaltungs- \nvorschrift als Grundlagen für die beim Ministerium für Finanzen eingerichtete Melde- \nund Informationsstelle außer Kraft treten. 14) zu verstehen; das bede utet, dass"
+        },
+        {
+          "quelle": 6,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01944,
+          "relevanz": "mittel",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 7,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01892,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Vergaberecht im Unterschwellenbereich ist Teil des Haushaltsrechts und damit dem\nVerwaltungsinnenrecht zuzuordnen. Wei-\ntere Hinweise zum Verfahren sind dem Internetauftritt der Vergabekammer für Rheinland-\nPfalz unter „https://mwvlw.rlp.de/de/ministerium/zugeordnete-institutionen/vergabekam-\nme"
+        },
+        {
+          "quelle": 8,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.01842,
+          "relevanz": "niedrig",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 20,
+          "score": 0.01795,
+          "relevanz": "mittel",
+          "abschnitt": "Soweit eine Branchenvereinbarung nach Absatz 2a oder eine Vereinbarung nach Absatz 2b einen Missbrauch der\nFreistellung darstellt, kann das Bundeskartellamt diese ganz oder teilweise für unwirksam erklären.\n(4) Das Bundesministerium für Wirtschaft und Energie berichtet den gesetzgebenden Körperschaf"
+        },
+        {
+          "quelle": 10,
+          "datei": "VVöffAw.pdf",
+          "seite": 2,
+          "score": 0.0175,
+          "relevanz": "mittel",
+          "abschnitt": "e)\n 8 Strategische Beschaffung\n   8.1 Allgemeine Grundsätze\n   8.2 Nachhaltige Beschaffung\n   8.3 Innovative Beschaffung\n   8.4 Energieeffiziente Beschaffung\n   8.5 Gütezeichen\n 9 Berücksichtigung der IAO-Kernarbeitsnormen\n   9.1 Grundsätze zur Berücksichtigung internationaler Arbeitsstandards\n   9."
+        },
+        {
+          "quelle": 11,
+          "datei": "VVöffAw.pdf",
+          "seite": 43,
+          "score": 0.01707,
+          "relevanz": "niedrig",
+          "abschnitt": "Das Nachprüfungsverfahren vor der Vergabekammer\nbestimmt sich nach Teil 4 Kapitel 2 (§§ 155 ff.) des Gesetzes gegen Wettbewerbsbeschrän-\nkungen; ergänzend wird auf §§ 134 und 135 GWB sowie auf die Landesverordnung über die\nNachprüfungsbehörden für die Vergabe öffentlicher Aufträge und von Konzession"
+        },
+        {
+          "quelle": 12,
+          "datei": "VVöffAw.pdf",
+          "seite": 17,
+          "score": 0.01667,
+          "relevanz": "niedrig",
+          "abschnitt": "Bis zu einem Auftragswert von 10.000 Euro (ohne\nUmsatzsteuer) dürfen öffentliche Aufträge über die Beschaffung von preisgebundenen Bü-\nchern abweichend von dem in Nummer 5.4 Buchst. a  niedergelegten Grundsatz auch ohne\nAufforderung von mehreren Unternehmen zur Abgabe eines Angebotes direkt an ein U"
+        },
+        {
+          "quelle": 13,
+          "datei": "VVöffAw.pdf",
+          "seite": 10,
+          "score": 0.01628,
+          "relevanz": "niedrig",
+          "abschnitt": "Ziel dieser Verwaltungsvorschrift ist es, die bei der Vergabe öffentlicher Aufträge und Kon-\nzessionen unterhalb der EU-Schwellenwerte von den öffentlichen Auftraggebern zu beach-\ntenden Rechtsvorschriften zusammenzufassen sowie das komplexe Vergaberecht zu struk-\nturieren und transparent zu machen,"
+        },
+        {
+          "quelle": 14,
+          "datei": "VVöffBeschaffungswesen.pdf",
+          "seite": 5,
+          "score": 0.01591,
+          "relevanz": "mittel",
+          "abschnitt": "Unter Bedarfe sind sämtliche Leistungen zu verstehen, die für Bedarfsträger des Landes Rhein-\nland-Pfalz zu beschaffen sind.\n \n \n \n2.2 Bedarfsträger\n \n \nBedarfsträger sind Behörden und Einrichtungen der unmittelbaren Landesverwaltung, die Leis-\ntungen zur Erfüllung ihrer Aufgaben benötigen. Bedarfst"
+        },
+        {
+          "quelle": 15,
+          "datei": "GWB.pdf",
+          "seite": 108,
+          "score": 0.01556,
+          "relevanz": "niedrig",
+          "abschnitt": "Die Sätze 1 und 2 gelten nicht für die Vergabe von\nAufträgen, deren Gegenstand die Beschaffung von Energie oder Brennstoffen zur Energieerzeugung ist.\n(2) Die Auftraggeber nach Absatz 1 erteilen der Europäischen Kommission über das Bundesministerium für\nWirtschaft und Energie Auskunft über die Verga"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:40:11.597902"
+    },
+    {
+      "query": " wie hoch ist der Mindestlohn in Deutschland?",
+      "answer": "Ich habe im übermittelten Auszug keine Angabe zum aktuellen Mindestlohn in Deutschland gefunden. Deshalb kann ich die Frage anhand dieser Dokumente nicht beantworten.",
+      "model": "gpt-oss:20b",
+      "quellen": [
+        {
+          "quelle": 1,
+          "datei": "VVöffAw.pdf",
+          "seite": 22,
+          "score": 0.02314,
+          "relevanz": "mittel",
+          "abschnitt": "Zudem muss ein Unternehmen\nvon Großunternehmen in dem Sinne unabhängig sein, dass sich weniger als 25 v. H."
+        },
+        {
+          "quelle": 2,
+          "datei": "GWB.pdf",
+          "seite": 95,
+          "score": 0.02258,
+          "relevanz": "hoch",
+          "abschnitt": "soweit der Schutz wesentlicher Sicherheitsinteressen der Bundesrepublik Deutschland nicht durch weniger\neinschneidende Maßnahmen gewährleistet werden kann, zum Beispiel durch Anforderungen, die auf den\n- Seite 95 von 126 -."
+        },
+        {
+          "quelle": 3,
+          "datei": "GWB.pdf",
+          "seite": 40,
+          "score": 0.02187,
+          "relevanz": "mittel",
+          "abschnitt": ".\n§ 46 Beschlüsse, Organisation, Rechte und Pflichten der Mitglieder\n(1) Die Beschlüsse der Monopolkommission bedürfen der Zustimmung von mindestens drei Mitgliedern.\n(2) Die Monopolkommission hat eine Geschäftsordnung und verfügt über eine Geschäftsstelle. Sie dürfen auch nicht während des letzten "
+        },
+        {
+          "quelle": 4,
+          "datei": "UVgO.pdf",
+          "seite": 8,
+          "score": 0.02121,
+          "relevanz": "mittel",
+          "abschnitt": "(1) Bei einer Beschränkten Ausschreibung ohne Teilnahmewettbewerb fordert der Auftraggeber ohne vorherige Durchführung\neines Teilnahmewettbewerbs mehrere, grundsätzlich mindestens drei Unternehmen zur Abgabe eines Angebots auf.\n(2) Für die Auswahl darf der Auftraggeber nur geeignete Unternehmen auff"
+        },
+        {
+          "quelle": 5,
+          "datei": "GWB.pdf",
+          "seite": 96,
+          "score": 0.02059,
+          "relevanz": "mittel",
+          "abschnitt": "Vergabe und die Ausführung des Auftrags für geheim erklärt werden oder nach den Rechts- oder Verwaltungsvorschriften besondere Sicherheitsmaßnahmen erfordern; Voraussetzung hierfür ist eine Feststellung darüber, dass die betreffenden wesentlichen Interessen nicht durch weniger einschneidende Maßnahm"
+        },
+        {
+          "quelle": 6,
+          "datei": "GWB.pdf",
+          "seite": 107,
+          "score": 0.02,
+          "relevanz": "niedrig",
+          "abschnitt": "das Gemeinschaftsunternehmen im Sinne des Absatzes 1 Nummer 1 gebildet wurde, um die betreffende\nSektorentätigkeit während eines Zeitraums von mindestens drei Jahren durchzuführen, und\n \n2.   in dem Gründungsakt des Gemeinschaftsunternehmens festgelegt wird, dass die das\nGemeinschaftsunternehmen bil"
+        },
+        {
+          "quelle": 7,
+          "datei": "VgV.pdf",
+          "seite": 33,
+          "score": 0.01995,
+          "relevanz": "hoch",
+          "abschnitt": "In jedem Fall muss die vorgesehene\nMindestzahl ausreichend hoch sein, sodass der Wettbewerb gewährleistet ist.\n(3) Sofern geeignete Bewerber in ausreichender Zahl zur Verfügung stehen, lädt der öffentliche Auftraggeber\neine Anzahl von geeigneten Bewerbern ein, die nicht niedriger als die festgelegte"
+        },
+        {
+          "quelle": 8,
+          "datei": "GWB.pdf",
+          "seite": 112,
+          "score": 0.01944,
+          "relevanz": "mittel",
+          "abschnitt": "die nicht bereits gemäß den Nummern 1 bis 5 ausgeschlossen sind, wenn der Schutz wesentlicher\nSicherheitsinteressen der Bundesrepublik Deutschland nicht durch weniger einschneidende Maßnahmen\ngarantiert werden kann, wie beispielsweise durch Anforderungen, die auf den Schutz der Vertraulichkeit\nder I"
+        },
+        {
+          "quelle": 9,
+          "datei": "GWB.pdf",
+          "seite": 126,
+          "score": 0.01892,
+          "relevanz": "mittel",
+          "abschnitt": "Das Bundesministerium für Wirtschaft und Klimaschutz\ngibt den Tag unter Angabe der Bezeichnung des Abkommens zwischen dem Bundesministerium für Wirtschaft\nund Klimaschutz der Bundesrepublik Deutschland und dem Eidgenössischen Departement für Wirtschaft,\nBildung und Forschung der Schweizerischen Eidg"
+        },
+        {
+          "quelle": 10,
+          "datei": "GWB.pdf",
+          "seite": 126,
+          "score": 0.01842,
+          "relevanz": "niedrig",
+          "abschnitt": "November 2023 bereits abgeschlossen war, wenn die\nVeröffentlichung des Abschlussberichts nach § 32e Absatz 4 zu diesem Zeitpunkt weniger als ein Jahr zurücklag. November 2023 bereits abgeschlossen war, wenn die\nVeröffentlichung des Abschlussberichts nach § 32e Absatz 4 zu diesem Zeitpunkt weniger al"
+        },
+        {
+          "quelle": 11,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.01795,
+          "relevanz": "mittel",
+          "abschnitt": "Gemäß Absatz 2 Satz 1 sind auch bei der Verhandlungsvergabe ohne Teilnahmewettbewerb mehrere, grundsätzlich\nmindestens drei Unternehmen zur Angebotsabgabe oder (unmittelbar) zur Teilnahme an Verhandlungen aufzufordern."
+        },
+        {
+          "quelle": 12,
+          "datei": "GWB.pdf",
+          "seite": 111,
+          "score": 0.0175,
+          "relevanz": "mittel",
+          "abschnitt": "bei denen die Anwendung der Vorschriften dieses Teils den Konzessionsgeber verpflichten würde,\nAuskünfte zu erteilen, deren Preisgabe seines Erachtens den wesentlichen Sicherheitsinteressen der\nBundesrepublik Deutschland zuwiderläuft, oder wenn die Vergabe und Durchführung der Konzession als\ngeheim "
+        },
+        {
+          "quelle": 13,
+          "datei": "GWB.pdf",
+          "seite": 41,
+          "score": 0.01707,
+          "relevanz": "mittel",
+          "abschnitt": "Die zusammengefassten\nEinzelangaben dürfen nicht weniger als drei Unternehmensgruppen, Unternehmen, Betriebe oder fachliche\nTeile von Unternehmen betreffen. Durch Kombination oder zeitliche Nähe mit anderen übermittelten oder\nallgemein zugänglichen Angaben darf kein Rückschluss auf zusammengefasste "
+        },
+        {
+          "quelle": 14,
+          "datei": "UVgO.pdf",
+          "seite": 28,
+          "score": 0.01667,
+          "relevanz": "mittel",
+          "abschnitt": "Gemäß Absatz 1 sind mehrere, grundsätzlich mindestens drei Unternehmen zur Angebotsabgabe aufzufordern. In\nbegründeten Ausnahmefällen ist es damit möglich, auch nur zwei Unternehmen zur Angebotsabgabe aufzufordern, nicht\njedoch nur ein einziges Unternehmen.\nAbsatz 2 stellt klar, dass grundsätzlich n"
+        },
+        {
+          "quelle": 15,
+          "datei": "GWB.pdf",
+          "seite": 100,
+          "score": 0.01628,
+          "relevanz": "mittel",
+          "abschnitt": "Ein Service des Bundesministeriums der Justiz sowie des Bundesamts für\nJustiz ‒ www.gesetze-im-internet.de\nVergabeverfahrens beeinträchtigen könnte und der durch andere, weniger einschneidende Maßnahmen\nnicht wirksam beseitigt werden kann,\n \n6.   eine Wettbewerbsverzerrung daraus resultiert, dass da"
+        }
+      ],
+      "export_zeit": "2026-06-27T10:40:11.597911"
+    }
+  ]
+}

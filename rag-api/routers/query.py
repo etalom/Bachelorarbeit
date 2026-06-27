@@ -35,10 +35,12 @@ class AskResponse(BaseModel):
     quellen: list[SourceEntry]
 
 
-def build_context(hits: list) -> tuple[str, list]:
+def build_context(hits: list, query: str = "") -> tuple[str, list]:
     """Erstellt Kontext + Sources für Response"""
     context_parts = []
     sources = []
+
+    query_emb = get_embedding(query) if query else []
 
     for i, hit in enumerate(hits, 1):
         source = hit.get("_source", {})
@@ -51,7 +53,22 @@ def build_context(hits: list) -> tuple[str, list]:
         clean_highlight = [re.sub(r"<[^>]+>", "", frag).strip() for frag in highlight]
         abschnitt = " [...] ".join(clean_highlight) if clean_highlight else text[:500]
 
-        relevanz = "hoch" if i == 1 else "mittel" if i <= 3 else "niedrig"
+        # Semantische Relevanz via Embedding-Cosine-Similarity
+        sim_score = 0.0
+        if query_emb:
+            chunk_emb = get_embedding(abschnitt[:500])
+            if chunk_emb and query_emb:
+                import numpy as np
+                a = np.array(query_emb, dtype=np.float32)
+                b = np.array(chunk_emb, dtype=np.float32)
+                sim_score = float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-10))
+
+        if sim_score >= 0.40:
+            relevanz = "hoch"
+        elif sim_score >= 0.28:
+            relevanz = "mittel"
+        else:
+            relevanz = "niedrig"
 
         context_parts.append(abschnitt)
 
@@ -113,7 +130,7 @@ def ask(
         }
 
     # Kontext + Antwort
-    context, sources = build_context(hits)
+    context, sources = build_context(hits, query)
     answer = generate_answer(query, context, intent, model)
     latency_ms = round((time.time() - start) * 1000, 2)
 
@@ -159,7 +176,7 @@ def compare(
     t0 = time.time()
     bm25_hits = search_bm25(query, intent, size=8)
     bm25_time = round((time.time() - t0) * 1000, 2)
-    ctx_bm25, src_bm25 = build_context(bm25_hits)
+    ctx_bm25, src_bm25 = build_context(bm25_hits, query)
     ans_bm25 = generate_answer(query, ctx_bm25, intent, model) if bm25_hits else "Keine Ergebnisse"
 
     # Vector (reine Vectorsuche, ohne BM25)
@@ -167,7 +184,7 @@ def compare(
     query_embedding = get_embedding(query)
     vector_hits = search_vector(query_embedding, size=8)
     vector_time = round((time.time() - t1) * 1000, 2)
-    ctx_vector, src_vector = build_context(vector_hits)
+    ctx_vector, src_vector = build_context(vector_hits, query)
     ans_vector = generate_answer(query, ctx_vector, intent, model) if vector_hits else "Keine Ergebnisse"
 
     bm25_keys = {chunk_key(h) for h in bm25_hits}

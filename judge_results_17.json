@@ -1,0 +1,166 @@
+{
+  "source_file": "eval_results_17.json",
+  "judge_model": "mistral:latest",
+  "entries": [
+    {
+      "query": "Ab welchem Betrag ist eine Vergabe durchzuführen (UVgO, VV ÖA, LHO)?",
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Ab welchem Betrag ist eine Beschaffung durchzuführen (UVgO, VV ÖA, LHO)?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Wie lange dauert ein Vergabeverfahren (UVgO, VgV)?",
+      "scores": {
+        "correctness": 4,
+        "completeness": 4,
+        "faithfulness": 5,
+        "clarity": 4
+      }
+    },
+    {
+      "query": "Ist der Höchstbetrag in Brutto oder Netto anzugeben (UVgO, VgV, VV ÖA)?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Warum ist ein Vergabeverfahren durchzuführen (LHO, UVgO, VgV, VV ÖA)?",
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Welcher Preis ist zu beachten (VV ÖA)?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Als Mitarbeitender oder Professor*in möchte ich wissen, ob Beträge, Preise und Kostenschätzungen in Brutto oder Netto anzugeben sind, um das korrekte Verfahren bestimmen zu können.",
+      "scores": {
+        "correctness": 1,
+        "completeness": 2,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Als Institutssekretariat möchte ich wissen, welche Dokumente der Beschaffungsstelle vorgelegt werden müssen, um eine Bestellung rechtssicher einzuleiten.",
+      "scores": {
+        "correctness": 1,
+        "completeness": 4,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Als wissenschaftlich Mitarbeitender möchte ich wissen, wie lange eine Ausschreibung offen sein muss und welche Fristen für Angebotsabgabe und Zuschlag gelten.",
+      "scores": {
+        "correctness": 3,
+        "completeness": 2,
+        "faithfulness": 5,
+        "clarity": 4
+      }
+    },
+    {
+      "query": "Als wissenschaftlich Mitarbeitende möchte ich erfahren, ob Angebote selbst eingeholt werden dürfen oder ob dies durch die Beschaffungsstelle erfolgt.",
+      "scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Als Projektleiter*in oder Mitarbeitender möchte ich verstehen, was ein Vergabeverfahren bzw. eine Beschaffung im Kontext der Vergaberegelungen bedeutet.",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Als Projektleiter*in einer rheinland-pfälzischen Hochschule möchte ich wissen, warum Vergabeverfahren durchgeführt werden müssen und warum eine direkte Vergabe an einen Wunschlieferanten nicht zulässig ist.",
+      "scores": {
+        "correctness": 3,
+        "completeness": 2,
+        "faithfulness": 5,
+        "clarity": 4
+      }
+    },
+    {
+      "query": "Wie mache ich eine Mondlandung?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Wie koche ich Pasta?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Wer hat die Relativitätstheorie erfunden?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Wie repariere ich einen kaputten Laptop?",
+      "scores": {
+        "correctness": 1,
+        "completeness": 5,
+        "faithfulness": 5,
+        "clarity": 5
+      }
+    },
+    {
+      "query": "Ich brauche einen Laptop - wie beschaffe ich diesen?",
+      "scores": {
+        "correctness": 3,
+        "completeness": 2,
+        "faithfulness": 5,
+        "clarity": 4
+      }
+    }
+  ],
+  "aggregates": {
+    "correctness": 2.24,
+    "completeness": 4.18,
+    "faithfulness": 5.0,
+    "clarity": 4.76
+  },
+  "overall": 4.04
+}
