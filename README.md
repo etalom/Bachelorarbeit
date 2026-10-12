@@ -81,8 +81,8 @@ Ergebnisse für die getesteten Fragen mit Kontext (In-Context-Fragen):
 ### Installation
 
 ```bash
-git clone https://github.com/etalom/<REPOSITORY-NAME>.git
-cd <REPOSITORY-NAME>
+git clone https://github.com/etalom/Bachelorarbeit.git
+cd Bacheloarbeit
 ```
 
 ### Konfiguration
